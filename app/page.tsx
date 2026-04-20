@@ -8,12 +8,14 @@ import Cards from "@/components/cards";
 import BackImage from "@/components/backimage";
 import Photo from "@/components/photo";
 import {Test} from"@/components/test";
+import Badge from "@/components/Badge";
 
 
 export default function Home() {
   return (
     <>
     <Hero/>
+    <Badge/>
       <Features />
       <Content/>
       <Center/>
@@ -22,6 +24,7 @@ export default function Home() {
       <BackImage/>
       <Photo/>
       <Test/>
+      
       
     </>
   );
