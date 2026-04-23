@@ -3,7 +3,13 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 
-const Move = () => {
+const Move = ({
+  titleLine1 = "Selenium Automation",
+  titleLine2 = "Software Testing",
+  description = "Learn Selenium automation for web testing, creating efficient test scripts and ensuring software quality.",
+  buttonText = "CALL TO EXPERT NOW"
+}: any) => {
+
   const textContainerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -57,23 +63,25 @@ const Move = () => {
             viewport={{ once: true, amount: 0.3 }}
           >
             <motion.h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+              
               <motion.span variants={leftMoveVariants} className="block">
-                Selenium Automation
+                {titleLine1}
               </motion.span>
+
               <motion.span 
                 variants={leftMoveVariants} 
                 className="block text-[#00a8b4]"
               >
-                Software Testing
+                {titleLine2}
               </motion.span>
+
             </motion.h1>
 
             <motion.p 
               variants={leftMoveVariants}
               className="text-lg md:text-xl text-gray-600 max-w-2xl leading-relaxed"
             >
-              Learn Selenium automation for web testing, creating efficient test
-              scripts and ensuring software quality.
+              {description}
             </motion.p>
           </motion.div>
 
@@ -87,10 +95,9 @@ const Move = () => {
               variants={zoomInVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              
               className="bg-red-600 hover:bg-red-700 text-white font-bold text-base md:text-lg px-8 py-3 rounded-md shadow-2xl shadow-red-500/20 transition-colors uppercase"
             >
-              CALL TO EXPERT NOW
+              {buttonText}
             </motion.button>
           </motion.div>
 

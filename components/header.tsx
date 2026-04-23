@@ -45,10 +45,13 @@ const navbarLinks: NavItem[] = [
       { name: "Digital Marketing" ,href: "/courses/digital-marketing" },
       { name: "Pythons", href: "/courses/pythons" },
       { name: "Cyber Security", href: "/courses/cyber-security" },
-      { name: "UI/UX Design", href: "/courses/ui-ux" },
-      { name: "Graphic Design", href: "/courses/graphic-design" },
-      { name: "DevOps", href: "/courses/devops" },
-      { name: "Cloud Computing", href: "/courses/cloud-computing" },
+      { name: "Data Science", href: "/courses/data-science" },
+      { name: "AI(Artificial Inteligence)", href: "/courses/ai" },
+      { name: "Data Analystics", href: "/courses/data-analystics" },
+      { name: "Google ads", href: "/courses/google-ads" },
+      { name: "Meta ads", href: "/courses/meta-ads" },
+      { name: "Social Media", href: "/courses/social-media"},
+      
     ],
   },
 

@@ -2,25 +2,17 @@
 import React from 'react';
 
 import HeroSection from '@/components/hero section';
-import Write  from '@/components/write';
-import Move from '@/components/move';
-import Courses from '@/components/courses';
-import Book from '@/components/Book';
-import Drop from '@/components/drop';
-import Tests from '@/components/Tests';
-
 export default function Home() {
   return (
     <main className="min-h-screen">
 
-      <HeroSection />
-      <Write/>
-      <Move/>
-      <Courses/>
-      <Book/>
-      <Drop/>
-      <Tests/>
-
+      <HeroSection
+  title ="Digital Marketing Course in Mohali"
+  description="Learn the Best Digital Marketing Course in Mohali at 5Trainers Training Institute. It is the Best Penetration Testing Course in Mohali."
+  image="/digi.jpg"
+  category="Digital Marketing"
+/>
+     
   
     </main>
   );
