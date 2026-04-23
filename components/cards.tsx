@@ -44,7 +44,7 @@ export default function Cards() {
             className={`${card.bgColor} p-5 rounded-xl flex flex-col items-start transition-transform hover:-translate-y-1 duration-300`}
           >
             {/* Icon Container */}
-            <div className={`p-3 rounded-lg mb-6 shadow-sm`}>
+            <div className={`p-3 rounded-lg mb-6 shadow-sm`}>   
               {card.icon}
             </div>
 

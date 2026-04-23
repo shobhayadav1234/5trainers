@@ -33,7 +33,7 @@ const Courses = () => {
   return (
     <section className="bg-white py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-12">
-        
+
         {/* HEADING & PARAGRAPH */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-4xl font-bold text-[#006677] mb-4">
@@ -46,18 +46,18 @@ const Courses = () => {
 
         {/* CARDS GRID (Responsive) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
-          
+
           {/* 3 Training Mode Cards */}
           {trainingModes.map((mode, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-white p-8 rounded-sm shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col items-center text-center group transition-all min-h-[420px] w-full"
             >
               {/* ICON: Blue to Black on Hover */}
               <div className="text-[#00a8b4] mb-10 transition-colors duration-300 group-hover:text-black">
                 {mode.icon}
               </div>
-              <h3 className="text-xl font-bold text-[#d16b2a] mb-6">
+              <h3 className="text-xl font-bold text-[#ec300f] mb-6">
                 {mode.title}
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">

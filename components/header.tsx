@@ -40,11 +40,11 @@ const navbarLinks: NavItem[] = [
   {
     name: "Courses",
     dropdown: [
-      { name: "Software Testing",href: "/Software-Testing"},
-      { name: "Web Development",href: "" },
-      { name: "Digital Marketing" ,href: "" },
-      { name: "Python", href: "" },
-      { name: "Cyber Security", href: "" },
+      { name: "Software Testing",href: "/courses/software-testing"},
+      { name: "Web Development",href: "/courses/web-development" },
+      { name: "Digital Marketing" ,href: "/courses/digital-marketing" },
+      { name: "Pythons", href: "/courses/pythons" },
+      { name: "Cyber Security", href: "/courses/cyber-security" },
       { name: "UI/UX Design", href: "/courses/ui-ux" },
       { name: "Graphic Design", href: "/courses/graphic-design" },
       { name: "DevOps", href: "/courses/devops" },

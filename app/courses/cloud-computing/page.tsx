@@ -1,9 +1,9 @@
 "use client";
-import Move from '@/components/move';
 import React from 'react';
 
 import HeroSection from '@/components/hero section';
 import Write  from '@/components/write';
+import Move from '@/components/move';
 import Courses from '@/components/courses';
 import Book from '@/components/Book';
 import Drop from '@/components/drop';
