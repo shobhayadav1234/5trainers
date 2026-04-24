@@ -7,6 +7,9 @@ import pythonsCourse from "./pythons";
 import socialmediaCourse from "./socialmedia";
 import googleadsCourse from "./googleads";
 import digitalmarketingCourse from "./digitalmarketing";
+import datascienceCourse from "./data-science";
+import dataanalysticsCourse from "./dataanalystics";
+import devopsCourse from "./devops";
 
 
 export const courses: Record<string, any> = {
@@ -19,6 +22,11 @@ export const courses: Record<string, any> = {
   "social-media":socialmediaCourse,
   "google-ads":googleadsCourse,
   "digital-marketing":digitalmarketingCourse,
+  "data-science":datascienceCourse,
+  "data-analystics":dataanalysticsCourse,
+  "devops":devopsCourse,
+  
+
   
 
 

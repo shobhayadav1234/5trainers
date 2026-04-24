@@ -53,8 +53,6 @@ const navbarLinks: NavItem[] = [
       { name: "DevOps", href: "/courses/devops"},
       { name: "Networking", href: "/courses/networking"},
       { name: "Cloud Computering", href: "/courses/cloud-computering"},
-
-
       
     ],
   },

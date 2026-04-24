@@ -12,55 +12,64 @@ const aiCourse: CourseContent = {
   },
 
   write: {
-    courseName: "Web Application Penetration Testing",
+  courseName: "Artificial Intelligence",
 
-    aboutTitle: "About Web Application Penetration Testing Course",
+  aboutTitle: "About Artificial Intelligence Course",
 
-    aboutPara1:
-      "Cyberyaan Training Institute in Delhi provides a thorough Web Application Penetration Testing Course that teaches you how to discover and mitigate security vulnerabilities in web applications.",
+  aboutPara1:
+    "The Artificial Intelligence Course at 5Trainers Institute in Mohali is designed to help you understand how intelligent systems work using data, algorithms, and machine learning techniques from basics to advanced level.",
 
-    aboutPara2:
-      "You will learn SQL injection, XSS, IDOR and tools like Burp Suite, OWASP ZAP, Metasploit.",
+  aboutPara2:
+    "You will learn Python programming, machine learning, deep learning fundamentals, and data processing techniques. The course focuses on building intelligent systems that can learn from data and make predictions.",
 
-    aboutPara3:
-      "After completion, you will receive a certification validating your skills.",
+  aboutPara3:
+    "At 5Trainers, we emphasize practical learning with live AI projects, case studies, and industry-based applications. After completion, you will be able to work confidently in AI, machine learning, and data-driven technology roles.",
 
-    learningObjectives: [
-      "Web Application Security Fundamentals",
-      "Web Application Architecture and Technologies",
-      "Attack Vectors",
-      "Security Testing Techniques",
-      "Secure Coding Practices",
-      "Authentication and Authorization",
-      "Session Management",
-      "Security Misconfigurations",
-    ],
+  learningObjectives: [
+    "Introduction to Artificial Intelligence",
+    "Python Programming for AI",
+    "Machine Learning Fundamentals",
+    "Supervised Learning Techniques",
+    "Unsupervised Learning Techniques",
+    "Neural Networks Basics",
+    "Deep Learning Introduction",
+    "Data Processing and Cleaning",
+    "Feature Engineering",
+    "Model Evaluation Techniques",
+    "Working with Real-world AI Projects",
+    "AI Applications in Industry"
+  ],
 
-    requirements: [
-      "HTML, CSS, JavaScript basics",
-      "Basic networking (TCP/IP, HTTP)",
-      "Operating systems knowledge",
-      "Cybersecurity fundamentals",
-    ],
+  requirements: [
+    "Basic computer knowledge",
+    "Interest in programming and data",
+    "No prior AI experience required",
+    "Laptop with internet access",
+    "Basic logical thinking skills",
+    "Willingness to learn Python"
+  ],
 
-    modules: [
-      "Introduction to HTTP/HTTPS",
-      "OWASP Top 10 Overview",
-      "Burp Suite Setup",
-      "XSS Attacks",
-      "SQL Injection",
-      "CSRF Attacks",
-      "Session Management",
-      "Final Pen Testing Project",
-    ],
-  },
-
-  move: {
-    titleLine1: "AI (Artificial Intelligence)",
-    titleLine2: "Training",
-    description:
-      "Learn how to find and fix security vulnerabilities using real-world tools.",
-  },
+  modules: [
+    "Module 01: Introduction to Artificial Intelligence",
+    "Module 02: Python Basics for AI",
+    "Module 03: Data Handling and Processing",
+    "Module 04: Machine Learning Basics",
+    "Module 05: Supervised Learning Algorithms",
+    "Module 06: Unsupervised Learning Algorithms",
+    "Module 07: Model Evaluation Techniques",
+    "Module 08: Neural Networks Introduction",
+    "Module 09: Deep Learning Basics",
+    "Module 10: Feature Engineering",
+    "Module 11: AI Model Training",
+    "Module 12: Real-world AI Projects"
+  ]
+},
+move: {
+  titleLine1: "Artificial Intelligence Course",
+  titleLine2: "Training",
+  description:
+    "Learn Artificial Intelligence with hands-on training in Python, machine learning, and deep learning. Build intelligent systems, work on real-world AI projects, and prepare for high-demand careers in AI and emerging technologies.",
+},
 
  training: {
   heading: "Modes of Training",
@@ -106,61 +115,103 @@ const aiCourse: CourseContent = {
 },
 
   book: {
-    title: "Artificial Intelligence Training Overview",
+  title: "Artificial Intelligence Course Overview",
 
-    paragraphs: [
-      "Best institute for AI training with hands-on learning.",
-      "Covers real-world AI projects and tools.",
-      "AI helps in automation, healthcare, finance and more.",
-    ],
+  paragraphs: [
+    "The Artificial Intelligence Course at 5Trainers Institute is designed to help students understand how machines learn, think, and make decisions using real-world data and algorithms.",
+    "You will learn Python programming, data handling, and core AI concepts including machine learning and deep learning.",
+    "The course focuses on building intelligent systems that can analyze data, recognize patterns, and make predictions.",
+    "Students will work on real-world AI projects and case studies to gain practical industry experience in artificial intelligence."
+  ],
 
-    highlights: [
-      {
-        title: "Data Analysis",
-        desc: "AI handles large datasets efficiently.",
-      },
-      {
-        title: "Automation",
-        desc: "Reduces manual work and increases efficiency.",
-      },
-      {
-        title: "Machine Learning",
-        desc: "Learn ML algorithms and neural networks.",
-      },
-    ],
-  },
+  highlights: [
+    {
+      title: "AI Fundamentals",
+      desc: "Understand the basics of Artificial Intelligence and how intelligent systems work.",
+    },
+    {
+      title: "Python for AI",
+      desc: "Learn Python programming for building AI-based applications and models.",
+    },
+    {
+      title: "Machine Learning",
+      desc: "Study algorithms like regression, classification, and clustering used in AI systems.",
+    },
+    {
+      title: "Deep Learning Basics",
+      desc: "Understand neural networks and how AI systems learn from large datasets.",
+    },
+    {
+      title: "Real-World AI Projects",
+      desc: "Work on practical AI applications and industry-based case studies.",
+    }
+  ]
+},
 
-  faq: {
-    title: "Artificial Intelligence Course FAQs",
+faq: {
+  title: "Artificial Intelligence Course FAQs",
 
-    faqs: [
-      {
-        question: "What is AI?",
-        answer:
-          "AI is machines simulating human intelligence.",
-      },
-      {
-        question: "Who can learn AI?",
-        answer:
-          "Students, developers and IT professionals.",
-      },
-    ],
-  },
+  faqs: [
+    {
+      question: "What is Artificial Intelligence?",
+      answer:
+        "Artificial Intelligence is the branch of computer science that focuses on creating systems capable of performing tasks that normally require human intelligence.",
+    },
+    {
+      question: "Who can learn AI?",
+      answer:
+        "Students, graduates, developers, and anyone interested in technology, data, and programming can learn AI.",
+    },
+    {
+      question: "Do I need coding knowledge for AI?",
+      answer:
+        "Basic coding knowledge is helpful, but beginners can also start as Python is taught from scratch.",
+    },
+    {
+      question: "What skills will I learn in AI course?",
+      answer:
+        "You will learn Python, machine learning, deep learning basics, data handling, and AI model building.",
+    },
+    {
+      question: "Is AI a good career option?",
+      answer:
+        "Yes, AI is one of the fastest-growing and highest-paying career fields in technology.",
+    }
+  ]
+},
 
-  testimonials: {
-    title: "What People Say About 5 Trainers Institute",
 
-    items: [
-      {
-        name: "Aarav Mehta",
-        review: "Great hands-on cybersecurity training.",
-      },
-      {
-        name: "Sneha Verma",
-        review: "Excellent Burp Suite training experience.",
-      },
-    ],
-  },
+testimonials: {
+  title: "What Students Say About Data Science Course",
+
+  items: [
+    {
+      name: "Aarav Mehta",
+      review:
+        "The Data Science training was very practical. I learned Python, data analysis, and machine learning with real projects.",
+    },
+    {
+      name: "Sneha Verma",
+      review:
+        "Excellent teaching approach. The concepts of data visualization and statistics were explained very clearly.",
+    },
+    {
+      name: "Rahul Sharma",
+      review:
+        "I gained hands-on experience with real datasets and now feel confident working as a data analyst.",
+    },
+    {
+      name: "Neha Kapoor",
+      review:
+        "The machine learning part was amazing. Step-by-step guidance made complex topics easy to understand.",
+    },
+    {
+      name: "Vikas Yadav",
+      review:
+        "Great institute for Data Science. Practical sessions and projects helped me build strong industry skills.",
+    },
+  ],
+},
 };
 
 export default aiCourse;
