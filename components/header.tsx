@@ -50,7 +50,11 @@ const navbarLinks: NavItem[] = [
       { name: "Data Analystics", href: "/courses/data-analystics" },
       { name: "Google ads", href: "/courses/google-ads" },
       { name: "Meta ads", href: "/courses/meta-ads" },
-      { name: "Social Media", href: "/courses/social-media"},
+      { name: "DevOps", href: "/courses/devops"},
+      { name: "Networking", href: "/courses/networking"},
+      { name: "Cloud Computering", href: "/courses/cloud-computering"},
+
+
       
     ],
   },

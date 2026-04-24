@@ -9,6 +9,7 @@ import BackImage from "@/components/backimage";
 import Photo from "@/components/photo";
 import {Test} from"@/components/test";
 import Badge from "@/components/Badge";
+import Trending from "@/components/trending";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
     <>
     <Hero/>
     <Badge/>
+    <Trending/>
       <Features />
       <Content/>
       <Center/>
