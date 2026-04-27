@@ -5,16 +5,16 @@ import React from "react";
 export default function Content() {
   return (
     <section className="w-full flex items-center justify-center px-4 py-16 bg-white">
-      <div className="max-w-4xl text-center">
+      <div className="max-w-8xl text-center">
         
         {/* Heading - Primary OKLCH Color applied */}
-        <h1 className="text-3xl md:text-6xl font-extrabold text-[oklch(0.45_0.15_250)] leading-tight">
+        <h1 className="text-7xl md:text-6xl font-extrabold text-[oklch(0.45_0.15_250)] leading-tight">
             Tech skills with 5  Trainers <br />
           institute  
         </h1>
 
         {/* Paragraph - 12 Lines centered */}
-        <p className="mt-8 text-gray-700 text-base md:text-xl leading-relaxed text-center">
+        <p className=" w-5xl mt-8 text-gray-700 text-base md:text-xl leading-relaxed text-center">
          Advance your career with 5 Trainers Institute’s expert-led training programs. 
          Our curriculum is thoughtfully designed by experienced industry trainers to equip you with real-world, job-ready skills. 
 

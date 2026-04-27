@@ -23,7 +23,7 @@ export default function Photo() {
         <span className="bg-blue-50 text-blue-600 px-6 py-2 rounded-full text-sm font-semibold tracking-wide">
           5 Trainers Gallery
         </span>
-        <h2 className="mt-6 text-3xl md:text-5xl font-extrabold text-[#333] leading-tight max-w-3xl mx-auto">
+        <h2 className="mt-6 text-5xl md:text-5xl font-extrabold text-[#333] leading-tight max-w-3xl mx-auto">
         Training Institute Guided 
          <br/> by 5 Professional  <br/>Trainers
         </h2>

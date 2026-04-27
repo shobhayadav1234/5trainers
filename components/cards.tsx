@@ -39,7 +39,7 @@ export default function Cards() {
     <section className="w-full py-12 bg-white">
 
       {/* ✅ SAME WIDTH AS NAVBAR */}
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
+      <div className="max-w-8xl mx-auto px-4 md:px-6">
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 

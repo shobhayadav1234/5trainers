@@ -5,7 +5,7 @@ import { Monitor, Globe, BookOpen } from 'lucide-react';
 
 const Courses = ({
   heading = "Modes of Training",
-  subHeading = "Cyberyaan offers flexibility in terms of training modes to accommodate various learning preferences:",
+  subHeading = "5Trainers offers flexibility in terms of training modes to accommodate various learning preferences:",
   trainingModes = [],
   targetAudience = []
 }: any) => {
