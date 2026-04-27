@@ -21,7 +21,7 @@ type CategoryDataMap = {
 const categories = [
   "Combos", "Web Dev", "Data Science", "Networking",
   "Cyber Security", "Cloud Computing", "DevOps", "Digital Marketing",
-  "Software Testing", "Data Analytics", "Python" // Added 3 new
+  "Software Testing", "Data Analytics", "python" // Added 3 new
 ];
 
 const allCoursesData: CategoryDataMap = {
