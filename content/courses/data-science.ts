@@ -6,7 +6,7 @@ hero: {
   title: "Data Science Course in Mohali",
   description:
     "Master Data Science with 5Trainers Institute in Mohali. Learn data analysis, statistics, Python for data science, machine learning, and real-world data projects to build a strong career in analytics and AI.",
-  image: "/datascience.jpg",
+  image: "/ads.jpg",
   category: "Data Science",
 },
  write:{

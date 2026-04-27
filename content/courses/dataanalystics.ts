@@ -6,7 +6,7 @@ hero: {
   title: "Data Analytics Course in Mohali",
   description:
     "Learn Data Analytics at 5Trainers Institute in Mohali with practical training in Excel, SQL, Python, statistics, and data visualization. Build strong analytical skills to interpret data and make smart business decisions.",
-  image: "/data-analytics.jpg",
+  image: "/ads.jpg",
   category: "Data Analytics",
 },
 

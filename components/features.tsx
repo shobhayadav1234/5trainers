@@ -6,8 +6,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -21,7 +19,7 @@ const courses = [
   { img: "/python.jpg" },
   { img: "/mobile.jpg" },
   { img: "/net.jpg" },
-  { img: "/web.jpg" },
+  { img: "/mobile.jpg" },
 ];
 
 /* ================= COMPONENT ================= */
@@ -29,7 +27,7 @@ const courses = [
 export default function Features() {
   const [api, setApi] = useState<CarouselApi | null>(null);
 
-  // Auto scroll
+  // ✅ Auto scroll
   useEffect(() => {
     if (!api) return;
 
@@ -42,14 +40,16 @@ export default function Features() {
 
   return (
     <div className="py-10 md:py-16 bg-background">
-      
-      {/* HEADING */}
-      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 md:mb-10 text-primary">
-        Popular Courses
-      </h2>
 
-      {/* CAROUSEL */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      {/* ✅ SAME WIDTH AS NAVBAR */}
+      <div className="max-w-8xl mx-auto px-4 md:px-6">
+
+        {/* HEADING */}
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 md:mb-10 text-primary">
+          Popular Courses
+        </h2>
+
+        {/* CAROUSEL */}
         <Carousel
           setApi={setApi}
           opts={{
@@ -76,9 +76,8 @@ export default function Features() {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
+
       </div>
     </div>
   );

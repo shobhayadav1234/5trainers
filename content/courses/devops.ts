@@ -6,7 +6,7 @@ hero: {
   title: "DevOps Course in Mohali",
   description:
     "Learn DevOps with hands-on training at 5Trainers Institute in Mohali. Master CI/CD pipelines, Docker, Kubernetes, cloud computing, and automation tools to build scalable and modern software delivery systems.",
-  image: "/devops.jpg",
+  image: "/ads.jpg",
   category: "DevOps",
 },
 

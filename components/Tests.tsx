@@ -23,7 +23,7 @@ interface Props {
   autoplayDelay?: number
 }
 
-export default function Test({
+export default function TestimonialCarousel({
   title = "What Our Students Say",
   subtitle = "AI & Automation Learning Experience",
   testimonials,

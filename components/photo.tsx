@@ -30,7 +30,7 @@ export default function Photo() {
       </div>
 
       {/* Image Grid - Desktop: 5 per row, Mobile: 2 per row */}
-      <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+      <div className="max-w-8xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
         {galleryImages.map((img, index) => (
           <div 
             key={index} 

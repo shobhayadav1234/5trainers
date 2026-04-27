@@ -6,7 +6,7 @@ hero: {
   title: "Digital Marketing Course in Mohali",
   description:
     "Learn complete digital marketing at 5Trainers Institute in Mohali. Master SEO, Google Ads, social media marketing, content strategy, and lead generation with practical training and real-world projects.",
-  image: "/digitalmarketing.jpg",
+  image: "/count.jpg",
   category: "Digital Marketing",
 },
 

@@ -10,7 +10,7 @@ export default function Hero() {
     <>
       {/* 🔥 TOP BLACK STRIP */}
       <div className="bg-black text-white text-sm py-2">
-        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <div className="max-w-8xl mx-auto px-4 flex justify-between items-center">
           
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">
@@ -33,7 +33,7 @@ export default function Hero() {
 
       {/* 🔵 HERO SECTION */}
       <div className="bg-[oklch(0.45_0.15_250)] text-white py-12 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+        <div className="max-w-8xl mx-auto px-4 sm:px-3 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           
           {/* LEFT CONTENT */}
           <div className="w-full md:w-1/2 text-center md:text-left">

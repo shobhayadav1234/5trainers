@@ -7,7 +7,7 @@ export default function Center() {
     <section className="w-full flex items-center justify-center bg-[oklch(0.45_0.15_250)] mb-10">
       
       {/* FULL WIDTH CONTAINER */}
-      <div className="w-full flex flex-col md:flex-row">
+      <div className="w-8xl px-4 flex flex-col md:flex-row">
         
         {/* Left Side: Image (SMALLER + TIGHT) */}
         <div className="md:w-1/2 flex items-center justify-center px-4 md:px-10 py-2 md:py-4">

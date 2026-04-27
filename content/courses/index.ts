@@ -10,6 +10,8 @@ import digitalmarketingCourse from "./digitalmarketing";
 import datascienceCourse from "./data-science";
 import dataanalysticsCourse from "./dataanalystics";
 import devopsCourse from "./devops";
+import cloudcomputeringCourse from "./cloudcomputering";
+import networkingCourse from "./networking";
 
 
 export const courses: Record<string, any> = {
@@ -25,6 +27,8 @@ export const courses: Record<string, any> = {
   "data-science":datascienceCourse,
   "data-analystics":dataanalysticsCourse,
   "devops":devopsCourse,
+  "cloud-computering":cloudcomputeringCourse,
+  "networking":networkingCourse
   
 
   
