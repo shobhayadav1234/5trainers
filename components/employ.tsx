@@ -2,7 +2,7 @@ import React from 'react';
 
 const Employ = () => {
   const alumni = [
-  { name: "Vipin Chauhan", role: "Associate Software Engineer", package: "7 LPA/-", company: "TCS", image: "/employ.jpg" },
+    { name: "Vipin Chauhan", role: "Associate Software Engineer", package: "7 LPA/-", company: "TCS", image: "/employ.jpg" },
     { name: "Ashutosh Kumar Jha", role: "Program Analyst", package: "8.5 LPA/-", company: "Cognizant", image: "/employ1.jpg" },
     { name: "Piyush Chawla", role: "Python Developer", package: "6 LPA/-", company: "HCL", image: "/employ2.jpg" },
     { name: "Pranav Mittal", role: "Frontend Developer", package: "5.5 LPA/-", company: "Wipro", image: "/employ3.jpg" },
@@ -21,14 +21,14 @@ const Employ = () => {
     { name: "Siddharth Jha", role: "Software Developer", package: "8.2 LPA/-", company: "Google", image: "/employ5.jpg" },
     { name: "Aman Deep", role: "Security Researcher", package: "12 LPA/-", company: "Microsoft", image: "/employ.jpg" },
     { name: "Vikas Yadav", role: "Web Developer", package: "6.8 LPA/-", company: "Deloitte", image: "/employ5.jpg" }
-  
+
   ];
 
   return (
     <div className="bg-white py-16">
       {/* Container matched to Navbar width (max-w-7xl + mx-auto) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section: Placement Packages */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 inline-block border-b-4 border-[#00A9A5] pb-2 uppercase tracking-wide">
@@ -41,10 +41,10 @@ const Employ = () => {
             Placement Packages – Average Salary & Growth Opportunities
           </h3>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            At 5Trainers, our students don't just get placed—they secure competitive salary packages and significant career growth opportunities. 
+            At 5Trainers, our students don't just get placed—they secure competitive salary packages and significant career growth opportunities.
             Here's a breakdown of the average salary packages our students receive based on their industry experience and expertise:
           </p>
-          
+
           <ul className="space-y-3">
             <li className="flex items-center gap-2 text-gray-700">
               <span className="font-bold text-gray-900">• Entry-level Salaries:</span> ₹6-8 LPA (Fresh Graduates)
@@ -96,13 +96,13 @@ const Employ = () => {
             <div key={index} className="relative bg-[#2A5C9A] rounded-xl pt-14 pb-6 px-4 text-center text-white shadow-lg transition-transform hover:scale-105">
               {/* Circular Image - Increased absolute top offset to -12 */}
               <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full border-4 border-white overflow-hidden bg-gray-200 shadow-md">
-                <img 
-                  src={person.image} 
-                  alt={person.name} 
+                <img
+                  src={person.image}
+                  alt={person.name}
                   className="w-full h-full object-cover"
                 />
               </div>
-              
+
               <div className="mt-4">
                 <h4 className="text-lg font-bold border-b border-blue-400 pb-2 mb-3">
                   {person.name}

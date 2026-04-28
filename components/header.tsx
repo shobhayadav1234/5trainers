@@ -66,16 +66,15 @@ const navbarLinks: NavItem[] = [
     ],
   },
   { name: "Reviews", href: "/reviews" },
-  { name: "Blog", href: "/blog" },
+  { name: "Blog", href: "/blogs" },
   { name: "Placement", href: "/placement" },
   {
     name: "Company",
     dropdown: [
       { name: "About Us", href: "/about" },
-      { name: "Careers", href: "/careers" },
+      { name: "Gallery", href: "/gallery" },
       { name: "Webinars", href: "/webinars" },
-      { name: "FAQs", href: "/faqs" },
-      { name: "Contact", href: "/contact" },
+    
     ],
   },
   { name: "Contact", href: "/contact" },
@@ -91,13 +90,13 @@ export default function Header() {
       <nav className="w-full border-b bg-background sticky top-0 z-[100]">
         {/* Container aligned with Hero Section (max-w-7xl) */}
         <div className="max-w-8xl mx-auto px-4 md:px-10 py-3 flex items-center justify-between">
-          
+
           {/* LOGO - Scaled for better alignment */}
           <Link href="/">
-            <img 
-              src="/logo.png" 
-              alt="5 Trainers Logo" 
-              className="h-10 md:h-12 w-auto object-contain cursor-pointer" 
+            <img
+              src="/logo.png"
+              alt="5 Trainers Logo"
+              className="h-10 md:h-12 w-auto object-contain cursor-pointer"
             />
           </Link>
 
@@ -116,53 +115,53 @@ export default function Header() {
                         <div className="grid gap-2 p-4 w-[280px] md:w-[350px] max-h-[450px] overflow-y-auto bg-popover rounded-md shadow-xl border">
                           {item.name === "Courses"
                             ? (item.dropdown as CourseItem[]).map((course, idx) =>
-                                course.sub ? (
-                                  <div key={idx} className="mb-2">
-                                    <p className="text-sm font-bold text-foreground px-2 py-1">
-                                      {course.name}
-                                    </p>
-                                    <div className="ml-2 mt-1 space-y-1 border-l-2 border-muted pl-2">
-                                      {course.sub.map((sub, subIdx) => (
-                                        <NavigationMenuLink asChild key={subIdx}>
-                                          <Link
-                                            href={sub.href}
-                                            className="block px-2 py-1.5 text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-sm transition-all"
-                                          >
-                                            {sub.name}
-                                          </Link>
-                                        </NavigationMenuLink>
-                                      ))}
-                                    </div>
+                              course.sub ? (
+                                <div key={idx} className="mb-2">
+                                  <p className="text-sm font-bold text-foreground px-2 py-1">
+                                    {course.name}
+                                  </p>
+                                  <div className="ml-2 mt-1 space-y-1 border-l-2 border-muted pl-2">
+                                    {course.sub.map((sub, subIdx) => (
+                                      <NavigationMenuLink asChild key={subIdx}>
+                                        <Link
+                                          href={sub.href}
+                                          className="block px-2 py-1.5 text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-sm transition-all"
+                                        >
+                                          {sub.name}
+                                        </Link>
+                                      </NavigationMenuLink>
+                                    ))}
                                   </div>
-                                ) : (
-                                  <NavigationMenuLink asChild key={idx}>
-                                    <Link
-                                      href={course.href || "#"}
-                                      className="block px-2 py-2 text-sm font-medium hover:text-primary hover:bg-accent rounded-md transition-all"
-                                    >
-                                      {course.name}
-                                    </Link>
-                                  </NavigationMenuLink>
-                                )
-                              )
-                            : (item.dropdown as SubLink[]).map((sub, idx) => (
+                                </div>
+                              ) : (
                                 <NavigationMenuLink asChild key={idx}>
                                   <Link
-                                    href={sub.href}
-                                    className="block px-3 py-2 text-sm font-medium hover:text-primary hover:bg-accent rounded-md transition-all"
+                                    href={course.href || "#"}
+                                    className="block px-2 py-2 text-sm font-medium hover:text-primary hover:bg-accent rounded-md transition-all"
                                   >
-                                    {sub.name}
+                                    {course.name}
                                   </Link>
                                 </NavigationMenuLink>
-                              ))}
+                              )
+                            )
+                            : (item.dropdown as SubLink[]).map((sub, idx) => (
+                              <NavigationMenuLink asChild key={idx}>
+                                <Link
+                                  href={sub.href}
+                                  className="block px-3 py-2 text-sm font-medium hover:text-primary hover:bg-accent rounded-md transition-all"
+                                >
+                                  {sub.name}
+                                </Link>
+                              </NavigationMenuLink>
+                            ))}
                         </div>
                       </NavigationMenuContent>
                     </NavigationMenuItem>
                   ) : (
                     <NavigationMenuItem key={i}>
                       <NavigationMenuLink asChild>
-                        <Link 
-                          href={item.href || "#"} 
+                        <Link
+                          href={item.href || "#"}
                           className="px-3 py-2 text-[15px] font-medium hover:text-primary transition-colors"
                         >
                           {item.name}
@@ -196,30 +195,30 @@ export default function Header() {
                     <div className="ml-4 space-y-2">
                       {item.name === "Courses"
                         ? (item.dropdown as CourseItem[]).map((course, idx) => (
-                            <Link
-                              key={idx}
-                              href={course.href || "#"}
-                              onClick={() => setOpen(false)}
-                              className="block text-sm text-muted-foreground hover:text-primary py-1"
-                            >
-                              {course.name}
-                            </Link>
-                          ))
+                          <Link
+                            key={idx}
+                            href={course.href || "#"}
+                            onClick={() => setOpen(false)}
+                            className="block text-sm text-muted-foreground hover:text-primary py-1"
+                          >
+                            {course.name}
+                          </Link>
+                        ))
                         : (item.dropdown as SubLink[]).map((sub, idx) => (
-                            <Link
-                              key={idx}
-                              href={sub.href}
-                              onClick={() => setOpen(false)}
-                              className="block text-sm text-muted-foreground hover:text-primary py-1"
-                            >
-                              {sub.name}
-                            </Link>
-                          ))}
+                          <Link
+                            key={idx}
+                            href={sub.href}
+                            onClick={() => setOpen(false)}
+                            className="block text-sm text-muted-foreground hover:text-primary py-1"
+                          >
+                            {sub.name}
+                          </Link>
+                        ))}
                     </div>
                   </div>
                 ) : (
-                  <Link 
-                    key={i} 
+                  <Link
+                    key={i}
                     href={item.href || "#"}
                     onClick={() => setOpen(false)}
                     className="text-lg font-semibold border-b border-muted pb-2 hover:text-primary"
@@ -250,18 +249,18 @@ export default function Header() {
           Chat with us!
         </span>
       </a>
-            {/* Call Fixed Icon */}
-     <a
-  href="tel:+918750500075"
-  className="fixed bottom-24 right-6 z-[999] bg-[#007BFF] p-3 md:p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 group flex items-center justify-center"
->
-  <Phone className="w-8 h-8 md:w-6 md:h-6 text-white" />
+      {/* Call Fixed Icon */}
+      <a
+        href="tel:+918750500075"
+        className="fixed bottom-24 right-6 z-[999] bg-[#007BFF] p-3 md:p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 group flex items-center justify-center"
+      >
+        <Phone className="w-8 h-8 md:w-6 md:h-6 text-white" />
 
-  {/* Tooltip on Hover */}
-  <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-black text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-md whitespace-nowrap pointer-events-none border border-gray-100">
-    Call us!
-  </span>
-</a>
+        {/* Tooltip on Hover */}
+        <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-black text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-md whitespace-nowrap pointer-events-none border border-gray-100">
+          Call us!
+        </span>
+      </a>
     </>
   );
 }
