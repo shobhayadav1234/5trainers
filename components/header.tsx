@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { Phone } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -242,13 +243,25 @@ export default function Header() {
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
           alt="WhatsApp"
-          className="w-8 h-8 md:w-10 md:h-10"
+          className="w-8 h-8 md:w-6 md:h-6"
         />
         {/* Tooltip on Hover */}
         <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-black text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-md whitespace-nowrap pointer-events-none border border-gray-100">
           Chat with us!
         </span>
       </a>
+            {/* Call Fixed Icon */}
+     <a
+  href="tel:+918750500075"
+  className="fixed bottom-24 right-6 z-[999] bg-[#007BFF] p-3 md:p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 group flex items-center justify-center"
+>
+  <Phone className="w-8 h-8 md:w-6 md:h-6 text-white" />
+
+  {/* Tooltip on Hover */}
+  <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-black text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-md whitespace-nowrap pointer-events-none border border-gray-100">
+    Call us!
+  </span>
+</a>
     </>
   );
 }

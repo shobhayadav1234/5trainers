@@ -77,7 +77,7 @@ move: {
   titleLine1: "Python Programming Course",
   titleLine2: "in Mohali",
   description:
-    "The largest selection of fitness articles, exercises, workouts, supplements, & community to help you reach your goals! Cyberyaan offers the best Python programming course in Delhi with both offline and online classes. Learn Python from basics to advanced with practical training and real-world projects.",
+    "The largest selection of fitness articles, exercises, workouts, supplements, & community to help you reach your goals! 5Trainers offers the best Python programming course in Delhi with both offline and online classes. Learn Python from basics to advanced with practical training and real-world projects.",
 },
 
 

@@ -31,7 +31,7 @@ const Alumni = () => {
           {/* Left Side: Content */}
           <div className="w-full lg:w-1/2 text-white">
             <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
-              ALUMNI PLACED
+              ALUMNI   PLACED
             </h2>
             
             <p className="text-[#FFD700] font-semibold text-lg mb-8 italic">
