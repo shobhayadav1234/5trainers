@@ -19,26 +19,39 @@ type CategoryDataMap = {
 
 // --- DATA UPDATED: Added Software Testing, Data Analytics, and Python ---
 const categories = [
-  "Combos", "Web Dev", "Data Science", "Networking",
+  "python", "Web Dev", "Data Science", "Networking",
   "Cyber Security", "Cloud Computing", "DevOps", "Digital Marketing",
-  "Software Testing", "Data Analytics", "python" // Added 3 new
+  "Software Testing", "Data Analytics",  // Added 3 new
 ];
 
 const allCoursesData: CategoryDataMap = {
-  "Combos": [
-    { id: "c1", title: "CCNP (ENCOR + ENARSI)", duration: "4/6 Months", mode: "Online / Offline", rating: 5, price: "₹35,000", imageUrl: "/cc.jpg" },
+
+  "python": [
+    { id: "py1", title: "Core Python", duration: "2 Months", mode: "Online / Offline", rating: 5, price: "₹15,000", imageUrl: "/co.jpg" },
+    { id: "py2", title: "Django Framework", duration: "1 Month", mode: "Online / Offline", rating: 5, price: "₹10,000", imageUrl: "/dj.jpg" },
+    { id: "py3", title: "Python for Data Science", duration: "2 Months", mode: "Online / Offline", rating: 5, price: "₹18,000", imageUrl: "/ca.jpg" },
   ],
+
   "Web Dev": [
     { id: "w1", title: "Front-end Development", duration: "4 Months", mode: "Online / Offline", rating: 5, price: "₹25,000", imageUrl: "/webs.jpg" },
     { id: "w2", title: "Back-end Development", duration: "4 Months", mode: "Online / Offline", rating: 5, price: "₹25,000", imageUrl: "/we.jpg" },
     { id: "w3", title: "Full-Stack Python", duration: "6 Months", mode: "Online / Offline", rating: 5, price: "₹35,000", imageUrl: "./pythons.jpg" },
     { id: "w4", title: "Full-Stack Java", duration: "6 Months", mode: "Online / Offline", rating: 5, price: "₹35,000", imageUrl: "/java.jpg" },
     { id: "w5", title: "Java + SpringBoot", duration: "4 Months", mode: "Online / Offline", rating: 5, price: "₹25,000", imageUrl: "/spo.jpg" },
-    { id: "w8", title: "React JS", duration: "2 Months", mode: "Online / Offline", rating: 5, price: "₹15,000", imageUrl: "/react.jpg" },
+    { id: "w6", title: "React JS", duration: "2 Months", mode: "Online / Offline", rating: 5, price: "₹15,000", imageUrl: "/react.jpg" },
+    { id: "w7", title: "FullStack Development", duration: "6 Months", mode: "Online / Offline", rating: 5, price: "₹25,000", imageUrl: "/co.jpg" },
+    { id: "w8", title: "Best Web Designing Course", duration: "6 Months", mode: "Online / Offline", rating: 5, price: "₹25,000", imageUrl: "/we.jpg" },
+    { id: "w9", title: "Best Anugular Course", duration: "6 Months", mode: "Online / Offline", rating: 5, price: "₹20,000", imageUrl: "/co.jpg" },
+    { id: "w10", title: "Best Django course", duration: "6 Months", mode: "Online / Offline", rating: 5, price: "₹22,000", imageUrl: "/dj.jpg" },
+    { id: "w11", title: "Node JS", duration: "6 Months", mode: "Online / Offline", rating: 5, price: "₹30,000", imageUrl: "/ca.jpg" },
   ],
   "Data Science": [
-    { id: "ds1", title: "Data Science", duration: "8 Months", mode: "Online / Offline", rating: 5, price: "₹35,000", imageUrl: "/sci.jpg" },
-    { id: "ds2", title: "AI / ML", duration: "3/6 Months", mode: "Online / Offline", rating: 5, price: "₹35,000", imageUrl: "/ai.jpg" },
+    { id: "ds1", title: "Machine Learning Course", duration: "8 Months", mode: "Online / Offline", rating: 5, price: "₹35,000", imageUrl: "/sci.jpg" },
+    { id: "ds2", title: "Artifical Intelligence(AI)Course", duration: "3/6 Months", mode: "Online / Offline", rating: 5, price: "₹35,000", imageUrl: "/ai.jpg" },
+    { id: "ds3", title: "Best Python Course", duration: "3/6 Months", mode: "Online / Offline", rating: 5, price: "₹35,000", imageUrl: "/dj.jpg" },
+    { id: "ds4", title: "Best Chat Gpt Course", duration: "3/6 Months", mode: "Online / Offline", rating: 5, price: "₹35,000", imageUrl: "/co.jpg" },
+    { id: "ds5", title: "Machine Learning with R Programing", duration: "3/6 Months", mode: "Online / Offline", rating: 5, price: "₹35,000", imageUrl: "/webs.jpg" },
+
   ],
   "Networking": [
     { id: "n1", title: "CCNA", duration: "1/2 Months", mode: "Online / Offline", rating: 5, price: "₹10,000", imageUrl: "/fr.jpg" },
@@ -49,9 +62,14 @@ const allCoursesData: CategoryDataMap = {
   ],
   "Cloud Computing": [
     { id: "cc1", title: "Cloud Practitioner", duration: "2 Weeks", mode: "Online / Offline", rating: 5, price: "₹5,000", imageUrl: "/aw.jpg" },
+    { id: "cc2", title: "AWS Solutions Architect", duration: "1 Month", mode: "Online / Offline", rating: 5, price: "₹12,000", imageUrl: "/aw2.jpg" },
+    { id: "cc3", title: "Microsoft Azure Fundamentals", duration: "3 Weeks", mode: "Online / Offline", rating: 5, price: "₹8,000", imageUrl: "/webs.jpg" },
+
   ],
   "DevOps": [
     { id: "dv1", title: "Azure DevOps", duration: "2 Months", mode: "Online / Offline", rating: 5, price: "₹15,000", imageUrl: "/dev1.jpg" },
+    { id: "dv2", title: "Google Cloud Associate Engineer", duration: "1 Month", mode: "Online / Offline", rating: 5, price: "₹10,000", imageUrl: "/webs.jpg" },
+    { id: "dv3", title: "DevOps with Cloud", duration: "45 Days", mode: "Online / Offline", rating: 5, price: "₹15,000", imageUrl: "/ai.jpg" },
   ],
   "Digital Marketing": [
     { id: "dm1", title: "Digital Marketing", duration: "4/6 Months", mode: "Online / Offline", rating: 5, price: "₹25,000", imageUrl: "/de1.jpg" },
@@ -64,17 +82,24 @@ const allCoursesData: CategoryDataMap = {
     { id: "st1", title: "Manual Testing", duration: "1 Month", mode: "Online / Offline", rating: 5, price: "₹10,000", imageUrl: "/sci.jpg" },
     { id: "st2", title: "Automation Testing", duration: "3 Months", mode: "Online / Offline", rating: 5, price: "₹20,000", imageUrl: "/ca.jpg" },
     { id: "st3", title: "Selenium with Java", duration: "2 Months", mode: "Online / Offline", rating: 5, price: "₹15,000", imageUrl: "/aw4.jpg" },
+    { id: "st4", title: "Micro Service Training", duration: "2 Months", mode: "Online / Offline", rating: 5, price: "₹15,000", imageUrl: "/spo.jpg" },
+
   ],
   "Data Analytics": [
     { id: "da1", title: "Power BI", duration: "1/2 Months", mode: "Online / Offline", rating: 5, price: "₹15,000", imageUrl: "/po.jpg" },
     { id: "da2", title: "Agentics AI course", duration: "1/2 Months", mode: "Online / Offline", rating: 5, price: "₹15,000", imageUrl: "/ta.jpg" },
     { id: "da3", title: "Data Analytics Master", duration: "4 Months", mode: "Online / Offline", rating: 5, price: "₹25,000", imageUrl: "/da.jpg" },
+    { id: "da4", title: "Business Analyst Course", duration: "4 Months", mode: "Online / Offline", rating: 5, price: "₹22,000", imageUrl: "/webs.jpg" },
+    { id: "da5", title: "Microsoft Power Apps Training", duration: "6 Months", mode: "Online / Offline", rating: 5, price: "₹28,000", imageUrl: "/spo.jpg" },
+    { id: "da6", title: "Power Automate Training", duration: "6 Months", mode: "Online / Offline", rating: 5, price: "₹28,000", imageUrl: "/po.jpg" },
+    { id: "da7", title: "Best Python Course", duration: "3 Months", mode: "Online / Offline", rating: 5, price: "₹18,000", imageUrl: "/python.jpg" },
+    { id: "da8", title: "Power BI Course Online", duration: "3 Months", mode: "Online / Offline", rating: 5, price: "₹18,000", imageUrl: "/dev1.jpg" },
+    { id: "da9", title: "Advanced Microsoft Excel Training", duration: "3 Months", mode: "Online / Offline", rating: 5, price: "₹16,000", imageUrl: "/sci.jpg" },
+    { id: "da10", title: "PL/SQL Course", duration: "3 Months", mode: "Online / Offline", rating: 5, price: "₹20,000", imageUrl: "/spo.jpg" },
+    { id: "da11", title: "Best Excel VBA Course Online", duration: "3 Months", mode: "Online / Offline", rating: 5, price: "₹18,000", imageUrl: "/ta.jpg" },
+    { id: "da12", title: "Tableau Course", duration: "3 Months", mode: "Online / Offline", rating: 5, price: "₹20,000", imageUrl: "/ca.jpg" }
   ],
-  "python": [
-    { id: "py1", title: "Core Python", duration: "2 Months", mode: "Online / Offline", rating: 5, price: "₹15,000", imageUrl: "/co.jpg" },
-    { id: "py2", title: "Django Framework", duration: "1 Month", mode: "Online / Offline", rating: 5, price: "₹10,000", imageUrl: "/dj.jpg" },
-    { id: "py3", title: "Python for Data Science", duration: "2 Months", mode: "Online / Offline", rating: 5, price: "₹18,000", imageUrl: "/ca.jpg" },
-  ],
+
 };
 
 const StarRating = ({ rating }: { rating: number }) => (
@@ -100,15 +125,15 @@ const Trending: React.FC = () => {
           Stay ahead in the rapidly growing tech world with our top trending IT courses. Whether you're a beginner looking to start your career or a working professional who wants to upskill, we offer practical based IT Training Courses.
         </p>
 
-        {/* Tabs Grid */}
-        <div className="flex flex-wrap justify-center gap-2 mb-14 border border-gray-200 p-2 rounded-xl bg-white shadow-sm">
+        {/* Tabs Grid - Now in one line with smaller buttons */}
+        <div className="flex flex-nowrap overflow-x-auto justify-start lg:justify-center gap-2 mb-14 border border-gray-200 p-2 rounded-xl bg-white shadow-sm scrollbar-hide">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveTab(cat)}
-              className={`px-7 py-2.5 rounded-lg font-bold border-2 transition-all duration-300 ${activeTab === cat
-                  ? "bg-[#0073b1] text-white border-[#0073b1] shadow-lg scale-105"
-                  : "bg-white text-[#0073b1] border-transparent hover:bg-[#e6f2f8] hover:border-[#0073b1]/30"
+              className={`px-4 py-1.5 rounded-lg font-bold border-2 transition-all duration-300 whitespace-nowrap text-sm ${activeTab === cat
+                ? "bg-[#0073b1] text-white border-[#0073b1] shadow-md scale-105"
+                : "bg-white text-[#0073b1] border-transparent hover:bg-[#e6f2f8] hover:border-[#0073b1]/30"
                 }`}
             >
               {cat}

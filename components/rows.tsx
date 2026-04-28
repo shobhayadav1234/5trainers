@@ -94,7 +94,7 @@ export default function TrendingCourses() {
                 {/* 📞 CONTACT */}
                 <div className="flex items-center gap-2 text-blue-600 text-xs md:text-sm mt-3 font-medium">
                   <Phone size={14} />
-                  <span>+91 7428748577 | +91 7428748576</span>
+                  <span>+91-87505 00075 </span>
                 </div>
 
               </div>

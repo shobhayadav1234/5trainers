@@ -41,7 +41,7 @@ const Black = () => {
                             </div>
                             <div>
                                 <p className="font-bold text-orange-500 text-lg uppercase">Phone Number</p>
-                                <p className="text-gray-200 text-lg">+91-7070905090</p>
+                                <p className="text-gray-200 text-lg">+91-87505 00075</p>
                             </div>
                         </div>
 
@@ -52,7 +52,7 @@ const Black = () => {
                             </div>
                             <div>
                                 <p className="font-bold text-orange-500 text-lg uppercase">E-mail</p>
-                                <p className="text-gray-200 text-lg">info@ducatindia.com</p>
+                                <p className="text-gray-200 text-lg">info@5Trainers.com</p>
                             </div>
                         </div>
 
@@ -64,7 +64,7 @@ const Black = () => {
                             <div>
                                 <p className="font-bold text-orange-500 text-lg uppercase">Corporate Address</p>
                                 <p className="text-gray-200 text-sm md:text-base leading-snug">
-                                    A 43 & A 52, Noida Sector 16, Behind MacD, 201301, UP
+                                    5th floor ,victory Tower, Sector 55 Phase 8B Mohali
                                 </p>
                             </div>
                         </div>
