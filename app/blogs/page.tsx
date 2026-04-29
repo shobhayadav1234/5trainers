@@ -1,9 +1,9 @@
-import Blogs from "@/components/blogs";
-
+import Blogs from "@/components/blogs-hero-section";
 const Page = () => {
   return (
     <>
  <Blogs/>
+ 
     </>
   );
 };

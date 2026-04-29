@@ -2,13 +2,13 @@ import { notFound } from "next/navigation";
 import { courses } from "@/content/courses";
 import { Monitor, Globe, BookOpen } from "lucide-react";
 
-import HeroSection from "@/components/hero section";
-import Write from "@/components/write";
-import Move from "@/components/move";
-import Courses from "@/components/courses";
-import Book from "@/components/Book";
-import Drop from "@/components/drop";
-import Test from "@/components/Tests";
+import HeroSection from "@/components/landing-hero-section";
+import Write from "@/components/courses-module";
+import Move from "@/components/courses-banners";
+import Courses from "@/components/courses-modes-training";
+import Book from "@/components/course-software-key-highlight";
+import Drop from "@/components/courses-faqs";
+import Test from "@/components/courses-testimonials";
 
 
 interface PageProps {

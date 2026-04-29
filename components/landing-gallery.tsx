@@ -17,15 +17,15 @@ const galleryImages = [
 
 export default function Photo() {
   return (
-    <section className="w-full py-16 px-4 md:px-10 bg-white">
+    <section className="w-full px-4 md:px-10 bg-white">
       {/* Top Header Section */}
       <div className="text-center mb-12">
         <span className="bg-blue-50 text-blue-600 px-6 py-2 rounded-full text-sm font-semibold tracking-wide">
           5 Trainers Gallery
         </span>
-        <h2 className="mt-6 text-5xl md:text-5xl font-extrabold text-[#333] leading-tight max-w-3xl mx-auto">
+        <h2 className="mt-4 text-5xl md:text-5xl font-extrabold text-[#333] leading-tight max-w-3xl mx-auto">
         Training Institute Guided 
-         <br/> by 5 Professional  <br/>Trainers
+         <br/> by Professional  <br/>5Trainers
         </h2>
       </div>
 

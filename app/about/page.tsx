@@ -1,5 +1,5 @@
-import AboutPage from "@/components/about";
-import Vision from "@/components/vision";
+import AboutPage from "@/components/company-about-founder";
+import Vision from "@/components/company-about-vision";
 
 const Page = () => {
   return (

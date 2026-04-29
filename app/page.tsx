@@ -1,20 +1,20 @@
 
-import Features from "@/components/features";
-import Hero from "@/components/hero";
-import Content from "@/components/content";
-import Center from "@/components/center";
-import Rows from "@/components/rows"
-import Cards from "@/components/cards";
-import BackImage from "@/components/backimage";
-import Photo from "@/components/photo";
-import { Test } from "@/components/test";
-import Badge from "@/components/Badge";
-import Trending from "@/components/trending";
-import Contacth from "@/components/contacth";
-import WhyChooseUs from "@/components/whychooseus";
-import FlexibleLern from "@/components/flexiblelern";
-import PlacementPartners from "@/components/placement-partners";
-import FAQ from "@/components/faq";
+import Features from "@/components/landing-popularcourses";
+import Hero from "@/components/landing-strip";
+import Content from "@/components/landing-techskills";
+import Center from "@/components/landing-cta";
+import Rows from "@/components/landing-trending-courses"
+import Cards from "@/components/landing-course";
+import BackImage from "@/components/landing-counter";
+import Photo from "@/components/landing-gallery";
+import { Test } from "@/components/testimonial";
+import Badge from "@/components/ourpartnered-landing";
+import Trending from "@/components/landing-toptrending";
+import Contacth from "@/components/landing-contact";
+import WhyChooseUs from "@/components/why-choose-us";
+import FlexibleLern from "@/components/landing-flexible-learning";
+import PlacementPartners from "@/components/landing-placement-partners";
+import FAQ from "@/components/landing-faqs";
 import { FaQ } from "react-icons/fa6";
 
 
