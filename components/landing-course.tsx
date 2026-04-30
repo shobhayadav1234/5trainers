@@ -7,66 +7,76 @@ const cardData = [
   {
     title: "Best Teaching",
     desc: "The best teaching involves engaging students, fostering critical thinking, and adapting methods to individual learning styles effectively.",
-    icon: <Award className="w-6 h-6 text-yellow-500" />,
-    bgColor: "bg-[#FFFCE4]",
-    iconBg: "bg-yellow-100",
+    icon: <Award className="w-6 h-6 text-[#1db954]" />,
+    // Logo Green accent
+    hoverBg: "hover:bg-[#1db954]/5",
+    accentBorder: "border-b-[#1db954]",
+    iconBg: "bg-[#1db954]/10",
   },
   {
     title: "Convenient Practice",
     desc: "Convenient practice offers flexibility and accessibility, enabling efficient skill development at one's preferred time and location.",
-    icon: <BookOpen className="w-6 h-6 text-purple-600" />,
-    bgColor: "bg-[#FDF2FF]",
-    iconBg: "bg-purple-100",
+    icon: <BookOpen className="w-6 h-6 text-[#f59e0b]" />,
+    // Logo Amber accent
+    hoverBg: "hover:bg-[#f59e0b]/5",
+    accentBorder: "border-b-[#f59e0b]",
+    iconBg: "bg-[#f59e0b]/10",
   },
   {
     title: "Video Lecture",
     desc: "We provide visual and auditory learning experiences, enhancing comprehension & engagement with educational content.",
-    icon: <MonitorPlay className="w-6 h-6 text-red-600" />,
-    bgColor: "bg-[#FFF1F1]",
-    iconBg: "bg-red-100",
+    icon: <MonitorPlay className="w-6 h-6 text-[#6366f1]" />,
+    // Logo Indigo/Purple accent
+    hoverBg: "hover:bg-[#6366f1]/5",
+    accentBorder: "border-b-[#6366f1]",
+    iconBg: "bg-[#6366f1]/10",
   },
   {
     title: "Live Classes",
     desc: "Live classes facilitate real-time interaction, engagement, and immediate feedback, enhancing learning experiences through dynamic participation.",
-    icon: <Users className="w-6 h-6 text-blue-600" />,
-    bgColor: "bg-[#F0F9FF]",
-    iconBg: "bg-blue-100",
+    icon: <Users className="w-6 h-6 text-[#1db954]" />,
+    // Back to Logo Green
+    hoverBg: "hover:bg-[#1db954]/5",
+    accentBorder: "border-b-[#1db954]",
+    iconBg: "bg-[#1db954]/10",
   },
 ];
 
 export default function Cards() {
   return (
-    <section className="w-full py-12 bg-white">
+    <section className="w-full py-16 bg-white">
 
-      {/* ✅ SAME WIDTH AS NAVBAR */}
       <div className="max-w-8xl mx-auto px-4 md:px-6">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {cardData.map((card, index) => (
             <div
               key={index}
-              className={`${card.bgColor} p-5 rounded-xl flex flex-col items-start transition-all hover:-translate-y-1 hover:shadow-lg duration-300`}
+              className={`group p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 flex flex-col items-start transition-all duration-500 hover:shadow-2xl hover:shadow-slate-200 border-b-4 ${card.accentBorder} ${card.hoverBg}`}
             >
               
-              {/* ICON */}
-              <div className={`p-3 rounded-lg mb-5 ${card.iconBg}`}>
+              {/* ICON - Circle style with logo colors */}
+              <div className={`p-4 rounded-2xl mb-8 transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg ${card.iconBg}`}>
                 {card.icon}
               </div>
 
               {/* TITLE */}
-              <h3 className="text-lg font-bold text-gray-800 mb-3">
+              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight">
                 {card.title}
               </h3>
 
               {/* DESC */}
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+              <p className="text-slate-500 text-sm leading-relaxed mb-10 font-medium">
                 {card.desc}
               </p>
 
               {/* BUTTON */}
-              <button className="mt-auto flex items-center gap-2 text-sm font-bold text-gray-800 hover:gap-3 transition-all">
-                Learn More <ArrowRight size={16} />
+              <button className="mt-auto flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-slate-900 group-hover:text-black transition-all">
+                Learn More 
+                <div className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center group-hover:bg-black group-hover:text-white group-hover:border-black transition-all duration-300">
+                   <ArrowRight size={16} />
+                </div>
               </button>
 
             </div>

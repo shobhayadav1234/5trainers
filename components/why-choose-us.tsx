@@ -1,110 +1,140 @@
 "use client";
 import React from 'react';
-import { 
-  Briefcase, 
-  Users, 
-  Award, 
-  Trophy, 
-  MessageSquare, 
-  LifeBuoy, 
-  Check 
+import {
+  Briefcase,
+  Users,
+  Award,
+  Trophy,
+  MessageSquare,
+  LifeBuoy,
+  Check,
+  ArrowRight,
+  Sparkles,
 } from 'lucide-react';
 
 const WhyChooseUs = () => {
   const features = [
     {
-      title: "10 Years IT Experience",
-      desc: "Real-world corporate exposure from a decade-old IT company legacy.",
-      icon: <Briefcase className="text-[#00a3c8]" size={32} />,
+      title: "10+ Years IT Experience",
+      desc: "Benefit from a decade of corporate expertise, real-world projects, and proven industry success.",
+      icon: <Briefcase size={28} />,
+      accent: "border-[#1db954]" // Emerald Green from logo
     },
     {
-      title: "Experienced Faculty",
-      desc: "Learn from specialists who live technology and work on live projects.",
-      icon: <Users className="text-[#00a3c8]" size={32} />,
+      title: "Expert Industry Faculty",
+      desc: "Train with professionals actively working on live technologies and enterprise solutions.",
+      icon: <Users size={28} />,
+      accent: "border-[#f59e0b]" // Amber from logo
     },
     {
-      title: "Google Certified",
-      desc: "Curriculum and trainers recognized by global industry standards.",
-      icon: <Award className="text-[#00a3c8]" size={32} />,
+      title: "Globally Certified Programs",
+      desc: "Curriculum aligned with Google, AWS, Microsoft, and global certification standards.",
+      icon: <Award size={28} />,
+      accent: "border-[#6366f1]" // Purple from logo
     },
     {
-      title: "100% Placement Support",
-      desc: "Dedicated cell to help you land your dream job in top tech firms.",
-      icon: <Trophy className="text-[#00a3c8]" size={32} />,
+      title: "100% Placement Assistance",
+      desc: "Dedicated placement support, interview preparation, and hiring network access.",
+      icon: <Trophy size={28} />,
+      accent: "border-[#1db954]"
     },
     {
-      title: "Interview & Soft Skills",
-      desc: "Complete personality development and mock interview sessions.",
-      icon: <MessageSquare className="text-[#00a3c8]" size={32} />,
+      title: "Soft Skills & Interview Prep",
+      desc: "Complete personality development, communication mastery, and mock interviews.",
+      icon: <MessageSquare size={28} />,
+      accent: "border-[#f59e0b]"
     },
     {
-      title: "Lifetime Trainer Support",
-      desc: "Get guidance even after course completion whenever you're stuck.",
-      icon: <LifeBuoy className="text-[#00a3c8]" size={32} />,
+      title: "Lifetime Mentor Support",
+      desc: "Continuous trainer guidance even after course completion for long-term success.",
+      icon: <LifeBuoy size={28} />,
+      accent: "border-[#6366f1]"
     },
   ];
 
   return (
-    <section className="py-20 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-28 bg-[#0b1120] overflow-hidden font-sans relative">
+      {/* Background Decorative Elements - Matching image_009896.png nodes */}
+      <div className="absolute inset-0 pointer-events-none opacity-20">
+        <div className="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] bg-[#1db954]/20 rounded-full blur-[120px]" />
+        <div className="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-[#6366f1]/20 rounded-full blur-[120px]" />
+      </div>
+
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
         
-        {/* --- Header Section --- */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        {/* Header Section */}
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-12 mb-24">
           <div className="max-w-2xl">
-            <h4 className="text-[#00a3c8] font-black uppercase tracking-[0.3em] text-sm mb-4">
-              Our Value Proposition
-            </h4>
-            <h2 className="text-4xl md:text-6xl font-black text-gray-900 uppercase tracking-tighter leading-none">
-              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00a3c8] to-cyan-600">5Trainers?</span>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1db954]/10 border border-[#1db954]/20 text-[#1db954] text-xs font-bold uppercase tracking-widest mb-6">
+              <Sparkles size={14} /> Our Competitive Edge
+            </div>
+
+            <h2 className="text-5xl md:text-6xl font-black text-white leading-tight">
+              Why Choose <span className="text-[#1db954]">Skill Nexus?</span>
             </h2>
           </div>
-          <p className="text-gray-500 font-medium max-w-sm border-l-4 border-gray-100 pl-4">
-            We don't just teach code; we build careers with real industry DNA and 24/7 mentorship.
-          </p>
+
+          <div className="lg:max-w-md">
+            <p className="text-slate-400 text-lg leading-relaxed border-l-2 border-[#f59e0b] pl-6">
+              We deliver more than training — we build future-ready careers through expert mentorship 
+              and industry-driven transformation.
+            </p>
+          </div>
         </div>
 
-        {/* --- Features Grid --- */}
+        {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((item, index) => (
-            <div 
+            <div
               key={index}
-              className="group relative p-8 bg-white border border-gray-100 rounded-[2.5rem] shadow-sm hover:shadow-2xl hover:shadow-cyan-100 transition-all duration-500 hover:-translate-y-2"
+              className={`group relative bg-[#0f172a] border-t-4 ${item.accent} rounded-2xl p-8 transition-all duration-500 hover:bg-[#161e31] hover:-translate-y-2 shadow-xl shadow-black/20`}
             >
-              {/* Icon Circle */}
-              <div className="w-16 h-16 bg-cyan-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#00a3c8] group-hover:rotate-[360deg] transition-all duration-700">
-                <span className="group-hover:text-white transition-colors duration-300">
-                  {item.icon}
-                </span>
+              {/* Icon Container */}
+              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-slate-800/50 text-white mb-6 group-hover:scale-110 transition-transform duration-500">
+                {item.icon}
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-black text-gray-900 mb-3 uppercase tracking-tight">
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#1db954] transition-colors">
                 {item.title}
               </h3>
-              <p className="text-gray-500 leading-relaxed text-sm font-medium">
+
+              <p className="text-slate-400 leading-relaxed text-sm mb-8">
                 {item.desc}
               </p>
 
-              {/* Bottom Decoration */}
-              <div className="absolute bottom-6 right-8 opacity-10 group-hover:opacity-100 transition-opacity">
-                <Check className="text-[#00a3c8]" size={24} />
+              {/* Bottom Badge */}
+              <div className="flex items-center gap-2 text-[10px] font-black text-slate-500 uppercase tracking-widest group-hover:text-white transition-colors">
+                <Check size={14} className="text-[#1db954]" /> Trusted Advantage
               </div>
             </div>
           ))}
         </div>
 
-        {/* --- Bottom CTA Bar --- */}
-        <div className="mt-20 bg-gray-900 rounded-[3rem] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
-          <div className="relative z-10 text-center md:text-left">
-            <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">Ready to start your journey?</h3>
-            <p className="text-gray-400">Join 500+ students already placed in top IT companies.</p>
-          </div>
-          <button className="relative z-10 bg-[#00a3c8] text-white font-black px-10 py-5 rounded-2xl uppercase tracking-widest text-sm hover:bg-white hover:text-[#00a3c8] transition-all duration-300 shadow-xl">
-            Get Started Now
-          </button>
+        {/* Professional CTA Card */}
+        <div className="mt-28 relative rounded-3xl overflow-hidden">
+          {/* Subtle Gradient Background */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] to-[#1e293b] border border-white/5" />
           
-          {/* Decorative background shape */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[#00a3c8] opacity-10 blur-[100px] -mr-32 -mt-32" />
+          {/* Animated Glow in Corner */}
+          <div className="absolute -right-20 -top-20 w-80 h-80 bg-[#1db954]/10 blur-[100px] rounded-full" />
+
+          <div className="relative z-10 p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div className="max-w-2xl text-center lg:text-left">
+              <h3 className="text-white text-3xl md:text-4xl font-black mb-4">
+                Ready to Build Your IT Career?
+              </h3>
+              <p className="text-slate-400 text-lg">
+                Join 500+ successful students who transformed their careers through Skill Nexus' 
+                practical programs and expert mentorship.
+              </p>
+            </div>
+
+            <button className="flex items-center gap-4 bg-[#f59e0b] hover:bg-white text-black px-10 py-5 rounded-xl font-black uppercase tracking-wider text-sm transition-all shadow-2xl active:scale-95 group">
+              Get Started Now
+              <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
+            </button>
+          </div>
         </div>
       </div>
     </section>

@@ -5,7 +5,6 @@ import Content from "@/components/landing-techskills";
 import Center from "@/components/landing-cta";
 import Rows from "@/components/landing-trending-courses"
 import Cards from "@/components/landing-course";
-import BackImage from "@/components/landing-counter";
 import Photo from "@/components/landing-gallery";
 import { Test } from "@/components/testimonial";
 import Badge from "@/components/ourpartnered-landing";
@@ -27,11 +26,11 @@ export default function Home() {
       <WhyChooseUs />
       <Features />
       <Content />
-      <Center />
       <Rows />
+      <Center />
       <Cards />
-      <BackImage />
       <Photo />
+      
       <FlexibleLern/>
       <PlacementPartners/>
       <FAQ/>

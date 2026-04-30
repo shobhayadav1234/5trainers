@@ -13,40 +13,45 @@ const PlacementPartners = () => {
     { name: "Fresco", url: "/logo-05.jpg" },
   ];
 
-  // Infinite loop ke liye logos repeat kiye hain
+  // Infinite loop logic
   const scrollLogos = [...logos, ...logos, ...logos];
 
   return (
-    <section className="py-16 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-24 bg-white overflow-hidden border-t border-slate-100">
+      <div className="max-w-8xl mx-auto px-6">
         
         {/* --- Header Section --- */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tighter uppercase">
-            5Trainers's <span className="text-[#00a3c8]">Placement Partners</span>
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1db954]/10 text-[#1db954] text-[10px] font-black uppercase tracking-[0.3em] mb-6">
+            Career Excellence
+          </div>
+          
+          <h2 className="text-5xl md:text-7xl font-black text-slate-900 mb-6 tracking-tighter uppercase">
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1db954] via-[#f59e0b] to-[#6366f1]">Placement Partners</span>
           </h2>
-          <p className="text-gray-500 max-w-3xl mx-auto font-medium text-lg leading-relaxed">
-            We have 1700+ placement partners who hire our talent for diverse digital marketing roles in their companies.
+          
+          <p className="text-slate-500 max-w-3xl mx-auto font-medium text-lg md:text-xl leading-relaxed">
+            Humare <span className="text-slate-900 font-bold">1700+ placement partners</span> world-class companies hain jo Cyberyaan ke talent ko hire karte hain.
           </p>
         </div>
 
-        {/* --- Fast Auto-Scrolling Marquee --- */}
-        <div className="relative">
-          {/* Edge Fading Effects */}
-          <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10" />
+        {/* --- Smooth Auto-Scrolling Marquee --- */}
+        <div className="relative group">
+          {/* Subtle Edge Fading */}
+          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
 
           <div className="flex overflow-hidden">
-            <div className="flex animate-marquee-fast whitespace-nowrap py-8 items-center">
+            <div className="flex animate-marquee-continuous whitespace-nowrap py-12 items-center">
               {scrollLogos.map((logo, index) => (
                 <div 
                   key={index} 
-                  className="mx-10 flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-110"
+                  className="mx-12 flex-shrink-0 transition-all duration-500 transform hover:scale-110 group-hover:pause-animation"
                 >
                   <img 
                     src={logo.url} 
                     alt={logo.name} 
-                    className="h-10 md:h-12 w-auto object-contain opacity-70 hover:opacity-100"
+                    className="h-10 md:h-14 w-auto object-contain filter drop-shadow-sm"
                   />
                 </div>
               ))}
@@ -55,15 +60,17 @@ const PlacementPartners = () => {
         </div>
       </div>
 
-      {/* Speed control via CSS */}
       <style jsx>{`
-        @keyframes marqueeFast {
+        @keyframes marqueeContinuous {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
-        .animate-marquee-fast {
-          /* Speed ko 15s rakha hai fast scroll ke liye */
-          animation: marqueeFast 15s linear infinite;
+        .animate-marquee-continuous {
+          animation: marqueeContinuous 25s linear infinite;
+        }
+        /* Hover karne par animation slow ho jayegi readability ke liye */
+        .group:hover .animate-marquee-continuous {
+          animation-play-state: paused;
         }
       `}</style>
     </section>

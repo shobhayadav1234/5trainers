@@ -94,7 +94,7 @@ export default function Header() {
           {/* LOGO - Scaled for better alignment */}
           <Link href="/">
             <img
-              src="/logo.png"
+              src="/logo3_neural_dark (1).svg"
               alt="5 Trainers Logo"
               className="h-5 md:h-12 w-auto object-contain cursor-pointer"
             />

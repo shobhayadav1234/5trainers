@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Calendar, Globe, X } from "lucide-react";
+import { Calendar, Globe, X, LayoutGrid, ArrowRight } from "lucide-react";
 
 // --- Types ---
 type CourseDetails = {
@@ -17,7 +17,7 @@ type CategoryDataMap = {
   [key: string]: CourseDetails[];
 };
 
-// --- Data ---
+// --- Full Content Data ---
 const categories = [
   "python", "Web Dev", "Data Science", "Networking",
   "Cyber Security", "Cloud Computing", "DevOps", "Digital Marketing",
@@ -95,63 +95,6 @@ const allCoursesData: CategoryDataMap = {
   ],
 };
 
-// --- Star Rating Component ---
-const StarRating = ({ rating }: { rating: number }) => (
-  <div className="flex justify-center gap-1.5 my-3">
-    {[...Array(rating)].map((_, index) => (
-      <span key={index} className="text-[#f18e1c] text-xl">★</span>
-    ))}
-  </div>
-);
-
-// --- Modal Component ---
-const InquiryModal = ({ isOpen, onClose, courseTitle }: { isOpen: boolean, onClose: () => void, courseTitle: string }) => {
-  if (!isOpen) return null;
-
-  return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-md p-4 overflow-y-auto">
-      <div className="bg-white w-full max-w-md rounded-2xl shadow-2xl relative animate-in fade-in zoom-in duration-300">
-        <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-red-500 transition-colors">
-          <X size={24} />
-        </button>
-
-        <div className="p-8">
-          <h3 className="text-2xl font-bold text-[#0073b1] mb-2 text-center">Enroll Now</h3>
-          <p className="text-gray-500 text-center text-sm mb-6">Course: <span className="font-semibold text-gray-800">{courseTitle}</span></p>
-
-          <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert('Form Submitted!'); onClose(); }}>
-            <div className="space-y-1">
-              <label className="text-xs font-bold uppercase text-gray-500 ml-1">Full Name</label>
-              <input required type="text" placeholder="Your Name" className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0073b1] outline-none" />
-            </div>
-            <div className="space-y-1">
-              <label className="text-xs font-bold uppercase text-gray-500 ml-1">Phone Number</label>
-              <input required type="tel" placeholder="+91 00000-00000" className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0073b1] outline-none" />
-            </div>
-            <div className="space-y-1">
-              <label className="text-xs font-bold uppercase text-gray-500 ml-1">Email Address</label>
-              <input required type="email" placeholder="email@example.com" className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0073b1] outline-none" />
-            </div>
-            <div className="space-y-1">
-              <label className="text-xs font-bold uppercase text-gray-500 ml-1">Qualification</label>
-              <select className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0073b1] outline-none">
-                <option>Graduate</option>
-                <option>Undergraduate</option>
-                <option>Post Graduate</option>
-                <option>Working Professional</option>
-              </select>
-            </div>
-            <button type="submit" className="w-full py-4 bg-[#0073b1] text-white font-bold rounded-xl hover:bg-[#005a8c] shadow-lg transition-all uppercase tracking-widest mt-4">
-              Submit Inquiry
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// --- Main Component ---
 const Trending: React.FC = () => {
   const [activeTab, setActiveTab] = useState("Web Dev");
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -165,26 +108,41 @@ const Trending: React.FC = () => {
   const selectedCourses = allCoursesData[activeTab] || [];
 
   return (
-    <section className="py-20 px-4 bg-gray-50 min-h-screen">
-      <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} courseTitle={selectedCourse} />
+    <section className="py-20 px-4 font-sans">
+      
+      {/* Inquiry Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+          <div className="bg-[#0b1120] border border-slate-800 w-full max-w-md rounded-2xl p-8 shadow-2xl relative">
+            <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 text-slate-500 hover:text-white transition-colors"><X size={20} /></button>
+            <h3 className="text-2xl font-bold text-white mb-1">Join Program</h3>
+            <p className="text-slate-400 text-sm mb-6">{selectedCourse}</p>
+            <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); setIsModalOpen(false); }}>
+              <input required type="text" placeholder="Full Name" className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl outline-none focus:border-[#1db954] text-white" />
+              <input required type="tel" placeholder="Contact No" className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl outline-none focus:border-[#1db954] text-white" />
+              <button type="submit" className="w-full py-4 bg-[#f59e0b] hover:bg-[#d97706] text-black font-bold rounded-xl transition-all shadow-lg active:scale-95">SEND ENQUIRY</button>
+            </form>
+          </div>
+        </div>
+      )}
 
-      <div className="max-w-[1440px] mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl font-extrabold text-[#0073b1] mb-7 tracking-tight">
-          Top Trending IT Training Programs
-        </h2>
-        <p className="text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed text-lg">
-          Stay ahead in the tech world with practical-based training. Beginner to Professional, we cover it all.
-        </p>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-black mb-4 text-white uppercase tracking-tight">
+            Trending <span className="text-[#1db954]">Skill Nexus</span> Courses
+          </h2>
+          <div className="h-1 w-20 bg-[#f59e0b] mx-auto rounded-full"></div>
+        </div>
 
-        {/* Tabs */}
-        <div className="flex flex-nowrap overflow-x-auto justify-start lg:justify-center gap-2 mb-14 border border-gray-200 p-2 rounded-xl bg-white shadow-sm no-scrollbar">
+        {/* Categories Tabs */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveTab(cat)}
-              className={`px-4 py-1.5 rounded-lg font-bold border-2 transition-all duration-300 whitespace-nowrap text-sm ${activeTab === cat
-                ? "bg-[#0073b1] text-white border-[#0073b1] shadow-md scale-105"
-                : "bg-white text-[#0073b1] border-transparent hover:bg-[#e6f2f8]"
+              className={`px-5 py-2 rounded-lg font-bold text-xs uppercase tracking-widest transition-all border ${activeTab === cat
+                ? "bg-[#1db954] text-white border-[#1db954] shadow-lg"
+                : "bg-transparent text-slate-400 border-slate-800 hover:border-[#1db954]/50"
                 }`}
             >
               {cat}
@@ -193,48 +151,48 @@ const Trending: React.FC = () => {
         </div>
 
         {/* Course Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {selectedCourses.map((course) => (
-            <div key={course.id} className="bg-white rounded-[20px] border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group overflow-hidden flex flex-col">
-
-              <div className="bg-[#e6f2f8] flex justify-center items-center h-52 group-hover:bg-gradient-to-br relative overflow-hidden">
+            <div 
+              key={course.id} 
+              className="group bg-[#0f172a] border border-slate-800 hover:border-indigo-500/50 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl flex flex-col"
+            >
+              <div className="relative h-40 overflow-hidden bg-slate-900">
                 {course.imageUrl ? (
-                  <img src={course.imageUrl} alt={course.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <img 
+                    src={course.imageUrl} 
+                    alt={course.title} 
+                    className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all duration-500" 
+                  />
                 ) : (
-                  <div className="w-20 h-20 border-[3px] border-[#0073b1] rounded-xl flex items-center justify-center font-bold text-[#0073b1]">
-                    CODE
-                  </div>
+                  <div className="w-full h-full flex items-center justify-center"><LayoutGrid size={32} className="text-slate-800" /></div>
                 )}
+                <div className="absolute top-3 right-3 bg-indigo-500/20 backdrop-blur-md border border-indigo-500/30 text-indigo-300 text-[10px] px-2 py-0.5 rounded font-bold uppercase">Tech</div>
               </div>
 
-              <div className="p-7 text-left flex-grow">
-                <h4 className="text-xl font-bold text-[#0073b1] mb-5 text-center h-14 flex items-center justify-center">
+              <div className="p-5 flex flex-col flex-grow">
+                <h4 className="text-lg font-bold text-white mb-4 line-clamp-2 leading-snug">
                   {course.title}
                 </h4>
 
-                <div className="flex justify-between text-sm text-gray-600 mb-2 border-t pt-3">
-                  <span className="flex items-center gap-2 font-medium">
-                    <Calendar size={16} className="text-[#0073b1]" />
-                    {course.duration}
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <Globe size={16} className="text-[#0073b1]" />
-                    {course.mode}
-                  </span>
+                <div className="space-y-2 mb-6">
+                  <div className="flex items-center gap-2 text-[11px] font-medium text-slate-400">
+                    <Calendar size={14} className="text-[#1db954]" /> {course.duration}
+                  </div>
+                  <div className="flex items-center gap-2 text-[11px] font-medium text-slate-400">
+                    <Globe size={14} className="text-indigo-400" /> {course.mode}
+                  </div>
                 </div>
 
-                <StarRating rating={course.rating} />
-
-                <div className="text-3xl font-extrabold text-[#0073b1] text-center mb-8">
-                  {course.price}
+                <div className="mt-auto pt-4 border-t border-slate-800/50 flex items-center justify-between">
+                  <div className="text-xl font-black text-white">{course.price}</div>
+                  <button
+                    onClick={() => handleOpenModal(course.title)}
+                    className="h-10 w-10 bg-[#f59e0b] hover:bg-white text-black rounded-lg flex items-center justify-center transition-all shadow-md active:scale-90"
+                  >
+                    <ArrowRight size={18} />
+                  </button>
                 </div>
-
-                <button
-                  onClick={() => handleOpenModal(course.title)}
-                  className="w-full py-3.5 bg-[#0073b1] text-white font-extrabold rounded-xl hover:bg-[#005a8c] transition-colors uppercase tracking-wider text-sm shadow-md"
-                >
-                  View Program
-                </button>
               </div>
             </div>
           ))}

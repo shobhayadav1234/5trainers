@@ -1,22 +1,22 @@
 "use client";
 import React, { useState } from 'react';
-import { Plus, Minus, HelpCircle, MessageCircle } from 'lucide-react';
+import { Plus, Minus, HelpCircle, MessageCircle, Sparkles } from 'lucide-react';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqData = [
     {
-      question: "What courses do you offer?",
-      answer: "We offer industry-focused courses like Digital Marketing, Cyber Security, Data Science, Data Analytics, Software Testing, and Python programming designed for beginners and professionals."
+      question: "What courses do you offer at Skill Nexus?",
+      answer: "We offer industry-focused courses like Data Science, AI, Digital Marketing, Cyber Security, and Python programming designed to connect students with industry needs."
     },
     {
       question: "Which course is best for beginners?",
       answer: "Python and Digital Marketing are great for beginners as they require no prior technical knowledge and offer strong career opportunities."
     },
     {
-      question: "Do you provide placement assistance after course completion?",
-      answer: "Yes, we provide 100% placement assistance including resume building, interview preparation, and job referrals."
+      question: "Do you provide placement assistance?",
+      answer: "Yes, we provide 100% placement assistance including resume building, interview preparation, and job referrals through our extensive industry connect."
     },
     {
       question: "What is the duration of your courses?",
@@ -24,108 +24,116 @@ const FAQ = () => {
     },
     {
       question: "Are your courses practical or theory-based?",
-      answer: "Our courses are highly practical with live projects, real-world case studies, and hands-on training."
+      answer: "Our courses are highly practical with live projects, real-world case studies, and hands-on training to ensure you are industry-ready."
     },
     {
-      question: "Can I learn Data Science or Cyber Security without coding?",
+      question: "Can I learn Data Science or AI without coding?",
       answer: "Basic coding knowledge helps, but we start from fundamentals, so beginners can easily learn step by step."
     },
     {
       question: "Do you provide certification after course completion?",
-      answer: "Yes, we provide industry-recognized certificates after successful completion of the course."
-    },
-    {
-      question: "What career opportunities are available after these courses?",
-      answer: "You can apply for roles like Digital Marketer, Data Analyst, Cyber Security Analyst, Software Tester, and Python Developer."
-    },
-    {
-      question: "Are online classes available?",
-      answer: "Yes, we offer both online and offline classes with flexible batch timings."
-    },
-    {
-      question: "Why should I choose your institute for IT courses?",
-      answer: "We provide expert trainers, practical training, updated curriculum, placement support, and affordable fees — making us one of the best choices for IT training."
+      answer: "Yes, we provide industry-recognized certificates after successful completion of the course, recognized by our hiring partners."
     }
   ];
 
   return (
-    <section className="py-24 bg-[#fcfcfc] relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
-           style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300a3c8' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }} 
-      />
+    <section className="py-24 bg-[#0a0f1a] relative overflow-hidden font-sans">
+      {/* Logo-Inspired Background Glows */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#10b981]/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#6366f1]/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[#f59e0b]/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         
         {/* --- Header Section --- */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-          <div className="max-w-xl">
-            <h2 className="text-5xl md:text-6xl font-black text-gray-900 uppercase tracking-tighter leading-none">
-              General <span className="text-[#00a3c8]">Inquiries</span>
-            </h2>
-            <p className="mt-4 text-gray-500 font-bold uppercase text-xs tracking-[0.2em] flex items-center gap-2">
-              <HelpCircle size={16} className="text-[#00a3c8]" /> Helping you grow step by step
-            </p>
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-white text-[10px] font-black uppercase tracking-[0.3em] mb-6">
+            <Sparkles size={14} className="text-[#f59e0b]" /> Skill Nexus Knowledge Base
           </div>
-          <div className="hidden md:block">
-            <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-3">
-              <div className="w-10 h-10 bg-[#00a3c8]/10 text-[#00a3c8] rounded-full flex items-center justify-center">
-                <MessageCircle size={20} />
-              </div>
-              <span className="text-sm font-black text-gray-800">24/7 Support</span>
-            </div>
-          </div>
+          
+          <h2 className="text-5xl md:text-7xl font-black text-white leading-[0.9] tracking-tighter uppercase mb-6">
+            Common <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10b981] via-[#f59e0b] to-[#6366f1]">Questions</span>
+          </h2>
+          
+          <p className="max-w-2xl mx-auto text-slate-400 font-medium text-lg">
+            Where Data Science + AI + Students + Industry Connect. Get all your doubts cleared here.
+          </p>
         </div>
 
         {/* --- FAQ List --- */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           {faqData.map((item, index) => {
             const isOpen = openIndex === index;
+            // Cycling through logo colors for borders
+            const colors = ['border-[#10b981]', 'border-[#f59e0b]', 'border-[#6366f1]'];
+            const shadowColors = ['shadow-[#10b981]/20', 'shadow-[#f59e0b]/20', 'shadow-[#6366f1]/20'];
+            const activeColor = colors[index % colors.length];
+            const activeShadow = shadowColors[index % shadowColors.length];
+
             return (
               <div 
                 key={index}
-                className={`group transition-all duration-500 ease-in-out ${
-                  isOpen ? 'scale-[1.02]' : 'scale-100'
-                }`}
+                className="transition-all duration-300"
               >
                 <div 
-                  className={`bg-white rounded-[2rem] border-2 transition-all duration-300 overflow-hidden ${
+                  className={`bg-[#111827] rounded-[2rem] border transition-all duration-500 overflow-hidden ${
                     isOpen 
-                    ? 'border-[#00a3c8] shadow-2xl shadow-cyan-100/50' 
-                    : 'border-gray-100 hover:border-gray-300 shadow-sm'
+                    ? `${activeColor} shadow-[0_0_40px_rgba(0,0,0,0.3)] ${activeShadow} translate-y-[-4px]` 
+                    : 'border-white/5 hover:border-white/20'
                   }`}
                 >
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : index)}
                     className="w-full flex items-center justify-between p-7 md:p-9 text-left"
                   >
-                    <span className={`text-lg md:text-xl font-black tracking-tight leading-tight max-w-[85%] ${
-                      isOpen ? 'text-gray-900' : 'text-gray-700 group-hover:text-[#00a3c8]'
+                    <div className="flex items-center gap-5">
+                      <div className={`w-2 h-2 rounded-full ${isOpen ? 'animate-pulse bg-white' : 'bg-slate-600'}`} />
+                      <span className={`text-lg md:text-xl font-bold tracking-tight leading-tight ${
+                        isOpen ? 'text-white' : 'text-slate-400 group-hover:text-slate-200'
+                      }`}>
+                        {item.question}
+                      </span>
+                    </div>
+                    
+                    <div className={`shrink-0 w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-500 border ${
+                      isOpen 
+                      ? 'bg-white text-black border-white rotate-0' 
+                      : 'bg-transparent text-slate-500 border-white/10 rotate-90'
                     }`}>
-                      {item.question}
-                    </span>
-                    <div className={`shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-500 ${
-                      isOpen ? 'bg-[#00a3c8] text-white rotate-0' : 'bg-gray-100 text-gray-400 rotate-90'
-                    }`}>
-                      {isOpen ? <Minus size={20} /> : <Plus size={20} />}
+                      {isOpen ? <Minus size={22} strokeWidth={3} /> : <Plus size={22} strokeWidth={3} />}
                     </div>
                   </button>
 
                   <div 
                     className={`transition-all duration-500 ease-in-out ${
-                      isOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+                      isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                     }`}
                   >
-                    <div className="px-7 md:px-9 pb-9 text-gray-500 font-semibold leading-relaxed border-t border-gray-50 pt-6">
-                      <p className="pl-6 border-l-2 border-[#00a3c8]/30">
-                        {item.answer}
-                      </p>
+                    <div className="px-7 md:px-14 pb-9 text-slate-400 font-medium text-lg leading-relaxed">
+                      <div className="pt-6 border-t border-white/5 italic">
+                        "{item.answer}"
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             );
           })}
+        </div>
+
+        {/* Support Section - Logo Style */}
+        <div className="mt-20 p-[2px] rounded-[2.5rem] bg-gradient-to-r from-[#10b981] via-[#f59e0b] to-[#6366f1]">
+            <div className="bg-[#0a0f1a] rounded-[2.4rem] p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div className="text-center md:text-left">
+                    <h4 className="text-white font-black text-2xl uppercase tracking-tighter">Still Unclear?</h4>
+                    <p className="text-slate-500 mt-2">Connect with our industry experts today.</p>
+                </div>
+                <button className="group relative px-10 py-5 bg-white text-black rounded-2xl font-black text-sm uppercase tracking-widest overflow-hidden transition-all hover:scale-105 active:scale-95">
+                    <span className="relative z-10 flex items-center gap-2">
+                        <MessageCircle size={20} /> Let's Connect
+                    </span>
+                </button>
+            </div>
         </div>
       </div>
     </section>
