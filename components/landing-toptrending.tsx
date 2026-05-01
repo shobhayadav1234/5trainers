@@ -108,97 +108,119 @@ const Trending: React.FC = () => {
   const selectedCourses = allCoursesData[activeTab] || [];
 
   return (
-    <section className="py-20 px-4 font-sans">
-      
-      {/* Inquiry Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-          <div className="bg-[#0b1120] border border-slate-800 w-full max-w-md rounded-2xl p-8 shadow-2xl relative">
-            <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 text-slate-500 hover:text-white transition-colors"><X size={20} /></button>
-            <h3 className="text-2xl font-bold text-white mb-1">Join Program</h3>
-            <p className="text-slate-400 text-sm mb-6">{selectedCourse}</p>
-            <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); setIsModalOpen(false); }}>
-              <input required type="text" placeholder="Full Name" className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl outline-none focus:border-[#1db954] text-white" />
-              <input required type="tel" placeholder="Contact No" className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl outline-none focus:border-[#1db954] text-white" />
-              <button type="submit" className="w-full py-4 bg-[#f59e0b] hover:bg-[#d97706] text-black font-bold rounded-xl transition-all shadow-lg active:scale-95">SEND ENQUIRY</button>
-            </form>
+    <section className="py-24 px-4 font-sans bg-[#f8fafc] w-full">
+  <div className="max-w-7xl mx-auto">
+    
+    {/* Badge */}
+    <div className="text-center mb-6">
+      <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#14b8a6]/10 border border-[#14b8a6]/20 text-[#14b8a6] text-xs font-bold tracking-[0.25em] uppercase">
+        <span className="w-2 h-2 rounded-full bg-[#14b8a6] animate-pulse"></span>
+        Top Professional Programs
+      </div>
+    </div>
+
+    {/* Heading Section */}
+    <div className="text-center mb-14 max-w-5xl mx-auto">
+      <h2 className="text-4xl md:text-6xl font-black leading-tight tracking-tight text-slate-900">
+        Learn with{" "}
+      <span className="text-[#20c9b0]">
+  Mindweave Academy
+</span>
+      </h2>
+
+      <h3 className="text-xl md:text-2xl font-bold text-slate-700 mt-3">
+        Industry-Focused Courses for Tomorrow’s Tech Leaders
+      </h3>
+
+      <p className="mt-6 text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-medium">
+        Explore career-ready certification programs in Artificial Intelligence,
+        Data Science, Web Development, Cloud Computing, and Digital Marketing.
+        Gain practical expertise, expert mentorship, and real-world skills to
+        accelerate your professional journey.
+      </p>
+    </div>
+
+    {/* Categories Tabs */}
+    <div className="flex flex-wrap justify-center gap-3 mb-14">
+      {categories.map((cat) => (
+        <button
+          key={cat}
+          onClick={() => setActiveTab(cat)}
+          className={`px-5 py-2 rounded-xl font-bold text-xs uppercase tracking-widest transition-all border ${
+            activeTab === cat
+              ? "bg-[#0f172a] text-white border-[#0f172a] shadow-lg"
+              : "bg-white text-slate-600 border-slate-200 hover:border-[#14b8a6]/40"
+          }`}
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
+
+    {/* Course Cards */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      {selectedCourses.map((course) => (
+        <div
+          key={course.id}
+          className="group bg-white border border-slate-200 hover:border-[#14b8a6]/30 rounded-3xl overflow-hidden transition-all duration-300 hover:shadow-xl flex flex-col"
+        >
+          {/* Image */}
+          <div className="relative h-48 overflow-hidden bg-slate-100">
+            {course.imageUrl ? (
+              <img
+                src={course.imageUrl}
+                alt={course.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center">
+                <LayoutGrid size={32} className="text-slate-300" />
+              </div>
+            )}
+
+            <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-[#14b8a6] text-[10px] px-3 py-1 rounded-full font-bold uppercase shadow-sm">
+              Professional
+            </div>
           </div>
-        </div>
-      )}
 
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-black mb-4 text-white uppercase tracking-tight">
-            Trending <span className="text-[#1db954]">Skill Nexus</span> Courses
-          </h2>
-          <div className="h-1 w-20 bg-[#f59e0b] mx-auto rounded-full"></div>
-        </div>
+          {/* Content */}
+          <div className="p-6 flex flex-col flex-grow">
+            <h4 className="text-lg font-black text-slate-900 mb-4 line-clamp-2 leading-snug">
+              {course.title}
+            </h4>
 
-        {/* Categories Tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveTab(cat)}
-              className={`px-5 py-2 rounded-lg font-bold text-xs uppercase tracking-widest transition-all border ${activeTab === cat
-                ? "bg-[#1db954] text-white border-[#1db954] shadow-lg"
-                : "bg-transparent text-slate-400 border-slate-800 hover:border-[#1db954]/50"
-                }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
-        {/* Course Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {selectedCourses.map((course) => (
-            <div 
-              key={course.id} 
-              className="group bg-[#0f172a] border border-slate-800 hover:border-indigo-500/50 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl flex flex-col"
-            >
-              <div className="relative h-40 overflow-hidden bg-slate-900">
-                {course.imageUrl ? (
-                  <img 
-                    src={course.imageUrl} 
-                    alt={course.title} 
-                    className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-all duration-500" 
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center"><LayoutGrid size={32} className="text-slate-800" /></div>
-                )}
-                <div className="absolute top-3 right-3 bg-indigo-500/20 backdrop-blur-md border border-indigo-500/30 text-indigo-300 text-[10px] px-2 py-0.5 rounded font-bold uppercase">Tech</div>
+            <div className="space-y-3 mb-6">
+              <div className="flex items-center gap-2 text-sm font-medium text-slate-500">
+                <Calendar size={14} className="text-[#14b8a6]" />
+                {course.duration}
               </div>
 
-              <div className="p-5 flex flex-col flex-grow">
-                <h4 className="text-lg font-bold text-white mb-4 line-clamp-2 leading-snug">
-                  {course.title}
-                </h4>
-
-                <div className="space-y-2 mb-6">
-                  <div className="flex items-center gap-2 text-[11px] font-medium text-slate-400">
-                    <Calendar size={14} className="text-[#1db954]" /> {course.duration}
-                  </div>
-                  <div className="flex items-center gap-2 text-[11px] font-medium text-slate-400">
-                    <Globe size={14} className="text-indigo-400" /> {course.mode}
-                  </div>
-                </div>
-
-                <div className="mt-auto pt-4 border-t border-slate-800/50 flex items-center justify-between">
-                  <div className="text-xl font-black text-white">{course.price}</div>
-                  <button
-                    onClick={() => handleOpenModal(course.title)}
-                    className="h-10 w-10 bg-[#f59e0b] hover:bg-white text-black rounded-lg flex items-center justify-center transition-all shadow-md active:scale-90"
-                  >
-                    <ArrowRight size={18} />
-                  </button>
-                </div>
+              <div className="flex items-center gap-2 text-sm font-medium text-slate-500">
+                <Globe size={14} className="text-[#5b7cfd]" />
+                {course.mode}
               </div>
             </div>
-          ))}
+
+            {/* Footer */}
+            <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div className="text-2xl font-black text-slate-900">
+                {course.price}
+              </div>
+
+              {/* Updated Arrow Button */}
+              <button
+                onClick={() => handleOpenModal(course.title)}
+                className="h-11 w-11 rounded-xl bg-[#0f172a] hover:bg-[#14b8a6] text-white flex items-center justify-center transition-all duration-300 shadow-md hover:scale-110"
+              >
+                <ArrowRight size={18} />
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
   );
 };
 

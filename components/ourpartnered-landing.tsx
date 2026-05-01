@@ -6,28 +6,35 @@ import { Atom } from "lucide-react";
 const Badge = () => {
   return (
     <section className="w-full bg-white py-12 border-y border-slate-100 overflow-hidden">
-      
+
       {/* Container - Responsive width matching your premium layout */}
       <div className="max-w-8xl mx-auto px-4 md:px-6">
-        
+
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          
+
           {/* Brand Header Section */}
           <div className="flex items-center gap-4 shrink-0">
-            <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-[#1db954] shadow-md">
-               <Atom size={28} className="animate-spin-slow" />
+            <div className="w-12 h-12 rounded-2xl bg-[#020817] border border-[#20c9b0]/20 flex items-center justify-center shadow-md">
+              <Atom size={28} className="text-[#20c9b0] animate-spin-slow" />
             </div>
+
             <div className="flex flex-col">
-              <span className="text-slate-400 uppercase tracking-[0.3em] text-[10px] font-black">Official</span>
+              <span className="text-[#20c9b0] uppercase tracking-[0.3em] text-[10px] font-black">
+                Official
+              </span>
+
               <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
-                Our Industry <span className="text-[#1db954]">Partners</span>
+                Our Industry{" "}
+                <span className="text-[#20c9b0]">
+                  Partners
+                </span>
               </h2>
             </div>
           </div>
 
           {/* BADGES WRAPPER - Original Colors, No Hover Effects */}
           <div className="flex flex-nowrap items-center gap-10 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0 no-scrollbar">
-            
+
             {/* Amazon Ads */}
             <div className="flex flex-col items-center gap-2 shrink-0">
               <div className="h-20 flex items-center justify-center">

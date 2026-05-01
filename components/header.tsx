@@ -89,14 +89,14 @@ export default function Header() {
     <>
       <nav className="w-full border-b bg-background sticky top-0 z-[100]">
         {/* Container aligned with Hero Section (max-w-7xl) */}
-        <div className="max-w-8xl mx-auto px-4 md:px-10-ml-10 py-4 flex items-center justify-between">
+        <div className="max-w-8xl mx-auto px-4 md:px-10 py-4 flex items-center justify-between">
 
           {/* LOGO - Scaled for better alignment */}
           <Link href="/">
             <img
-              src="/logo3_neural_dark (1).svg"
+              src="/mind.png"
               alt="5 Trainers Logo"
-              className="h-5 md:h-12 w-auto object-contain cursor-pointer"
+              className="h-16 md:h-16 w-auto object-contain cursor-pointer"
             />
           </Link>
 

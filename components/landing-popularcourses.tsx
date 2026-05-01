@@ -43,13 +43,11 @@ export default function Features() {
 
       {/* ✅ SAME WIDTH AS NAVBAR */}
       <div className="max-w-8xl mx-auto px-4 md:px-6">
-
-      <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-center mb-6 md:mb-10 tracking-tighter">
-  <span className="text-white">Our</span>{" "}
-  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1db954] via-[#f59e0b] to-[#6366f1]">
-    Popular Courses
-  </span>
-</h2>
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-center mb-6 md:mb-10 tracking-tighter">
+          <span className="text-[#20c9b0]">
+            Our Popular Courses
+          </span>
+        </h2>
 
         {/* CAROUSEL */}
         <Carousel

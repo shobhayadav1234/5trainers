@@ -12,38 +12,46 @@ import {
 } from "@/components/ui/carousel"
 
 const testimonials = [
-  { 
-    name: "Karan Khanna", 
-    review: "This institute is one of the best for professional training. Huge thanks to all 5 trainers for their amazing teaching and constant support. Everything here is top-notch — highly recommended!" 
+  {
+    name: "Karan Khanna",
+    review:
+      "Mindweave Academy is one of the best institutes for professional training. The mentors are highly supportive and provide practical learning that truly builds confidence.",
   },
-  { 
-    name: "Rahul Sharma", 
-    review: "The hands-on labs and real-world scenarios are amazing. If you want practical knowledge instead of just theory, this is the perfect place to learn from 5 expert trainers." 
+  {
+    name: "Rahul Sharma",
+    review:
+      "The hands-on projects and expert guidance helped me gain real-world skills. Perfect place for anyone serious about career growth.",
   },
-  { 
-    name: "Sneha Kapoor", 
-    review: "The 5 trainers are highly professional and the support team is very helpful. From day one, the focus was on building strong concepts and practical skills." 
+  {
+    name: "Sneha Kapoor",
+    review:
+      "From practical sessions to career support, everything is structured professionally. The learning environment is excellent.",
   },
-  { 
-    name: "Amit Verma", 
-    review: "Highly recommended for anyone looking to build a strong career. The guidance from 5 experienced trainers helps you understand real industry standards." 
+  {
+    name: "Amit Verma",
+    review:
+      "Highly recommended for building strong technical skills. The trainers focus on real industry standards and practical implementation.",
   },
-  { 
-    name: "Priya Das", 
-    review: "The placement support is excellent. With guidance from 5 trainers, I improved my skills and confidence, which helped me get placed quickly." 
+  {
+    name: "Priya Das",
+    review:
+      "Excellent placement support and professional mentorship. My confidence and technical abilities improved significantly.",
   },
-  { 
-    name: "Vikram Singh", 
-    review: "The curriculum is detailed and the teaching approach is very practical. All 5 trainers explain even complex topics in a very simple way." 
+  {
+    name: "Vikram Singh",
+    review:
+      "The curriculum is detailed, modern, and practical. Complex concepts are explained in a simple and effective way.",
   },
-  { 
-    name: "Anjali Mehta", 
-    review: "I had the best learning experience here. The 5 trainers provide continuous support and the learning environment is excellent." 
+  {
+    name: "Anjali Mehta",
+    review:
+      "One of the best learning experiences I’ve had. Continuous support and practical exposure make a huge difference.",
   },
-  { 
-    name: "Deepak Raj", 
-    review: "Great value for money and a positive learning environment. Learning from 5 expert trainers makes a big difference in understanding concepts deeply." 
-  }
+  {
+    name: "Deepak Raj",
+    review:
+      "Great value for money with a strong focus on career success. Mindweave Academy truly prepares students for industry.",
+  },
 ]
 
 export function Test() {
@@ -52,28 +60,28 @@ export function Test() {
   )
 
   return (
-    <div className="w-full py-20 bg-white flex flex-col items-center overflow-hidden">
-      {/* Section Header */}
-      <div className="text-center mb-16 px-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#10b981]/10 border border-[#10b981]/20 mb-4">
-          <div className="w-1.5 h-1.5 rounded-full bg-[#10b981]" />
-          <span className="text-[#10b981] text-[10px] font-black uppercase tracking-[0.2em]">
-            Testimonials
+    <section className="w-full py-20 bg-white flex flex-col items-center overflow-hidden">
+      {/* Header */}
+      <div className="text-center mb-14 px-4">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#20c9b0]/10 border border-[#20c9b0]/20 mb-5">
+          <div className="w-2 h-2 rounded-full bg-[#20c9b0]" />
+          <span className="text-[#20c9b0] text-[10px] font-black uppercase tracking-[0.25em]">
+            Student Reviews
           </span>
         </div>
-        
-        {/* Logo Inspired Gradient Heading */}
-        <h2 className="text-4xl md:text-5xl font-black leading-[1.1] tracking-tighter uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#10b981] via-[#f59e0b] to-[#6366f1]">
-          What Students Say <br /> About <span className="text-[#0a0f1a]">Skill Nexus</span>
+
+        <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900">
+          What Students Say About{" "}
+          <span className="text-[#20c9b0]">Mindweave Academy</span>
         </h2>
-        
-        <div className="flex gap-1 justify-center mt-6">
-          <div className="w-8 h-1 bg-[#10b981] rounded-full" />
-          <div className="w-2 h-1 bg-[#f59e0b] rounded-full" />
-          <div className="w-5 h-1 bg-[#6366f1] rounded-full" />
-        </div>
+
+        <p className="text-slate-500 mt-5 max-w-2xl mx-auto text-lg leading-relaxed">
+          Real success stories from students who transformed their careers with
+          practical learning and expert mentorship.
+        </p>
       </div>
 
+      {/* Carousel */}
       <Carousel
         opts={{
           align: "start",
@@ -86,42 +94,39 @@ export function Test() {
       >
         <CarouselContent>
           {testimonials.map((item, index) => (
-            <CarouselItem key={index} className="md:basis-full lg:basis-full">
+            <CarouselItem key={index}>
               <div className="flex flex-col items-center p-2">
-                
-                {/* Review Bubble with Logo-Matched Background */}
-                <div className="bg-[#0a0f1a] text-white p-10 md:p-16 rounded-[3rem] relative mb-10 w-full max-w-4xl shadow-xl shadow-indigo-900/10 border border-white/5">
-                  <Quote className="absolute top-8 left-8 text-white/5 w-16 h-16" />
-                  
-                  <p className="text-center italic text-xl md:text-2xl font-medium leading-relaxed relative z-10 text-slate-200">
+                {/* Review Card */}
+                <div className="bg-black text-white p-8 md:p-12 rounded-3xl relative mb-8 w-full max-w-4xl border border-slate-800 shadow-lg">
+                  <Quote className="absolute top-6 left-6 text-[#20c9b0]/10 w-12 h-12" />
+
+                  <p className="text-center text-lg md:text-xl leading-relaxed font-medium text-slate-200 relative z-10">
                     "{item.review}"
                   </p>
-                  
-                  {/* Styled Triangle Tip */}
-                  <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-t-[25px] border-t-[#0a0f1a]"></div>
-                  
-                  {/* Top Gradient Bar */}
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-gradient-to-r from-[#10b981] via-[#f59e0b] to-[#6366f1] rounded-b-full" />
+
+                  {/* Bottom Arrow */}
+                  <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-6 h-6 bg-black rotate-45 border-r border-b border-slate-800"></div>
                 </div>
-                
-                {/* Student Name in Logo Green */}
-                <h3 className="text-[#10b981] font-black text-xl md:text-2xl uppercase tracking-tighter">
+
+                {/* Student Info */}
+                <h3 className="text-[#20c9b0] font-black text-xl md:text-2xl uppercase tracking-tight">
                   {item.name}
                 </h3>
-                <p className="text-slate-400 text-xs font-bold uppercase tracking-widest mt-1">
-                  Verified Alumnus
+
+                <p className="text-slate-400 text-xs font-bold uppercase tracking-[0.25em] mt-2">
+                  Verified Student
                 </p>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
 
-        {/* Navigation Buttons with Hover Effects */}
+        {/* Navigation */}
         <div className="hidden md:block">
-          <CarouselPrevious className="left-0 h-12 w-12 border-slate-200 text-slate-400 hover:bg-[#10b981] hover:text-white hover:border-[#10b981] transition-all" />
-          <CarouselNext className="right-0 h-12 w-12 border-slate-200 text-slate-400 hover:bg-[#10b981] hover:text-white hover:border-[#10b981] transition-all" />
+          <CarouselPrevious className="left-0 h-12 w-12 border-slate-200 text-slate-500 hover:bg-[#20c9b0] hover:text-white hover:border-[#20c9b0] transition-all" />
+          <CarouselNext className="right-0 h-12 w-12 border-slate-200 text-slate-500 hover:bg-[#20c9b0] hover:text-white hover:border-[#20c9b0] transition-all" />
         </div>
       </Carousel>
-    </div>
+    </section>
   )
 }

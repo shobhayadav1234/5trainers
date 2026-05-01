@@ -37,106 +37,107 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#0a0f1a] relative overflow-hidden font-sans">
-      {/* Logo-Inspired Background Glows */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#10b981]/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#6366f1]/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[#f59e0b]/5 rounded-full blur-[100px] pointer-events-none" />
+  <section className="py-24 bg-[#020817] font-sans">
+  <div className="max-w-5xl mx-auto px-6">
 
-      <div className="max-w-4xl mx-auto px-6 relative z-10">
-        
-        {/* --- Header Section --- */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-white text-[10px] font-black uppercase tracking-[0.3em] mb-6">
-            <Sparkles size={14} className="text-[#f59e0b]" /> Skill Nexus Knowledge Base
-          </div>
-          
-          <h2 className="text-5xl md:text-7xl font-black text-white leading-[0.9] tracking-tighter uppercase mb-6">
-            Common <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10b981] via-[#f59e0b] to-[#6366f1]">Questions</span>
-          </h2>
-          
-          <p className="max-w-2xl mx-auto text-slate-400 font-medium text-lg">
-            Where Data Science + AI + Students + Industry Connect. Get all your doubts cleared here.
-          </p>
-        </div>
+    {/* Header */}
+    <div className="text-center mb-16">
+      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#20c9b0]/10 border border-[#20c9b0]/20 text-[#20c9b0] text-xs font-bold uppercase tracking-[0.25em] mb-6">
+        <Sparkles size={14} /> Mindweave Academy FAQs
+      </div>
 
-        {/* --- FAQ List --- */}
-        <div className="space-y-4">
-          {faqData.map((item, index) => {
-            const isOpen = openIndex === index;
-            // Cycling through logo colors for borders
-            const colors = ['border-[#10b981]', 'border-[#f59e0b]', 'border-[#6366f1]'];
-            const shadowColors = ['shadow-[#10b981]/20', 'shadow-[#f59e0b]/20', 'shadow-[#6366f1]/20'];
-            const activeColor = colors[index % colors.length];
-            const activeShadow = shadowColors[index % shadowColors.length];
+      <h2 className="text-4xl md:text-6xl font-black text-white tracking-tight mb-6">
+        Frequently Asked <span className="text-[#20c9b0]">Questions</span>
+      </h2>
 
-            return (
-              <div 
-                key={index}
-                className="transition-all duration-300"
-              >
-                <div 
-                  className={`bg-[#111827] rounded-[2rem] border transition-all duration-500 overflow-hidden ${
-                    isOpen 
-                    ? `${activeColor} shadow-[0_0_40px_rgba(0,0,0,0.3)] ${activeShadow} translate-y-[-4px]` 
-                    : 'border-white/5 hover:border-white/20'
+      <p className="max-w-2xl mx-auto text-slate-400 text-lg leading-relaxed">
+        Find answers about courses, certifications, placements, and career support at Mindweave Academy.
+      </p>
+    </div>
+
+    {/* FAQ Cards */}
+    <div className="space-y-5">
+      {faqData.map((item, index) => {
+        const isOpen = openIndex === index;
+
+        return (
+          <div
+            key={index}
+            className={`rounded-3xl border transition-all duration-300 ${
+              isOpen
+                ? "border-[#20c9b0] bg-[#0f172a] shadow-lg shadow-[#20c9b0]/10"
+                : "border-slate-800 bg-[#0b1120]"
+            }`}
+          >
+            <button
+              onClick={() => setOpenIndex(isOpen ? null : index)}
+              className="w-full flex items-center justify-between px-8 py-7 text-left"
+            >
+              <div className="flex items-center gap-4">
+                <div
+                  className={`w-3 h-3 rounded-full ${
+                    isOpen ? "bg-[#20c9b0]" : "bg-slate-600"
+                  }`}
+                />
+                <span
+                  className={`text-lg md:text-xl font-bold ${
+                    isOpen ? "text-white" : "text-slate-300"
                   }`}
                 >
-                  <button
-                    onClick={() => setOpenIndex(isOpen ? null : index)}
-                    className="w-full flex items-center justify-between p-7 md:p-9 text-left"
-                  >
-                    <div className="flex items-center gap-5">
-                      <div className={`w-2 h-2 rounded-full ${isOpen ? 'animate-pulse bg-white' : 'bg-slate-600'}`} />
-                      <span className={`text-lg md:text-xl font-bold tracking-tight leading-tight ${
-                        isOpen ? 'text-white' : 'text-slate-400 group-hover:text-slate-200'
-                      }`}>
-                        {item.question}
-                      </span>
-                    </div>
-                    
-                    <div className={`shrink-0 w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-500 border ${
-                      isOpen 
-                      ? 'bg-white text-black border-white rotate-0' 
-                      : 'bg-transparent text-slate-500 border-white/10 rotate-90'
-                    }`}>
-                      {isOpen ? <Minus size={22} strokeWidth={3} /> : <Plus size={22} strokeWidth={3} />}
-                    </div>
-                  </button>
-
-                  <div 
-                    className={`transition-all duration-500 ease-in-out ${
-                      isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                    }`}
-                  >
-                    <div className="px-7 md:px-14 pb-9 text-slate-400 font-medium text-lg leading-relaxed">
-                      <div className="pt-6 border-t border-white/5 italic">
-                        "{item.answer}"
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  {item.question}
+                </span>
               </div>
-            );
-          })}
-        </div>
 
-        {/* Support Section - Logo Style */}
-        <div className="mt-20 p-[2px] rounded-[2.5rem] bg-gradient-to-r from-[#10b981] via-[#f59e0b] to-[#6366f1]">
-            <div className="bg-[#0a0f1a] rounded-[2.4rem] p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8">
-                <div className="text-center md:text-left">
-                    <h4 className="text-white font-black text-2xl uppercase tracking-tighter">Still Unclear?</h4>
-                    <p className="text-slate-500 mt-2">Connect with our industry experts today.</p>
-                </div>
-                <button className="group relative px-10 py-5 bg-white text-black rounded-2xl font-black text-sm uppercase tracking-widest overflow-hidden transition-all hover:scale-105 active:scale-95">
-                    <span className="relative z-10 flex items-center gap-2">
-                        <MessageCircle size={20} /> Let's Connect
-                    </span>
-                </button>
+              <div
+                className={`w-10 h-10 rounded-2xl flex items-center justify-center transition-all ${
+                  isOpen
+                    ? "bg-[#20c9b0] text-black"
+                    : "bg-slate-800 text-slate-400"
+                }`}
+              >
+                {isOpen ? (
+                  <Minus size={20} strokeWidth={3} />
+                ) : (
+                  <Plus size={20} strokeWidth={3} />
+                )}
+              </div>
+            </button>
+
+            <div
+              className={`overflow-hidden transition-all duration-500 ${
+                isOpen ? "max-h-96" : "max-h-0"
+              }`}
+            >
+              <div className="px-8 pb-8 pt-2 border-t border-slate-800">
+                <p className="text-slate-400 text-base leading-relaxed">
+                  {item.answer}
+                </p>
+              </div>
             </div>
-        </div>
+          </div>
+        );
+      })}
+    </div>
+
+    {/* Bottom CTA */}
+    <div className="mt-16 bg-[#0f172a] border border-slate-800 rounded-3xl p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="text-center md:text-left">
+        <h3 className="text-2xl font-black text-white mb-2">
+          Need Personal Guidance?
+        </h3>
+        <p className="text-slate-400">
+          Connect with our expert counselors for course selection and career advice.
+        </p>
       </div>
-    </section>
+
+      <button className="px-8 py-4 bg-[#20c9b0] hover:bg-[#18b39d] text-white font-bold rounded-2xl transition-all flex items-center gap-3 shadow-lg">
+        <MessageCircle size={18} />
+        Contact Us
+      </button>
+    </div>
+
+  </div>
+</section>
   );
 };
 
