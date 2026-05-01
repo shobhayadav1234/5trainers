@@ -139,7 +139,7 @@ const Write = ({
               </h3>
 
               <p className="text-slate-400 text-xs md:text-sm mb-6">
-                You can call us at +91 7428748576
+                You can call us at +91  87505 00075
               </p>
 
               <form className="space-y-4">
