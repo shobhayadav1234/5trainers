@@ -17,11 +17,11 @@ const Contact = () => {
 
                         {/* Head Office */}
                         <div className="space-y-4">
-                            <h2 className="text-[#00a3c8] text-xl font-bold uppercase tracking-wide">
+                            <h2 className="text-[#20C9B0] text-xl font-bold uppercase tracking-wide">
                                 Head Office, Mohali
                             </h2>
                             <div className="flex items-start gap-4 text-gray-300">
-                                <MapPin className="text-[#00a3c8] mt-1 shrink-0" size={20} />
+                                <MapPin className="text-[#20C9B0] mt-1 shrink-0" size={20} />
                                 <p>
                                     Mindweave Academy Institute,<br />
                                     5th Floor, Victory Tower,<br />
@@ -30,11 +30,11 @@ const Contact = () => {
                                 </p>
                             </div>
                             <div className="flex items-center gap-4 text-gray-300">
-                                <Mail className="text-[#00a3c8] shrink-0" size={20} />
+                                <Mail className="text-[#20C9B0] shrink-0" size={20} />
                                 <p>info@Mindweave Academy.com</p>
                             </div>
                             <div className="flex items-center gap-4 text-gray-300">
-                                <Phone className="text-[#00a3c8] shrink-0" size={20} />
+                                <Phone className="text-[#20C9B0] shrink-0" size={20} />
                                 <p>+91-87505 00075</p>
                             </div>
 
@@ -59,7 +59,7 @@ const Contact = () => {
                     </div>
 
                     {/* --- RIGHT SIDE: Form --- */}
-                    <div className="bg-[#1286a1] p-8 rounded-sm shadow-xl self-start">
+                    <div className="bg-[#20C9B0] p-8 rounded-sm shadow-xl self-start">
                         <h3 className="text-xl font-bold mb-2">Book your Trial Demo Class</h3>
                         <p className="text-sm mb-6 text-gray-100">You can call us at +91 87505 00075</p>
 

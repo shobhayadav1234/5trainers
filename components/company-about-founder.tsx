@@ -45,7 +45,7 @@ const AboutPage = () => {
                             </p>
 
                             <p>
-                                The name <strong>“5 Trainers”</strong> reflects this philosophy, representing the harmony of five fundamental pillars inspired by both nature’s elements and human senses. At the core of the institute are the <strong>5 T’s: Training, Technology, Thinking, Time, and Teamwork</strong>, which serve as the foundation for a truly comprehensive learning experience.
+                                The name <strong>“Mindweave Academy”</strong> reflects this philosophy, representing the harmony of five fundamental pillars inspired by both nature’s elements and human senses. At the core of the institute are the <strong> Training, Technology, Thinking, Time, and Teamwork</strong>, which serve as the foundation for a truly comprehensive learning experience.
                             </p>
 
                             <p>

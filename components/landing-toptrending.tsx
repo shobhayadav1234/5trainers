@@ -105,122 +105,162 @@ const Trending: React.FC = () => {
     setIsModalOpen(true);
   };
 
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   const selectedCourses = allCoursesData[activeTab] || [];
 
   return (
-    <section className="py-24 px-4 font-sans bg-[#f8fafc] w-full">
-  <div className="max-w-7xl mx-auto">
-    
-    {/* Badge */}
-    <div className="text-center mb-6">
-      <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#14b8a6]/10 border border-[#14b8a6]/20 text-[#14b8a6] text-xs font-bold tracking-[0.25em] uppercase">
-        <span className="w-2 h-2 rounded-full bg-[#14b8a6] animate-pulse"></span>
-        Top Professional Programs
-      </div>
-    </div>
+    <>
+      <section className="py-24 px-4 font-sans bg-[#f8fafc] w-full">
+        <div className="max-w-7xl mx-auto">
 
-    {/* Heading Section */}
-    <div className="text-center mb-14 max-w-5xl mx-auto">
-      <h2 className="text-4xl md:text-6xl font-black leading-tight tracking-tight text-slate-900">
-        Learn with{" "}
-      <span className="text-[#20c9b0]">
-  Mindweave Academy
-</span>
-      </h2>
-
-      <h3 className="text-xl md:text-2xl font-bold text-slate-700 mt-3">
-        Industry-Focused Courses for Tomorrow’s Tech Leaders
-      </h3>
-
-      <p className="mt-6 text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-medium">
-        Explore career-ready certification programs in Artificial Intelligence,
-        Data Science, Web Development, Cloud Computing, and Digital Marketing.
-        Gain practical expertise, expert mentorship, and real-world skills to
-        accelerate your professional journey.
-      </p>
-    </div>
-
-    {/* Categories Tabs */}
-    <div className="flex flex-wrap justify-center gap-3 mb-14">
-      {categories.map((cat) => (
-        <button
-          key={cat}
-          onClick={() => setActiveTab(cat)}
-          className={`px-5 py-2 rounded-xl font-bold text-xs uppercase tracking-widest transition-all border ${
-            activeTab === cat
-              ? "bg-[#0f172a] text-white border-[#0f172a] shadow-lg"
-              : "bg-white text-slate-600 border-slate-200 hover:border-[#14b8a6]/40"
-          }`}
-        >
-          {cat}
-        </button>
-      ))}
-    </div>
-
-    {/* Course Cards */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-      {selectedCourses.map((course) => (
-        <div
-          key={course.id}
-          className="group bg-white border border-slate-200 hover:border-[#14b8a6]/30 rounded-3xl overflow-hidden transition-all duration-300 hover:shadow-xl flex flex-col"
-        >
-          {/* Image */}
-          <div className="relative h-48 overflow-hidden bg-slate-100">
-            {course.imageUrl ? (
-              <img
-                src={course.imageUrl}
-                alt={course.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-              />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center">
-                <LayoutGrid size={32} className="text-slate-300" />
-              </div>
-            )}
-
-            <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-[#14b8a6] text-[10px] px-3 py-1 rounded-full font-bold uppercase shadow-sm">
-              Professional
+          {/* Badge */}
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#20c9b0]/10 border border-[#20c9b0]/20 text-[#20c9b0] text-xs font-bold tracking-[0.25em] uppercase">
+              <span className="w-2 h-2 rounded-full bg-[#20c9b0] animate-pulse"></span>
+              Top Professional Programs
             </div>
           </div>
 
-          {/* Content */}
-          <div className="p-6 flex flex-col flex-grow">
-            <h4 className="text-lg font-black text-slate-900 mb-4 line-clamp-2 leading-snug">
-              {course.title}
-            </h4>
+          {/* Heading */}
+          <div className="text-center mb-14 max-w-5xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-black leading-tight text-slate-900">
+              Learn with{" "}
+              <span className="text-[#20c9b0]">Mindweave Academy</span>
+            </h2>
 
-            <div className="space-y-3 mb-6">
-              <div className="flex items-center gap-2 text-sm font-medium text-slate-500">
-                <Calendar size={14} className="text-[#14b8a6]" />
-                {course.duration}
-              </div>
+            <h3 className="text-xl md:text-2xl font-bold text-slate-700 mt-3">
+              Industry-Focused Courses for Tomorrow’s Tech Leaders
+            </h3>
+          </div>
 
-              <div className="flex items-center gap-2 text-sm font-medium text-slate-500">
-                <Globe size={14} className="text-[#5b7cfd]" />
-                {course.mode}
-              </div>
-            </div>
-
-            {/* Footer */}
-            <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
-              <div className="text-2xl font-black text-slate-900">
-                {course.price}
-              </div>
-
-              {/* Updated Arrow Button */}
+          {/* Tabs */}
+          <div className="flex flex-wrap justify-center gap-3 mb-14">
+            {categories.map((cat) => (
               <button
-                onClick={() => handleOpenModal(course.title)}
-                className="h-11 w-11 rounded-xl bg-[#0f172a] hover:bg-[#14b8a6] text-white flex items-center justify-center transition-all duration-300 shadow-md hover:scale-110"
+                key={cat}
+                onClick={() => setActiveTab(cat)}
+                className={`px-5 py-2 rounded-xl font-bold text-xs uppercase tracking-widest transition-all border ${
+                  activeTab === cat
+                    ? "bg-[#0f172a] text-white border-[#0f172a]"
+                    : "bg-white text-slate-600 border-slate-200 hover:border-[#20c9b0]"
+                }`}
               >
-                <ArrowRight size={18} />
+                {cat}
               </button>
-            </div>
+            ))}
+          </div>
+
+          {/* Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {selectedCourses.map((course: any) => (
+              <div
+                key={course.id}
+                className="group bg-white border border-slate-200 hover:border-[#20c9b0]/30 rounded-3xl overflow-hidden transition-all duration-300 hover:shadow-xl flex flex-col"
+              >
+
+                {/* Image */}
+                <div className="relative h-48 overflow-hidden bg-slate-100">
+                  {course.imageUrl ? (
+                    <img
+                      src={course.imageUrl}
+                      alt={course.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <LayoutGrid size={32} className="text-slate-300" />
+                    </div>
+                  )}
+                </div>
+
+                {/* Content */}
+                <div className="p-6 flex flex-col flex-grow">
+                  <h4 className="text-lg font-black text-slate-900 mb-4">
+                    {course.title}
+                  </h4>
+
+                  <div className="text-sm text-slate-500 mb-4">
+                    {course.duration}
+                  </div>
+
+                  {/* Button */}
+                  <button
+                    onClick={() => handleOpenModal(course.title)}
+                    className="mt-auto bg-[#0f172a] hover:bg-[#20c9b0] text-white py-2 rounded-lg transition-all"
+                  >
+                    Enquire Now
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* 🔥 POPUP MODAL */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
+
+          <div className="bg-white w-full max-w-md rounded-2xl p-6 relative shadow-2xl">
+
+            {/* Close */}
+            <button
+              onClick={handleCloseModal}
+              className="absolute top-3 right-3 text-gray-500 hover:text-black"
+            >
+              ✕
+            </button>
+
+            <h2 className="text-xl font-bold mb-1">Enquiry Form</h2>
+
+            <p className="text-sm text-gray-500 mb-4">
+              Course: <span className="text-[#20c9b0] font-semibold">{selectedCourse}</span>
+            </p>
+
+            {/* Form */}
+            <form className="space-y-4">
+
+              <input
+                type="text"
+                placeholder="Name"
+                className="w-full border px-4 py-2 rounded-lg focus:border-[#20c9b0] outline-none"
+              />
+
+              <input
+                type="email"
+                placeholder="Email"
+                className="w-full border px-4 py-2 rounded-lg focus:border-[#20c9b0] outline-none"
+              />
+
+              <input
+                type="text"
+                placeholder="Qualification"
+                className="w-full border px-4 py-2 rounded-lg focus:border-[#20c9b0] outline-none"
+              />
+
+              <input
+                type="text"
+                placeholder="Phone Number"
+                className="w-full border px-4 py-2 rounded-lg focus:border-[#20c9b0] outline-none"
+              />
+
+              <button
+                type="submit"
+                className="w-full bg-[#20c9b0] hover:bg-[#18b39a] text-white font-bold py-2 rounded-lg"
+              >
+                Submit Enquiry
+              </button>
+
+            </form>
+
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      )}
+    </>
   );
 };
 
