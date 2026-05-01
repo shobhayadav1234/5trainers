@@ -36,12 +36,12 @@ const AboutPage = () => {
                     <div className="w-full md:w-2/3">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 relative pb-2">
                             OUR Founder
-                            <span className="absolute bottom-0 left-0 w-16 h-1 bg-[#0073b1]"></span>
+                            <span className="absolute bottom-0 left-0 w-16 h-1 bg-[#20C9B0]"></span>
                         </h2>
 
                         <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
                             <p>
-                                <strong>Amandeep Singh</strong>, the visionary founder of <strong>5 Trainers</strong>, set out with a clear mission to transform the landscape of education. Originating from Punjab, he drew inspiration from the essence of the state, symbolizing the balance of essential elements that shape life.
+                                <strong>Amandeep Singh</strong>, the visionary founder of <strong>Mindweave Academy</strong>, set out with a clear mission to transform the landscape of education. Originating from Punjab, he drew inspiration from the essence of the state, symbolizing the balance of essential elements that shape life.
                             </p>
 
                             <p>
@@ -53,7 +53,7 @@ const AboutPage = () => {
                             </p>
 
                             <p>
-                                <strong>5 Trainers</strong> offers a wide range of <strong>Digital Marketing</strong> and <strong>Core IT courses</strong>, enriched with specialized modules on personality development, motivation, creative thinking, leadership, and networking skills.
+                                <strong>Mindweave Academy</strong> offers a wide range of <strong>Digital Marketing</strong> and <strong>Core IT courses</strong>, enriched with specialized modules on personality development, motivation, creative thinking, leadership, and networking skills.
                             </p>
 
                             <p>
@@ -61,7 +61,7 @@ const AboutPage = () => {
                             </p>
 
                             <p>
-                                Under his leadership, <strong>5 Trainers</strong> remains firmly committed to holistic education. His vision has shaped an institution that not only enhances academic excellence but also fosters personal growth, strong human values, and innovative thinking.
+                                Under his leadership, <strong>Mindweave Academy</strong> remains firmly committed to holistic education. His vision has shaped an institution that not only enhances academic excellence but also fosters personal growth, strong human values, and innovative thinking.
                             </p>
 
                             <p>
@@ -69,13 +69,13 @@ const AboutPage = () => {
                             </p>
                             <p>
                                 If you have any questions, please don't hesitate to contact me directly at
-                                <a href="mailto:pankaj@cyberyuan.com" className="text-[#0073b1] font-semibold hover:underline ml-1">
-                                    info@5Trainers.com
+                                <a href="mailto:pankaj@cyberyuan.com" className="text-[#20C9B0] font-semibold hover:underline ml-1">
+                                    info@Mindweave Academy.com
                                 </a>
                             </p>
 
                             <div className="pt-4">
-                                <h3 className="text-2xl font-bold text-[#0073b1]">Amandeep Singh</h3>
+                                <h3 className="text-2xl font-bold text-[#20C9B0]">Amandeep Singh</h3>
                             </div>
                         </div>
                     </div>

@@ -5,7 +5,7 @@ const  pythonsCourse: CourseContent = {
 hero: {
   title: "Python Programming Course in Mohali",
   description:
-    "5Trainers provides the best Python programming course in Mohali and we also provide an online Python programming course in Mohali.",
+    "Mindweave Academy provides the best Python programming course in Mohali and we also provide an online Python programming course in Mohali.",
   image: "/phthon.jpg",
   category: "Python",
 },
@@ -16,13 +16,13 @@ write: {
   aboutTitle: "About Python Programming Course",
 
   aboutPara1:
-    "If you are keen on learning programming, the Python Programming Course at 5Trainers in Mohali is designed for both beginners and experienced learners. This course provides a complete learning path from basic to advanced Python concepts, helping students build strong programming foundations.",
+    "If you are keen on learning programming, the Python Programming Course at Mindweave Academy in Mohali is designed for both beginners and experienced learners. This course provides a complete learning path from basic to advanced Python concepts, helping students build strong programming foundations.",
 
   aboutPara2:
     "Our modules are carefully structured to cover core topics such as variables, data types, control flow, functions, modules, and object-oriented programming. With guidance from experienced trainers, students receive personalized support to understand concepts clearly and effectively.",
 
   aboutPara3:
-    "At 5Trainers, we focus on practical learning. Students work on real-world projects, coding exercises, and problem-solving tasks to build strong programming skills. The course also covers advanced topics like file handling, exception handling, and database connectivity to prepare students for real industry scenarios.",
+    "At Mindweave Academy, we focus on practical learning. Students work on real-world projects, coding exercises, and problem-solving tasks to build strong programming skills. The course also covers advanced topics like file handling, exception handling, and database connectivity to prepare students for real industry scenarios.",
 
   learningObjectives: [
     "Introduction to Python",
@@ -77,14 +77,14 @@ move: {
   titleLine1: "Python Programming Course",
   titleLine2: "in Mohali",
   description:
-    "The largest selection of fitness articles, exercises, workouts, supplements, & community to help you reach your goals! 5Trainers offers the best Python programming course in Delhi with both offline and online classes. Learn Python from basics to advanced with practical training and real-world projects.",
+    "The largest selection of fitness articles, exercises, workouts, supplements, & community to help you reach your goals! Mindweave Academy offers the best Python programming course in Delhi with both offline and online classes. Learn Python from basics to advanced with practical training and real-world projects.",
 },
 
 
 training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
+    "Mindweave Academy provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
 
   trainingModes: [
     {
@@ -128,7 +128,7 @@ training: {
   title: "Python Programming Course in Mohali Overview",
 
   paragraphs: [
-    "Are you ready to explore the powerful world of Python programming? The Python Programming Course at 5Trainers in Mohali is designed for both beginners and experienced learners. This comprehensive course provides complete knowledge of the Python language and helps you build strong skills across different domains of application development.",
+    "Are you ready to explore the powerful world of Python programming? The Python Programming Course at Mindweave Academy in Mohali is designed for both beginners and experienced learners. This comprehensive course provides complete knowledge of the Python language and helps you build strong skills across different domains of application development.",
 
     "The curriculum begins with the basics including Python history, installation, and fundamental concepts such as variables, data types, operators, and control structures. As you progress, you will dive deeper into functions, modules, and packages to write clean, reusable, and efficient code.",
 
@@ -209,7 +209,7 @@ training: {
     {
       question: "Why choose Mohali for Python training?",
       answer:
-        "Mohali is an emerging IT hub with quality training institutes like 5Trainers that offer practical learning, experienced trainers, and industry-focused courses.",
+        "Mohali is an emerging IT hub with quality training institutes like Mindweave Academy that offer practical learning, experienced trainers, and industry-focused courses.",
     },
     {
       question: "What are the prerequisites for enrolling in a Python training program?",
@@ -229,19 +229,19 @@ training: {
     {
       question: "How do I get started with a Python Programming Course in Mohali?",
       answer:
-        "You can enroll by contacting 5Trainers, choosing your preferred training mode, and starting with beginner-friendly modules that gradually build your skills."
+        "You can enroll by contacting Mindweave Academy, choosing your preferred training mode, and starting with beginner-friendly modules that gradually build your skills."
     }
   ]
 },
 
   testimonials: {
-  title: "What Students Say About 5Trainers Institute",
+  title: "What Students Say About Mindweave Academy Institute",
 
   items: [
     {
       name: "Arjun Patel",
       review:
-        "This Python course at 5Trainers Institute in Mohali helped me build a strong foundation in programming. I can now create my own projects with confidence.",
+        "This Python course at Mindweave Academy Institute in Mohali helped me build a strong foundation in programming. I can now create my own projects with confidence.",
     },
     {
       name: "Priya Malhotra",

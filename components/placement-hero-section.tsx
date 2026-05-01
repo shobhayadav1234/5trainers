@@ -20,7 +20,7 @@ const Placement = () => {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[500px] text-center px-4 py-20">
         
         {/* Main Heading */}
-        <h1 className="text-3xl md:text-5xl font-bold text-[#FF8C00] uppercase tracking-wide mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#FFB81C] uppercase tracking-wide mb-4">
           Best Placement Offered
         </h1>
 

@@ -5,7 +5,7 @@ const  datascienceCourse: CourseContent = {
 hero: {
   title: "Data Science Course in Mohali",
   description:
-    "Master Data Science with 5Trainers Institute in Mohali. Learn data analysis, statistics, Python for data science, machine learning, and real-world data projects to build a strong career in analytics and AI.",
+    "Master Data Science with Mindweave Academy Institute in Mohali. Learn data analysis, statistics, Python for data science, machine learning, and real-world data projects to build a strong career in analytics and AI.",
   image: "/ads.jpg",
   category: "Data Science",
 },
@@ -15,13 +15,13 @@ hero: {
   aboutTitle: "About Data Science Course",
 
   aboutPara1:
-    "The Data Science Course at 5Trainers in Mohali is designed to help you build a strong foundation in data analysis, machine learning, and artificial intelligence. You will learn how to collect, process, and analyze data to extract meaningful insights that help businesses make better decisions.",
+    "The Data Science Course at Mindweave Academy in Mohali is designed to help you build a strong foundation in data analysis, machine learning, and artificial intelligence. You will learn how to collect, process, and analyze data to extract meaningful insights that help businesses make better decisions.",
 
   aboutPara2:
     "This course covers statistics, Python programming, data visualization, machine learning algorithms, and data handling techniques. You will also learn how to work with real-world datasets and build predictive models for business solutions.",
 
   aboutPara3:
-    "At 5Trainers, we focus on practical, industry-oriented training with live projects and case studies. By the end of this course, you will be able to work as a professional data scientist and handle real-world data-driven problems confidently.",
+    "At Mindweave Academy, we focus on practical, industry-oriented training with live projects and case studies. By the end of this course, you will be able to work as a professional data scientist and handle real-world data-driven problems confidently.",
 
   learningObjectives: [
     "Introduction to Data Science and its Applications",
@@ -76,13 +76,13 @@ move: {
   titleLine1: "Data Science Course",
   titleLine2: "in Mohali",
   description:
-    "Learn Data Science at 5Trainers Institute in Mohali with practical training in Python, statistics, data analysis, machine learning, and real-world projects. Build strong analytical skills and prepare for high-demand careers in AI and data-driven industries.",
+    "Learn Data Science at Mindweave Academy Institute in Mohali with practical training in Python, statistics, data analysis, machine learning, and real-world projects. Build strong analytical skills and prepare for high-demand careers in AI and data-driven industries.",
 },
 
 training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers offers flexible and industry-oriented Social Media Marketing training designed to suit different learning styles. Whether you prefer classroom sessions, online learning, or a hybrid approach, our program ensures practical exposure, real-world projects, and job-ready digital marketing skills.",
+    "Mindweave Academy offers flexible and industry-oriented Social Media Marketing training designed to suit different learning styles. Whether you prefer classroom sessions, online learning, or a hybrid approach, our program ensures practical exposure, real-world projects, and job-ready digital marketing skills.",
 
   trainingModes: [
     {
@@ -125,7 +125,7 @@ book: {
   title: "Data Science Course in Mohali Overview",
 
   paragraphs: [
-    "Are you ready to build a career in data and artificial intelligence? The Data Science Course at 5Trainers Institute in Mohali is designed for beginners and professionals who want to master data analysis, machine learning, and real-world data problem solving.",
+    "Are you ready to build a career in data and artificial intelligence? The Data Science Course at Mindweave Academy Institute in Mohali is designed for beginners and professionals who want to master data analysis, machine learning, and real-world data problem solving.",
 
     "The course begins with fundamentals of data science, including Python programming, statistics, data handling, and data visualization. You will learn how data is collected, processed, and used to make business decisions.",
 
@@ -217,7 +217,7 @@ faq: {
     {
       question: "Do you provide online and offline classes in Mohali?",
       answer:
-        "Yes, 5Trainers Institute offers both online and classroom training options with flexible timing for students and working professionals.",
+        "Yes, Mindweave Academy Institute offers both online and classroom training options with flexible timing for students and working professionals.",
     },
     {
       question: "Do I need a technical background to join this course?",
@@ -227,7 +227,7 @@ faq: {
     {
       question: "How can I enroll in the Data Science course?",
       answer:
-        "You can enroll by contacting 5Trainers Institute in Mohali, selecting your batch, and starting your training with beginner-friendly modules."
+        "You can enroll by contacting Mindweave Academy Institute in Mohali, selecting your batch, and starting your training with beginner-friendly modules."
     }
   ]
 },
@@ -239,7 +239,7 @@ testimonials: {
     {
       name: "Arjun Mehta",
       review:
-        "This Data Science course at 5Trainers helped me understand Python, data analysis, and machine learning in a very practical way. I can now work confidently on real datasets.",
+        "This Data Science course at Mindweave Academy helped me understand Python, data analysis, and machine learning in a very practical way. I can now work confidently on real datasets.",
     },
     {
       name: "Priya Sharma",

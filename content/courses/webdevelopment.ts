@@ -6,7 +6,7 @@ const  webdevelopmentCourse: CourseContent = {
  hero: {
   title: "Web Application Testing Course in Mohali",
   description:
-    "Learn the Best Web Application Testing Course in Mohali at 5Trainers Training Institute. It is the best penetration testing course in Mohali.",
+    "Learn the Best Web Application Testing Course in Mohali at Mindweave Academy Training Institute. It is the best penetration testing course in Mohali.",
   image: "/web.jpg",
   category: "Web Application",
 },
@@ -18,13 +18,13 @@ write: {
   aboutTitle: "About Web Application Penetration Testing Course",
 
   aboutPara1:
-    "5Trainers Training Institute in Mohali provides a comprehensive Web Application Penetration Testing Course that teaches you how to identify and mitigate security vulnerabilities in web applications. This hands-on training covers key penetration testing phases including reconnaissance, scanning, exploitation, and post-exploitation techniques.",
+    "Mindweave Academy Training Institute in Mohali provides a comprehensive Web Application Penetration Testing Course that teaches you how to identify and mitigate security vulnerabilities in web applications. This hands-on training covers key penetration testing phases including reconnaissance, scanning, exploitation, and post-exploitation techniques.",
 
   aboutPara2:
     "You will learn about common web application vulnerabilities such as SQL Injection, Cross-Site Scripting (XSS), and Insecure Direct Object References (IDOR). The course includes practical training with tools like Burp Suite, OWASP ZAP, and Metasploit through real-world scenarios and lab exercises.",
 
   aboutPara3:
-    "This course is delivered by experienced cybersecurity professionals who provide personalized guidance. After successful completion, you will receive a 5Trainers certification validating your expertise in web application penetration testing.",
+    "This course is delivered by experienced cybersecurity professionals who provide personalized guidance. After successful completion, you will receive a Mindweave Academy certification validating your expertise in web application penetration testing.",
 
   learningObjectives: [
     "Web Application Security Fundamentals",
@@ -84,14 +84,14 @@ write: {
   titleLine1: "Join Web Application Penetration Testing Course",
   titleLine2: "Training",
   description:
-    "The largest selection of fitness articles, exercises, workouts, supplements, & community to help you reach your goals! Learn Web Application Penetration Testing course in Mohali from 5Trainers Training Institute and gain hands-on experience in identifying and fixing web application vulnerabilities.",
+    "The largest selection of fitness articles, exercises, workouts, supplements, & community to help you reach your goals! Learn Web Application Penetration Testing course in Mohali from Mindweave Academy Training Institute and gain hands-on experience in identifying and fixing web application vulnerabilities.",
 },
 
 
 training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
+    "Mindweave Academy provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
 
   trainingModes: [
     {
@@ -135,7 +135,7 @@ training: {
   title: "Web Application Penetration Testing Course in Mohali Overview",
 
   paragraphs: [
-    "5Trainers Training Institute in Mohali provides a comprehensive Web Application Penetration Testing Course that equips students with the skills and knowledge required to analyze and enhance the security of web applications. This course is designed for aspiring cybersecurity professionals, developers, IT experts, and anyone interested in learning how to secure modern web applications.",
+    "Mindweave Academy Training Institute in Mohali provides a comprehensive Web Application Penetration Testing Course that equips students with the skills and knowledge required to analyze and enhance the security of web applications. This course is designed for aspiring cybersecurity professionals, developers, IT experts, and anyone interested in learning how to secure modern web applications.",
 
     "You will learn the fundamentals of web application security including common vulnerabilities, attack vectors, and secure coding practices. The course also covers OWASP Top 10 vulnerabilities and highlights the importance of penetration testing in protecting applications from real-world cyber threats.",
 
@@ -185,7 +185,7 @@ training: {
     {
       question: "What makes Mohali an ideal location for web application security training?",
       answer:
-        "Mohali is a growing IT hub with excellent training infrastructure and industry exposure. 5Trainers provides hands-on labs, expert trainers, and real-world projects that make learning practical and career-oriented.",
+        "Mohali is a growing IT hub with excellent training infrastructure and industry exposure. Mindweave Academy provides hands-on labs, expert trainers, and real-world projects that make learning practical and career-oriented.",
     },
     {
       question: "Is this course suitable for beginners in cybersecurity?",
@@ -210,7 +210,7 @@ training: {
     {
       question: "How long is the certification valid, and is it globally recognized?",
       answer:
-        "The certification provided by 5Trainers is valid for a lifetime and demonstrates your practical skills. While it is industry-recognized, combining it with global certifications can further boost your profile.",
+        "The certification provided by Mindweave Academy is valid for a lifetime and demonstrates your practical skills. While it is industry-recognized, combining it with global certifications can further boost your profile.",
     },
     {
       question: "Are there any prerequisites for enrolling in the course?",
@@ -225,7 +225,7 @@ training: {
     {
       question: "Is financial assistance available for the course?",
       answer:
-        "5Trainers may offer flexible payment options or installment plans. You can contact the institute directly for detailed information.",
+        "Mindweave Academy may offer flexible payment options or installment plans. You can contact the institute directly for detailed information.",
     },
     {
       question: "How can I stay updated on the latest developments in web application security?",
@@ -237,7 +237,7 @@ training: {
 
 
   testimonials: {
-  title: "What Students Say About 5Trainers Institute",
+  title: "What Students Say About Mindweave Academy Institute",
 
   items: [
     {

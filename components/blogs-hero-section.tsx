@@ -150,14 +150,14 @@ const BlogCard = ({ post }: { post: BlogPost }) => (
             />
 
             <div className="absolute top-4 left-4">
-                <span className="bg-[#00a3c8] text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+                <span className="bg-[#FFB81C] text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
                     {post.category}
                 </span>
             </div>
         </div>
 
         <div className="p-6 flex flex-col flex-grow">
-            <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#00a3c8] transition-colors line-clamp-2">
+            <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#20c9b0] transition-colors line-clamp-2">
                 {post.title}
             </h3>
 
@@ -165,7 +165,7 @@ const BlogCard = ({ post }: { post: BlogPost }) => (
                 {post.description}
             </p>
 
-            <div className="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between text-[#00a3c8] font-semibold text-sm">
+            <div className="mt-auto pt-4 border-t border-gray-50 flex items-center justify-between text-[#20c9b0] font-semibold text-sm">
                 Read Full Article
                 <ArrowRight
                     size={18}
@@ -186,7 +186,7 @@ const Blogs = () => {
 
                 <div className="relative z-10 text-center px-4">
                     <h1 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter">
-                        5 Trainers <span className="text-[#00a3c8]">Expert Blog</span>
+                         Mindweave Academy<span className="text-[#FFB81C]">Expert Blog</span>
                     </h1>
 
                     <p className="text-gray-300 mt-4 text-lg max-w-2xl mx-auto">

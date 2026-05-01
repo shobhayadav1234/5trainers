@@ -26,7 +26,7 @@ const Logo = () => {
         
         {/* Section Heading matching the screenshot */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#051C33] inline-block border-b-4 border-[#00A9A5] pb-2 uppercase tracking-wider">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#051C33] inline-block border-b-4 border-[#20C9B0] pb-2 uppercase tracking-wider">
             Our Placement Partners
           </h2>
         </div>
@@ -63,7 +63,7 @@ const Logo = () => {
 
         {/* Button Section */}
         <div className="text-center mt-12">
-          <button className="bg-[#2A5C9A] hover:bg-[#1e4474] text-white font-bold py-3 px-10 rounded-full transition-all duration-300 shadow-lg uppercase tracking-wide">
+          <button className="bg-[#FFB81C] hover:bg-[#b68a2b] text-white font-bold py-3 px-10 rounded-full transition-all duration-300 shadow-lg uppercase tracking-wide">
             View All Partners
           </button>
         </div>

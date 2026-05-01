@@ -30,7 +30,7 @@ const reviewsData = [
     name: "Ankit Prajapati",
     image: "/employ8.jpg",
     rating: 5,
-    text: "The training environment at 5Trainers is excellent. Mentors are supportive and placement assistance is great.",
+    text: "The training environment at Mindweave Academy is excellent. Mentors are supportive and placement assistance is great.",
   },
    {
     name: "Rahul Sain",
@@ -55,7 +55,7 @@ const Review = () => {
 
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#051C33] inline-block border-b-4 border-[#00A9A5] pb-2 uppercase tracking-wide">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#051C33] inline-block border-b-4 border-[#20C9B0] pb-2 uppercase tracking-wide">
             REAL-TIME REVIEWS & TESTIMONIALS
           </h2>
 
@@ -96,7 +96,7 @@ const Review = () => {
                       <Star
                         key={i}
                         size={18}
-                        className="fill-green-500 text-green-500"
+                        className="fill-blue-500 text-[#20C9B0]"
                       />
                     ))}
                   </div>
@@ -108,11 +108,11 @@ const Review = () => {
 
                   {/* User */}
                   <div className="flex items-center justify-between">
-                    <h4 className="font-bold text-[#051C33] text-lg">
+                    <h4 className="font-bold text-[#141516] text-lg">
                       {review.name}
                     </h4>
 
-                    <div className="w-14 h-14 rounded-full border-4 border-orange-400 overflow-hidden shadow-md">
+                    <div className="w-14 h-14 rounded-full border-4 border-[#FFB81C] overflow-hidden shadow-md">
                       <Image
                         src={review.image}
                         alt={review.name}
@@ -122,10 +122,10 @@ const Review = () => {
                       />
                     </div>
                   </div>
-
+                    
                   {/* Button */}
                   <div className="mt-4 text-right">
-                    <button className="text-orange-500 font-bold text-sm hover:underline">
+                    <button className="text-[#FFB81C] font-bold text-sm hover:underline">
                       Read more
                     </button>
                   </div>

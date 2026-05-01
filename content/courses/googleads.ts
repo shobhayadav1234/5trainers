@@ -5,7 +5,7 @@ const  googleadsCourse: CourseContent = {
 hero: {
   title: "Google Ads Course in Mohali",
   description:
-    "Master Google Ads from basics to advanced with 5Trainers Institute in Mohali. Learn how to create high-performing ad campaigns, target the right audience, and generate leads and sales effectively with practical training.",
+    "Master Google Ads from basics to advanced with Mindweave Academy Institute in Mohali. Learn how to create high-performing ad campaigns, target the right audience, and generate leads and sales effectively with practical training.",
   image: "/ads.jpg",
   category: "Google Ads",
 },
@@ -16,13 +16,13 @@ write: {
   aboutTitle: "About Google Ads Course",
 
   aboutPara1:
-    "The Google Ads Course at 5Trainers in Mohali is designed to help you master paid advertising on Google. You will learn how to create high-performing ad campaigns that appear on Google Search, YouTube, and partner websites to reach the right audience at the right time.",
+    "The Google Ads Course at Mindweave Academy in Mohali is designed to help you master paid advertising on Google. You will learn how to create high-performing ad campaigns that appear on Google Search, YouTube, and partner websites to reach the right audience at the right time.",
 
   aboutPara2:
     "This course covers keyword research, ad creation, bidding strategies, campaign optimization, and conversion tracking. You will also learn how to reduce ad cost while increasing leads, traffic, and sales for businesses.",
 
   aboutPara3:
-    "At 5Trainers, we focus on practical training with live campaigns and real business projects. By the end of this course, you will be able to manage Google Ads accounts professionally and run profitable advertising campaigns for any business.",
+    "At Mindweave Academy, we focus on practical training with live campaigns and real business projects. By the end of this course, you will be able to manage Google Ads accounts professionally and run profitable advertising campaigns for any business.",
 
   learningObjectives: [
     "Introduction to Google Ads and PPC Marketing",
@@ -77,13 +77,13 @@ move: {
   titleLine1: "Google Ads Course",
   titleLine2: "in Mohali",
   description:
-    "Master Google Ads with our professional training at 5Trainers Institute in Mohali. Learn how to create high-performing search, display, and YouTube ad campaigns, target the right audience, manage budgets effectively, and generate quality leads and sales for businesses using data-driven strategies.",
+    "Master Google Ads with our professional training at Mindweave Academy Institute in Mohali. Learn how to create high-performing search, display, and YouTube ad campaigns, target the right audience, manage budgets effectively, and generate quality leads and sales for businesses using data-driven strategies.",
 },
 
 training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers offers flexible and industry-oriented Social Media Marketing training designed to suit different learning styles. Whether you prefer classroom sessions, online learning, or a hybrid approach, our program ensures practical exposure, real-world projects, and job-ready digital marketing skills.",
+    "Mindweave Academy offers flexible and industry-oriented Social Media Marketing training designed to suit different learning styles. Whether you prefer classroom sessions, online learning, or a hybrid approach, our program ensures practical exposure, real-world projects, and job-ready digital marketing skills.",
 
   trainingModes: [
     {
@@ -127,7 +127,7 @@ book: {
   title: "Google Ads Course in Mohali Overview",
 
   paragraphs: [
-    "Are you ready to master paid advertising and build a strong career in digital marketing? The Google Ads Course at 5Trainers Institute in Mohali is designed for beginners and professionals who want to learn how to run profitable online ad campaigns.",
+    "Are you ready to master paid advertising and build a strong career in digital marketing? The Google Ads Course at Mindweave Academy Institute in Mohali is designed for beginners and professionals who want to learn how to run profitable online ad campaigns.",
 
     "The course starts with the fundamentals of Google Ads, including account setup, campaign structure, keyword research, and understanding how the Google advertising system works. You will learn how search ads appear on Google and how businesses reach potential customers.",
 
@@ -223,12 +223,12 @@ faq: {
     {
       question: "Do you provide online and offline classes in Mohali?",
       answer:
-        "Yes, 5Trainers Institute offers both online and classroom training options with flexible timings for students and working professionals.",
+        "Yes, Mindweave Academy Institute offers both online and classroom training options with flexible timings for students and working professionals.",
     },
     {
       question: "How can I enroll in the Google Ads course?",
       answer:
-        "You can enroll by contacting 5Trainers Institute in Mohali, choosing your batch, and starting your training with practical Google Ads modules."
+        "You can enroll by contacting Mindweave Academy Institute in Mohali, choosing your batch, and starting your training with practical Google Ads modules."
     }
   ]
 }, 

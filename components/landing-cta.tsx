@@ -33,7 +33,7 @@ export default function Center() {
 
           <h2 className="text-2xl md:text-4xl font-black leading-tight uppercase tracking-tighter">
             Ready to Start Your <br /> 
-           <span className="text-[#20c9b0]">Career in</span> 5 Trainers Institute
+           <span className="text-[#20c9b0]">Career in</span> Mindweave Academy Institute
           </h2>
 
           <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 mt-6">

@@ -17,7 +17,7 @@ const cloudcomputeringCourse: CourseContent = {
   aboutTitle: "About Cloud Computing Course",
 
   aboutPara1:
-    "The Cloud Computing Course at 5Trainers is designed to provide in-depth knowledge of modern cloud platforms and services. This course helps students understand how businesses use cloud technologies to store data, run applications, and scale infrastructure efficiently. You will gain hands-on experience with leading cloud providers like AWS, Microsoft Azure, and Google Cloud Platform.",
+    "The Cloud Computing Course at Mindweave Academy is designed to provide in-depth knowledge of modern cloud platforms and services. This course helps students understand how businesses use cloud technologies to store data, run applications, and scale infrastructure efficiently. You will gain hands-on experience with leading cloud providers like AWS, Microsoft Azure, and Google Cloud Platform.",
 
   aboutPara2:
     "The course begins with the fundamentals of cloud computing, including service models (IaaS, PaaS, SaaS) and deployment models (Public, Private, Hybrid). As you progress, you will learn to create and manage virtual machines, storage systems, networking, and security in the cloud. You will also explore DevOps practices, containerization using Docker, and orchestration with Kubernetes.",
@@ -92,7 +92,7 @@ move: {
   training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
+    "Mindweave Academy provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
 
   trainingModes: [
     {
@@ -137,7 +137,7 @@ move: {
   title: "Cloud Computing Course in Mohali Overview",
 
   paragraphs: [
-    "The Cloud Computing Course in Mohali by 5Trainers is designed to provide in-depth knowledge of modern cloud platforms including Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). This course equips learners with the skills required to build, deploy, and manage scalable applications in cloud environments.",
+    "The Cloud Computing Course in Mohali by Mindweave Academy is designed to provide in-depth knowledge of modern cloud platforms including Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). This course equips learners with the skills required to build, deploy, and manage scalable applications in cloud environments.",
 
     "In this course, participants will understand core cloud concepts such as virtualization, cloud architecture, storage, networking, and security. You will also explore different cloud service models like IaaS, PaaS, and SaaS, along with real-world use cases used by top companies.",
 
@@ -233,7 +233,7 @@ move: {
     {
       question: "Is there any certification at the end of the course?",
       answer:
-        "Yes, you will receive a certification from 5Trainers after successfully completing the course.",
+        "Yes, you will receive a certification from Mindweave Academy after successfully completing the course.",
     },
     {
       question: "Can I attend the course online?",
@@ -255,7 +255,7 @@ testimonials: {
     {
       name: "Aarav Mehta",
       review:
-        "The Cloud Computing course at 5Trainers was very practical. I gained hands-on experience with AWS services like EC2 and S3, which helped me understand real-world cloud deployment.",
+        "The Cloud Computing course at Mindweave Academy was very practical. I gained hands-on experience with AWS services like EC2 and S3, which helped me understand real-world cloud deployment.",
     },
     {
       name: "Sneha Verma",

@@ -38,12 +38,12 @@ const Book = ({
           variants={cardVariants}
         >
 
-          {/* 🔥 Dynamic TITLE */}
+          {/* TITLE */}
           <h2 className="text-3xl md:text-5xl font-bold text-[#1a202c] mb-8 leading-tight">
             {title}
           </h2>
 
-          {/* 🔥 Dynamic PARAGRAPHS */}
+          {/* PARAGRAPHS */}
           <div className="text-gray-600 space-y-6 leading-relaxed mb-12 text-sm md:text-lg">
             {paragraphs.length > 0 ? (
               paragraphs.map((para: string, index: number) => (
@@ -54,7 +54,7 @@ const Book = ({
             )}
           </div>
 
-          {/* 🔥 Highlights */}
+          {/* HIGHLIGHTS */}
           <h3 className="text-2xl font-bold text-[#1a202c] mb-8 border-b pb-4">
             Key Highlights
           </h3>
@@ -63,7 +63,7 @@ const Book = ({
             {highlights.length > 0 ? (
               highlights.map((item: any, index: number) => (
                 <li key={index} className="flex items-start gap-4 group">
-                  <span className="text-[#00a8b4] mt-1 text-xl font-bold group-hover:scale-125 transition-transform">
+                  <span className="text-[#20c9b0] mt-1 text-xl font-bold group-hover:scale-125 transition-transform">
                     •
                   </span>
 
@@ -81,17 +81,17 @@ const Book = ({
           </ul>
         </motion.div>
 
-        {/* DESIGN ELEMENTS SAME */}
+        {/* DESIGN ELEMENTS */}
         <div className="absolute right-[-40px] bottom-40 opacity-20 hidden lg:block z-0">
           <div className="grid grid-cols-5 gap-3">
             {[...Array(25)].map((_, i) => (
-              <div key={i} className="w-2 h-2 bg-[#00a8b4] rounded-full"></div>
+              <div key={i} className="w-2 h-2 bg-[#20c9b0] rounded-full"></div>
             ))}
           </div>
         </div>
 
         <div className="absolute right-0 bottom-10 opacity-30 hidden lg:block z-0">
-          <svg width="60" height="60" viewBox="0 0 50 50" fill="none" stroke="#005cff" strokeWidth="2">
+          <svg width="60" height="60" viewBox="0 0 50 50" fill="none" stroke="#20c9b0" strokeWidth="2">
             <path d="M10 10L40 25L10 40Z" />
           </svg>
         </div>

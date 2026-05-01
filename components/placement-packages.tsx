@@ -31,7 +31,7 @@ const Employ = () => {
 
         {/* Section: Placement Packages */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 inline-block border-b-4 border-[#00A9A5] pb-2 uppercase tracking-wide">
+          <h2 className="text-3xl font-bold text-gray-900 inline-block border-b-4 border-[#20C9B0] pb-2 uppercase tracking-wide">
             Placement Packages
           </h2>
         </div>
@@ -41,7 +41,7 @@ const Employ = () => {
             Placement Packages – Average Salary & Growth Opportunities
           </h3>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            At 5Trainers, our students don't just get placed—they secure competitive salary packages and significant career growth opportunities.
+            At Mindweave Academy, our students don't just get placed—they secure competitive salary packages and significant career growth opportunities.
             Here's a breakdown of the average salary packages our students receive based on their industry experience and expertise:
           </p>
 
@@ -60,7 +60,7 @@ const Employ = () => {
 
         {/* Section: Placement Strategy */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 inline-block border-b-4 border-[#00A9A5] pb-2 uppercase tracking-wide">
+          <h2 className="text-3xl font-bold text-gray-900 inline-block border-b-4 border-[#20C9B0] pb-2 uppercase tracking-wide">
             Placement
           </h2>
         </div>
@@ -81,7 +81,7 @@ const Employ = () => {
               { title: "Alumni Network", desc: "Our strong alumni network actively supports students with job opportunities and career advice." }
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-2">
-                <span className="text-[#00A9A5] mt-1">•</span>
+                <span className="text-[#20C9B0] mt-1">•</span>
                 <p className="text-gray-700">
                   <span className="font-bold">{item.title}:</span> {item.desc}
                 </p>

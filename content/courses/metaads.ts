@@ -5,7 +5,7 @@ const  metaadsCourse: CourseContent = {
 hero: {
   title: "Meta Ads Course in Mohali",
   description:
-    "Learn our Best Basic Networking Course in Mohali at 5Trainers Institute in Mohali with Certified Network Trainers.",
+    "Learn our Best Basic Networking Course in Mohali at Mindweave Academy Institute in Mohali with Certified Network Trainers.",
   image: "/red.jpg",
   category: "Meta Ads",
 },
@@ -17,13 +17,13 @@ write: {
   aboutTitle: "About Meta Ads Course",
 
   aboutPara1:
-    "5Trainers Training Institute in Mohali offers a comprehensive Meta Ads Course designed to help you master Facebook and Instagram advertising. This course covers everything from basic campaign setup to advanced ad strategies, enabling you to generate leads, increase sales, and scale businesses using paid marketing.",
+    "Mindweave Academy Training Institute in Mohali offers a comprehensive Meta Ads Course designed to help you master Facebook and Instagram advertising. This course covers everything from basic campaign setup to advanced ad strategies, enabling you to generate leads, increase sales, and scale businesses using paid marketing.",
 
   aboutPara2:
     "You will learn how to create high-converting ad campaigns, target the right audience, and optimize ads using Meta Ads Manager. The course includes hands-on training on audience targeting, pixel setup, A/B testing, retargeting strategies, and performance analysis.",
 
   aboutPara3:
-    "This course is taught by industry experts with real-world experience in digital marketing. After completion, you will be able to run successful ad campaigns for businesses, clients, or your own brand and receive a 5Trainers certification.",
+    "This course is taught by industry experts with real-world experience in digital marketing. After completion, you will be able to run successful ad campaigns for businesses, clients, or your own brand and receive a Mindweave Academy certification.",
 
   learningObjectives: [
     "Understand Meta Ads Ecosystem (Facebook & Instagram)",
@@ -77,14 +77,14 @@ write: {
   titleLine1: "Join Meta Ads Course",
   titleLine2: "Training",
   description:
-    "Master Facebook and Instagram advertising with our Meta Ads Course in Mohali at 5Trainers Institute. Learn how to create high-converting ad campaigns, target the right audience, and generate leads and sales using real-world marketing strategies and hands-on practice.",
+    "Master Facebook and Instagram advertising with our Meta Ads Course in Mohali at Mindweave Academy Institute. Learn how to create high-converting ad campaigns, target the right audience, and generate leads and sales using real-world marketing strategies and hands-on practice.",
 },
 
 
 training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
+    "Mindweave Academy provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
 
   trainingModes: [
     {
@@ -128,7 +128,7 @@ training: {
   title: "Meta Ads (Facebook & Instagram Ads) Course in Mohali Overview",
 
   paragraphs: [
-    "5Trainers Training Institute in Mohali offers a powerful Meta Ads Course designed to help you master Facebook and Instagram advertising. This course focuses on real-world strategies to generate leads, increase sales, and grow businesses using paid marketing campaigns.",
+    "Mindweave Academy Training Institute in Mohali offers a powerful Meta Ads Course designed to help you master Facebook and Instagram advertising. This course focuses on real-world strategies to generate leads, increase sales, and grow businesses using paid marketing campaigns.",
 
     "You will learn how to create high-converting ads, target the right audience, and optimize campaigns using Meta Ads Manager. From beginners to advanced learners, this course provides a step-by-step approach to building profitable ad campaigns.",
 
@@ -237,7 +237,7 @@ training: {
     {
       question: "Is there any certification provided?",
       answer:
-        "Yes, you will receive a certification from 5Trainers after successfully completing the course.",
+        "Yes, you will receive a certification from Mindweave Academy after successfully completing the course.",
     },
     {
       question: "Can I attend the course online?",
@@ -254,7 +254,7 @@ training: {
 
 
   testimonials: {
-  title: "What Students Say About 5Trainers Institute",
+  title: "What Students Say About Mindweave Academy Institute",
 
   items: [
     {

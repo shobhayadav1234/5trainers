@@ -6,7 +6,7 @@ const aiCourse: CourseContent = {
   hero: {
     title: "AI (Artificial Intelligence) Course in Mohali",
     description:
-      "Learn our Best Basic Networking Course in Mohali at 5Trainers Institute in Mohali with Certified Network Trainers.",
+      "Learn our Best Basic Networking Course in Mohali at Mindweave Academy Institute in Mohali with Certified Network Trainers.",
     image: "/cyber.jpg",
     category: "AI (Artificial Intelligence)",
   },
@@ -17,13 +17,13 @@ const aiCourse: CourseContent = {
   aboutTitle: "About Artificial Intelligence Course",
 
   aboutPara1:
-    "The Artificial Intelligence Course at 5Trainers Institute in Mohali is designed to help you understand how intelligent systems work using data, algorithms, and machine learning techniques from basics to advanced level.",
+    "The Artificial Intelligence Course at Mindweave Academy Institute in Mohali is designed to help you understand how intelligent systems work using data, algorithms, and machine learning techniques from basics to advanced level.",
 
   aboutPara2:
     "You will learn Python programming, machine learning, deep learning fundamentals, and data processing techniques. The course focuses on building intelligent systems that can learn from data and make predictions.",
 
   aboutPara3:
-    "At 5Trainers, we emphasize practical learning with live AI projects, case studies, and industry-based applications. After completion, you will be able to work confidently in AI, machine learning, and data-driven technology roles.",
+    "At Mindweave Academy, we emphasize practical learning with live AI projects, case studies, and industry-based applications. After completion, you will be able to work confidently in AI, machine learning, and data-driven technology roles.",
 
   learningObjectives: [
     "Introduction to Artificial Intelligence",
@@ -74,7 +74,7 @@ move: {
  training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
+    "Mindweave Academy provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
 
   trainingModes: [
     {
@@ -118,7 +118,7 @@ move: {
   title: "Artificial Intelligence Course Overview",
 
   paragraphs: [
-    "The Artificial Intelligence Course at 5Trainers Institute is designed to help students understand how machines learn, think, and make decisions using real-world data and algorithms.",
+    "The Artificial Intelligence Course at Mindweave Academy Institute is designed to help students understand how machines learn, think, and make decisions using real-world data and algorithms.",
     "You will learn Python programming, data handling, and core AI concepts including machine learning and deep learning.",
     "The course focuses on building intelligent systems that can analyze data, recognize patterns, and make predictions.",
     "Students will work on real-world AI projects and case studies to gain practical industry experience in artificial intelligence."

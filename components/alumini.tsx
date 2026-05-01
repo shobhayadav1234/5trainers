@@ -19,7 +19,7 @@ const Alumni = () => {
   ];
 
   return (
-    <section className="relative w-full bg-[#051C33] overflow-hidden">
+    <section className="relative w-full bg-[#122a42] overflow-hidden">
       {/* Background Pattern Overlay (Optional: creates the diamond/grid effect) */}
       <div className="absolute inset-0 opacity-10 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '30px 30px' }}>

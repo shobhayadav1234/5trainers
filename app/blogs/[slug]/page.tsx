@@ -38,7 +38,7 @@ export default async function BlogDetailPage({
     // Yahan hum manual components define kar rahe hain taaki symbols hide ho jayein aur styling bani rahe
     const MarkdownComponents = {
         h1: ({ children }: any) => <h1 className="text-4xl font-bold mt-8 mb-6 text-gray-900">{children}</h1>,
-        h2: ({ children }: any) => <h2 className="text-3xl font-semibold mt-10 mb-4 text-[#00a3c8]">{children}</h2>,
+        h2: ({ children }: any) => <h2 className="text-3xl font-semibold mt-10 mb-4 text-[#20c9b0]">{children}</h2>,
         h3: ({ children }: any) => <h3 className="text-2xl font-semibold mt-6 mb-3 text-gray-800">{children}</h3>,
         p: ({ children }: any) => <p className="mb-4 leading-relaxed text-lg text-gray-700">{children}</p>,
         ul: ({ children }: any) => <ul className="ml-6 list-disc mb-4 space-y-2 text-gray-700">{children}</ul>,
@@ -57,7 +57,7 @@ export default async function BlogDetailPage({
                     className="absolute inset-0 w-full h-full object-cover opacity-40"
                 />
                 <div className="relative z-10 text-center px-4 max-w-4xl">
-                    <span className="inline-block bg-[#00a3c8] text-white text-sm font-bold px-4 py-2 rounded-full uppercase mb-4">
+                    <span className="inline-block bg-[#FFB81C] text-white text-sm font-bold px-4 py-2 rounded-full uppercase mb-4">
                         {blog.category}
                     </span>
                     <h1 className="text-4xl md:text-6xl font-black text-white leading-tight">
@@ -99,7 +99,7 @@ export default async function BlogDetailPage({
                             <option>Data Analytics</option>
                         </select>
                         <textarea placeholder="Your Message" rows={4} className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#00a3c8]" />
-                        <button type="submit" className="w-full bg-[#00a3c8] hover:bg-[#0089a8] text-white font-bold py-3 rounded-lg transition-colors">
+                        <button type="submit" className="w-full bg-[#20C9B0] hover:bg-[#24a793] text-white font-bold py-3 rounded-lg transition-colors">
                             Submit Now
                         </button>
                     </form>

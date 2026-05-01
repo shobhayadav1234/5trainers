@@ -7,7 +7,7 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "What courses do you offer at Skill Nexus?",
+      question: "What courses do you offer at MindWeave Academy?",
       answer: "We offer industry-focused courses like Data Science, AI, Digital Marketing, Cyber Security, and Python programming designed to connect students with industry needs."
     },
     {

@@ -18,7 +18,7 @@ const networkingCourse: CourseContent = {
   aboutTitle: "About Networking Course",
 
   aboutPara1:
-    "The Networking Course at 5Trainers is designed to provide a strong foundation in computer networking concepts and real-world network infrastructure. This course helps students understand how data is transmitted across networks and how organizations design, manage, and secure their IT systems. You will gain hands-on experience with routers, switches, and networking tools used in modern environments.",
+    "The Networking Course at Mindweave Academy is designed to provide a strong foundation in computer networking concepts and real-world network infrastructure. This course helps students understand how data is transmitted across networks and how organizations design, manage, and secure their IT systems. You will gain hands-on experience with routers, switches, and networking tools used in modern environments.",
 
   aboutPara2:
     "The course begins with networking fundamentals such as OSI and TCP/IP models, IP addressing, subnetting, and basic network devices. As you progress, you will learn routing and switching concepts, network protocols, wireless networking, and network security. You will also explore configuring networks, troubleshooting issues, and managing enterprise-level network systems.",
@@ -84,7 +84,7 @@ const networkingCourse: CourseContent = {
   training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
+    "Mindweave Academy provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
 
   trainingModes: [
     {
@@ -129,7 +129,7 @@ book: {
   title: "Networking Course in Mohali Overview",
 
   paragraphs: [
-    "The Networking Course in Mohali by 5Trainers is designed to provide comprehensive knowledge of computer networking concepts and real-world network infrastructure. This course equips learners with the skills required to design, configure, and manage networks used in modern organizations.",
+    "The Networking Course in Mohali by Mindweave Academy is designed to provide comprehensive knowledge of computer networking concepts and real-world network infrastructure. This course equips learners with the skills required to design, configure, and manage networks used in modern organizations.",
 
     "In this course, participants will understand core networking concepts such as OSI and TCP/IP models, IP addressing, subnetting, routing, switching, and network security. You will also explore different network types, protocols, and real-world use cases implemented in enterprise environments.",
 
@@ -240,7 +240,7 @@ book: {
     {
       question: "Is there any certification at the end of the course?",
       answer:
-        "Yes, you will receive a certification from 5Trainers after successfully completing the course.",
+        "Yes, you will receive a certification from Mindweave Academy after successfully completing the course.",
     },
     {
       question: "Can I attend the course online?",
@@ -263,7 +263,7 @@ testimonials: {
     {
       name: "Rahul Sharma",
       review:
-        "The Networking course at 5Trainers was very practical. I learned routing, switching, and IP addressing with hands-on labs, which helped me understand real-world network setups.",
+        "The Networking course at Mindweave Academy was very practical. I learned routing, switching, and IP addressing with hands-on labs, which helped me understand real-world network setups.",
     },
     {
       name: "Neha Gupta",

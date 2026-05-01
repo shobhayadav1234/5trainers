@@ -18,7 +18,7 @@ const softwaretestingCourse: CourseContent = {
   aboutTitle: "About Selenium Automation Software Testing Course",
 
   aboutPara1:
-    "The Automation Software Testing Course at 5Trainers offers a comprehensive curriculum focused on both manual and automated testing techniques. This course is designed to equip students with the knowledge and practical skills required to become proficient in software testing, with a strong emphasis on Selenium WebDriver, a leading tool for automating web applications.",
+    "The Automation Software Testing Course at Mindweave Academy offers a comprehensive curriculum focused on both manual and automated testing techniques. This course is designed to equip students with the knowledge and practical skills required to become proficient in software testing, with a strong emphasis on Selenium WebDriver, a leading tool for automating web applications.",
 
   aboutPara2:
     "The course begins with an introduction to software testing fundamentals, covering various testing types, the testing lifecycle, and best practices. As students progress, they dive into automation concepts, learning to write automated test scripts using Java or Python. Key topics include TestNG, handling dynamic elements, and integrating automated tests with Jenkins for Continuous Integration (CI).",
@@ -111,7 +111,7 @@ const softwaretestingCourse: CourseContent = {
   training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
+    "Mindweave Academy provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
 
   trainingModes: [
     {
@@ -156,7 +156,7 @@ const softwaretestingCourse: CourseContent = {
   title: "Selenium Automation Software Testing Course in Mohali Overview",
 
   paragraphs: [
-    "The Selenium Automation Software Testing Course in Mohali by 5Trainers is designed to provide comprehensive training in both manual and automated software testing, with a strong focus on Selenium WebDriver—the most widely used tool for automating web application testing. This course empowers individuals to perform end-to-end testing of web applications, ensuring quality and performance across different platforms and browsers.",
+    "The Selenium Automation Software Testing Course in Mohali by Mindweave Academy is designed to provide comprehensive training in both manual and automated software testing, with a strong focus on Selenium WebDriver—the most widely used tool for automating web application testing. This course empowers individuals to perform end-to-end testing of web applications, ensuring quality and performance across different platforms and browsers.",
 
     "In this course, participants gain a deep understanding of the software testing lifecycle, different types of testing such as functional, regression, and performance testing, along with the importance of quality assurance in modern software development.",
 
@@ -257,7 +257,7 @@ const softwaretestingCourse: CourseContent = {
     {
       question: "Is there any certification at the end of the course?",
       answer:
-        "Yes, you will receive a certification from 5Trainers after successfully completing the course.",
+        "Yes, you will receive a certification from Mindweave Academy after successfully completing the course.",
     },
     {
       question: "Can I attend the course online?",
@@ -273,12 +273,12 @@ const softwaretestingCourse: CourseContent = {
 },
 
   testimonials: {
-    title: "What People Say About 5 Trainers Institute",
+    title: "What People Say About Mindweave Academy Institute",
 
     items: [
       {
         name: "Aarav Mehta",
-        review: "Great hands-on 5Trainers training.",
+        review: "Great hands-on Mindweave Academy training.",
       },
       {
         name: "Sneha Verma",

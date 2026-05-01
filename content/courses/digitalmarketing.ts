@@ -5,7 +5,7 @@ const  digitalmarketingCourse: CourseContent = {
 hero: {
   title: "Digital Marketing Course in Mohali",
   description:
-    "Learn complete digital marketing at 5Trainers Institute in Mohali. Master SEO, Google Ads, social media marketing, content strategy, and lead generation with practical training and real-world projects.",
+    "Learn complete digital marketing at Mindweave Academy Institute in Mohali. Master SEO, Google Ads, social media marketing, content strategy, and lead generation with practical training and real-world projects.",
   image: "/count.jpg",
   category: "Digital Marketing",
 },
@@ -16,13 +16,13 @@ write: {
   aboutTitle: "About Digital Marketing Course",
 
   aboutPara1:
-    "The Digital Marketing Course at 5Trainers in Mohali is designed for beginners and professionals who want to build a career in online marketing. This course covers all major digital marketing channels including SEO, Google Ads, social media marketing, and content marketing.",
+    "The Digital Marketing Course at Mindweave Academy in Mohali is designed for beginners and professionals who want to build a career in online marketing. This course covers all major digital marketing channels including SEO, Google Ads, social media marketing, and content marketing.",
 
   aboutPara2:
     "You will learn how to promote businesses online using search engines and social media platforms. The course includes practical training in keyword research, ad campaign creation, audience targeting, and conversion optimization to generate real results.",
 
   aboutPara3:
-    "At 5Trainers, we focus on hands-on learning with live projects and real business case studies. Students gain practical experience in running marketing campaigns, analyzing performance, and improving ROI for businesses and brands.",
+    "At Mindweave Academy, we focus on hands-on learning with live projects and real business case studies. Students gain practical experience in running marketing campaigns, analyzing performance, and improving ROI for businesses and brands.",
 
   learningObjectives: [
     "Introduction to Digital Marketing",
@@ -77,14 +77,14 @@ move: {
   titleLine1: "Digital Marketing Course",
   titleLine2: "in Mohali",
   description:
-    "Learn complete digital marketing at 5Trainers Institute in Mohali with expert trainers. Master SEO, Google Ads, social media marketing, content strategy, and lead generation with practical training, live projects, and real-world case studies to build a successful career in online marketing.",
+    "Learn complete digital marketing at Mindweave Academy Institute in Mohali with expert trainers. Master SEO, Google Ads, social media marketing, content strategy, and lead generation with practical training, live projects, and real-world case studies to build a successful career in online marketing.",
 },
 
 
 training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
+    "Mindweave Academy provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
 
   trainingModes: [
     {
@@ -128,7 +128,7 @@ training: {
   title: "Digital Marketing Course in Mohali Overview",
 
   paragraphs: [
-    "Are you ready to build a successful career in the fast-growing digital world? The Digital Marketing Course at 5Trainers Institute in Mohali is designed to provide complete knowledge of online marketing strategies used by modern businesses.",
+    "Are you ready to build a successful career in the fast-growing digital world? The Digital Marketing Course at Mindweave Academy Institute in Mohali is designed to provide complete knowledge of online marketing strategies used by modern businesses.",
 
     "The course starts with the fundamentals of digital marketing, including website basics, online presence, and introduction to SEO and paid advertising. You will understand how businesses grow online using search engines and social media platforms.",
 
@@ -219,7 +219,7 @@ training: {
     {
       question: "Do you provide online and offline classes in Mohali?",
       answer:
-        "Yes, 5Trainers Institute offers both classroom and online training options with flexible timing for students and working professionals.",
+        "Yes, Mindweave Academy Institute offers both classroom and online training options with flexible timing for students and working professionals.",
     },
     {
       question: "Do I need any technical background to join?",
@@ -229,7 +229,7 @@ training: {
     {
       question: "How can I enroll in the Digital Marketing course?",
       answer:
-        "You can enroll by contacting 5Trainers Institute in Mohali, selecting your preferred batch, and starting your training with practical modules."
+        "You can enroll by contacting Mindweave Academy Institute in Mohali, selecting your preferred batch, and starting your training with practical modules."
     }
   ]
 },
@@ -242,7 +242,7 @@ training: {
     {
       name: "Arjun Malhotra",
       review:
-        "This Digital Marketing course at 5Trainers Institute helped me understand SEO and Google Ads practically. I can now run real campaigns with confidence.",
+        "This Digital Marketing course at Mindweave Academy Institute helped me understand SEO and Google Ads practically. I can now run real campaigns with confidence.",
     },
     {
       name: "Priya Verma",

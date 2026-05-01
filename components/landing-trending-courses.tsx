@@ -43,7 +43,7 @@ export default function TrendingCourses() {
           <Sparkles size={14} /> Career Growth
         </div>
 
-        <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900">
+        <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-slate-900">
           Trending <span className="text-[#20c9b0]">Mindweave Courses</span>
         </h2>
       </div>

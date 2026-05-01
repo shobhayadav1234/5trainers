@@ -5,7 +5,7 @@ const  socialmediaCourse: CourseContent = {
 hero: {
   title: "Social Media Course in Mohali",
   description:
-    "Learn our Best Basic Networking Course in Mohali at 5Trainers Institute in Mohali with Certified Network Trainers.",
+    "Learn our Best Basic Networking Course in Mohali at Mindweave Academy Institute in Mohali with Certified Network Trainers.",
   image: "/peo.jpg",
   category: "Social Media",
 },
@@ -16,13 +16,13 @@ write: {
   aboutTitle: "About Social Media Marketing Course",
 
   aboutPara1:
-    "The Social Media Marketing Course at 5Trainers in Mohali is designed to help you master platforms like Facebook, Instagram, LinkedIn, and YouTube. This course is ideal for beginners and professionals who want to build strong skills in digital marketing and grow businesses online.",
+    "The Social Media Marketing Course at Mindweave Academy in Mohali is designed to help you master platforms like Facebook, Instagram, LinkedIn, and YouTube. This course is ideal for beginners and professionals who want to build strong skills in digital marketing and grow businesses online.",
 
   aboutPara2:
     "You will learn how to create engaging content, manage social media pages, run paid campaigns, and build a strong online presence. The course also covers audience targeting, content strategy, brand building, and analytics to help you achieve real results.",
 
   aboutPara3:
-    "At 5Trainers, we focus on practical learning with live projects, real campaigns, and hands-on exercises. By the end of the course, you will be able to manage social media accounts professionally, generate leads, and grow businesses or personal brands effectively.",
+    "At Mindweave Academy, we focus on practical learning with live projects, real campaigns, and hands-on exercises. By the end of the course, you will be able to manage social media accounts professionally, generate leads, and grow businesses or personal brands effectively.",
 
   learningObjectives: [
     "Introduction to Social Media Marketing",
@@ -74,13 +74,13 @@ move: {
   titleLine1: "Social Media Marketing Course",
   titleLine2: "in Mohali",
   description:
-    "Learn how to grow businesses online with our Social Media Marketing course at 5Trainers Institute in Mohali. Master platforms like Facebook, Instagram, and LinkedIn, create engaging content, run paid ad campaigns, and generate leads and sales with practical training and real-world projects.",
+    "Learn how to grow businesses online with our Social Media Marketing course at Mindweave Academy Institute in Mohali. Master platforms like Facebook, Instagram, and LinkedIn, create engaging content, run paid ad campaigns, and generate leads and sales with practical training and real-world projects.",
 },
 
 training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers offers flexible and industry-oriented Social Media Marketing training designed to suit different learning styles. Whether you prefer classroom sessions, online learning, or a hybrid approach, our program ensures practical exposure, real-world projects, and job-ready digital marketing skills.",
+    "Mindweave Academy offers flexible and industry-oriented Social Media Marketing training designed to suit different learning styles. Whether you prefer classroom sessions, online learning, or a hybrid approach, our program ensures practical exposure, real-world projects, and job-ready digital marketing skills.",
 
   trainingModes: [
     {
@@ -123,7 +123,7 @@ book: {
   title: "Social Media Marketing Course in Mohali Overview",
 
   paragraphs: [
-    "Are you ready to build a strong career in digital marketing? The Social Media Marketing Course at 5Trainers Institute in Mohali is designed for beginners and professionals who want to grow businesses using powerful online platforms like Facebook, Instagram, and LinkedIn.",
+    "Are you ready to build a strong career in digital marketing? The Social Media Marketing Course at Mindweave Academy Institute in Mohali is designed for beginners and professionals who want to grow businesses using powerful online platforms like Facebook, Instagram, and LinkedIn.",
 
     "The course starts with the fundamentals of social media marketing, including platform understanding, account setup, and content planning. You will learn how to create engaging posts, reels, and stories that attract audience attention and increase brand visibility.",
 
@@ -219,18 +219,18 @@ faq: {
     {
       question: "Do you provide online and offline classes in Mohali?",
       answer:
-        "Yes, 5Trainers Institute offers both classroom and online training options with flexible timings to suit students and working professionals.",
+        "Yes, Mindweave Academy Institute offers both classroom and online training options with flexible timings to suit students and working professionals.",
     },
     {
       question: "How can I enroll in the Social Media Marketing course?",
       answer:
-        "You can enroll by contacting 5Trainers Institute in Mohali, selecting your preferred batch, and starting your training with beginner-friendly modules."
+        "You can enroll by contacting Mindweave Academy Institute in Mohali, selecting your preferred batch, and starting your training with beginner-friendly modules."
     }
   ]
 },
 
 testimonials: {
-  title: "What Students Say About 5Trainers Institute",
+  title: "What Students Say About Mindweave Academy Institute",
 
   items: [
     {

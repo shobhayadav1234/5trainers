@@ -18,7 +18,7 @@ const Drop = ({
       <div className="container mx-auto px-4 md:px-12">
 
         {/* TITLE */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#00a8b4] mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#121312] mb-12">
           {title}
         </h2>
 
@@ -42,7 +42,7 @@ const Drop = ({
                 className={`border rounded-lg shadow-sm overflow-hidden transition-all duration-300 ${
                   isOpen
                     ? "bg-white border-gray-200"
-                    : "bg-[#00a8b4] border-[#00a8b4]"
+                    : "bg-[#20c9b0] border-[#20c9b0]"
                 }`}
               >
 
@@ -62,7 +62,7 @@ const Drop = ({
 
                   <span
                     className={`text-xl font-bold transition ${
-                      isOpen ? "text-[#00a8b4]" : "text-white"
+                      isOpen ? "text-[#20c9b0]" : "text-white"
                     }`}
                   >
                     {isOpen ? "-" : "+"}

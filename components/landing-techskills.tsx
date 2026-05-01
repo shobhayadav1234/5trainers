@@ -22,7 +22,7 @@ export default function Content() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-5xl sm:text-6xl md:text-8xl font-black text-white leading-[1.05] tracking-tighter">
+        <h1 className="text-5xl sm:text-6xl md:text-6xl font-black text-white leading-[1.05] tracking-tighter">
           Build Your Future with <br className="hidden lg:block" />
           <span className="text-[#20c9b0]">
             Mindweave Academy

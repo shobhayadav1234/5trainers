@@ -95,7 +95,7 @@ export default function Header() {
           <Link href="/">
             <img
               src="/mind.png"
-              alt="5 Trainers Logo"
+              alt="Mindweave Academy Logo"
               className="h-16 md:h-16 w-auto object-contain cursor-pointer"
             />
           </Link>

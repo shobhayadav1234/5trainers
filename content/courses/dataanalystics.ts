@@ -5,7 +5,7 @@ const dataanalysticsCourse: CourseContent = {
 hero: {
   title: "Data Analytics Course in Mohali",
   description:
-    "Learn Data Analytics at 5Trainers Institute in Mohali with practical training in Excel, SQL, Python, statistics, and data visualization. Build strong analytical skills to interpret data and make smart business decisions.",
+    "Learn Data Analytics at Mindweave Academy Institute in Mohali with practical training in Excel, SQL, Python, statistics, and data visualization. Build strong analytical skills to interpret data and make smart business decisions.",
   image: "/ads.jpg",
   category: "Data Analytics",
 },
@@ -16,13 +16,13 @@ hero: {
   aboutTitle: "About Data Analytics Course",
 
   aboutPara1:
-    "The Data Analytics Course at 5Trainers Institute in Mohali is designed to help you understand how to collect, process, and analyze data to make better business decisions using real-world datasets and tools.",
+    "The Data Analytics Course at Mindweave Academy Institute in Mohali is designed to help you understand how to collect, process, and analyze data to make better business decisions using real-world datasets and tools.",
 
   aboutPara2:
     "You will learn Excel, SQL, Python basics, statistics, and data visualization techniques. The course focuses on transforming raw data into meaningful insights for business growth and decision-making.",
 
   aboutPara3:
-    "At 5Trainers, we emphasize practical learning with live projects, dashboards, and real business case studies. After completion, you will be able to work confidently as a Data Analyst in various industries.",
+    "At Mindweave Academy, we emphasize practical learning with live projects, dashboards, and real business case studies. After completion, you will be able to work confidently as a Data Analyst in various industries.",
 
   learningObjectives: [
     "Introduction to Data Analytics",
@@ -74,7 +74,7 @@ move: {
  training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
+    "Mindweave Academy provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
 
   trainingModes: [
     {
@@ -118,7 +118,7 @@ move: {
   title: "Data Analytics Course Overview",
 
   paragraphs: [
-    "The Data Analytics Course at 5Trainers Institute is designed to help students understand how to collect, process, and analyze data to extract meaningful business insights.",
+    "The Data Analytics Course at Mindweave Academy Institute is designed to help students understand how to collect, process, and analyze data to extract meaningful business insights.",
     "You will learn Excel, SQL, Python basics, statistics, and data visualization techniques used in real-world analytics workflows.",
     "The course focuses on turning raw data into actionable insights to support business decision-making and performance improvement.",
     "Students will work on real-world datasets, dashboards, and case studies to gain practical industry experience in data analytics."

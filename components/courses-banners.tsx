@@ -70,7 +70,7 @@ const Move = ({
 
               <motion.span 
                 variants={leftMoveVariants} 
-                className="block text-[#00a8b4]"
+                className="block text-[#20c9b0]"
               >
                 {titleLine2}
               </motion.span>

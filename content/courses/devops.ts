@@ -5,7 +5,7 @@ const devopsCourse: CourseContent = {
 hero: {
   title: "DevOps Course in Mohali",
   description:
-    "Learn DevOps with hands-on training at 5Trainers Institute in Mohali. Master CI/CD pipelines, Docker, Kubernetes, cloud computing, and automation tools to build scalable and modern software delivery systems.",
+    "Learn DevOps with hands-on training at Mindweave Academy Institute in Mohali. Master CI/CD pipelines, Docker, Kubernetes, cloud computing, and automation tools to build scalable and modern software delivery systems.",
   image: "/ads.jpg",
   category: "DevOps",
 },
@@ -16,13 +16,13 @@ hero: {
   aboutTitle: "About DevOps Course",
 
   aboutPara1:
-    "The DevOps Course at 5Trainers Institute in Mohali is designed to help you understand how modern software development and IT operations work together to deliver applications faster and more efficiently.",
+    "The DevOps Course at Mindweave Academy Institute in Mohali is designed to help you understand how modern software development and IT operations work together to deliver applications faster and more efficiently.",
 
   aboutPara2:
     "You will learn CI/CD pipelines, Docker, Kubernetes, Linux administration, cloud platforms, and automation tools used in real-world DevOps environments.",
 
   aboutPara3:
-    "At 5Trainers, we focus on practical learning with real deployment projects, cloud setups, and automation workflows. After completion, you will be able to work confidently as a DevOps Engineer.",
+    "At Mindweave Academy, we focus on practical learning with real deployment projects, cloud setups, and automation workflows. After completion, you will be able to work confidently as a DevOps Engineer.",
 
   learningObjectives: [
     "Introduction to DevOps",
@@ -74,7 +74,7 @@ move: {
  training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
+    "Mindweave Academy provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
 
   trainingModes: [
     {
@@ -117,7 +117,7 @@ move: {
   title: "DevOps Course Overview",
 
   paragraphs: [
-    "The DevOps Course at 5Trainers Institute is designed to help students understand how modern software development and IT operations work together to deliver applications faster and more efficiently.",
+    "The DevOps Course at Mindweave Academy Institute is designed to help students understand how modern software development and IT operations work together to deliver applications faster and more efficiently.",
     "You will learn CI/CD pipelines, Linux, Docker, Kubernetes, cloud computing, and automation tools used in real-world DevOps environments.",
     "The course focuses on building scalable deployment systems, automating workflows, and managing infrastructure efficiently.",
     "Students will work on real-world deployment projects and cloud-based scenarios to gain practical industry experience in DevOps."

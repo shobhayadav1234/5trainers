@@ -22,7 +22,7 @@ const Black = () => {
 
                 {/* Left Side: Content */}
                 <div className="text-white flex flex-col justify-center">
-                    <h2 className="text-3xl md:text-4xl font-bold text-orange-500 mb-6 uppercase tracking-wider">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#FFB81C] mb-6 uppercase tracking-wider">
                         Ready to empower your <br /> Workforce?
                     </h2>
 
@@ -36,33 +36,33 @@ const Black = () => {
                     <div className="space-y-8">
                         {/* Phone */}
                         <div className="flex items-start gap-4">
-                            <div className="bg-orange-500 p-3 rounded-full">
-                                <Phone size={20} className="text-white" />
+                            <div className="font-bold text-[#FFB81C] p-3 rounded-full bg-[#FFB81C]">
+                                <Phone size={20} className="text-white " />
                             </div>
                             <div>
-                                <p className="font-bold text-orange-500 text-lg uppercase">Phone Number</p>
+                                <p className="font-bold text-[#FFB81C] text-lg uppercase">Phone Number</p>
                                 <p className="text-gray-200 text-lg">+91-87505 00075</p>
                             </div>
                         </div>
 
                         {/* Email */}
                         <div className="flex items-start gap-4">
-                            <div className="bg-orange-500 p-3 rounded-full">
+                            <div className="bg-[#FFB81C] p-3 rounded-full">
                                 <Mail size={20} className="text-white" />
                             </div>
                             <div>
-                                <p className="font-bold text-orange-500 text-lg uppercase">E-mail</p>
-                                <p className="text-gray-200 text-lg">info@5Trainers.com</p>
+                                <p className="font-bold text-[#FFB81C] text-lg uppercase">E-mail</p>
+                                <p className="text-gray-200 text-lg">info@Mindweave Academy.com</p>
                             </div>
                         </div>
 
                         {/* Address */}
                         <div className="flex items-start gap-4">
-                            <div className="bg-orange-500 p-3 rounded-full">
+                            <div className="bg-[#FFB81C] p-3 rounded-full">
                                 <MapPin size={20} className="text-white" />
                             </div>
                             <div>
-                                <p className="font-bold text-orange-500 text-lg uppercase">Corporate Address</p>
+                                <p className="font-bold text-[#FFB81C] text-lg uppercase">Corporate Address</p>
                                 <p className="text-gray-200 text-sm md:text-base leading-snug">
                                     5th floor ,victory Tower, Sector 55 Phase 8B Mohali
                                 </p>
@@ -76,7 +76,7 @@ const Black = () => {
                     <div className="bg-white rounded-xl shadow-2xl p-8 w-full max-w-md">
                         <div className="text-center mb-8">
                             <h3 className="text-2xl font-bold text-[#051C33] uppercase">Enquire Now</h3>
-                            <div className="w-16 h-1 bg-orange-500 mx-auto mt-2"></div>
+                            <div className="w-16 h-1 bg-[#FFB81C]    mx-auto mt-2"></div>
                         </div>
 
                         <form className="space-y-4">
@@ -156,7 +156,7 @@ const Black = () => {
 
                             <button
                                 type="submit"
-                                className="w-full bg-[#2A5C9A] hover:bg-[#1e4474] text-white font-bold py-4 rounded-md transition duration-300 uppercase mt-4"
+                                className="w-full bg-[#20C9B0] hover:bg-[#45a798] text-white font-bold py-4 rounded-md transition duration-300 uppercase mt-4"
                             >
                                 Submit
                             </button>

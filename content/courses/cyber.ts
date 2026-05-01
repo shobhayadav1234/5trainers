@@ -5,7 +5,7 @@ const cyberCourse: CourseContent = {
 hero: {
   title: "Cyber Security Course in Mohali",
   description:
-    "Learn Cyber Security with hands-on training at 5Trainers Institute in Mohali. Master ethical hacking, network security, penetration testing, and real-world cyber defense techniques with expert guidance.",
+    "Learn Cyber Security with hands-on training at Mindweave Academy Institute in Mohali. Master ethical hacking, network security, penetration testing, and real-world cyber defense techniques with expert guidance.",
   image: "/cyber.jpg",
   category: "Cyber Security",
 },
@@ -16,13 +16,13 @@ hero: {
   aboutTitle: "About Cyber Security Course",
 
   aboutPara1:
-    "The Cyber Security Course at 5Trainers Institute in Mohali is designed to help you understand how to protect systems, networks, and applications from cyber threats and attacks using real-world tools and techniques.",
+    "The Cyber Security Course at Mindweave Academy Institute in Mohali is designed to help you understand how to protect systems, networks, and applications from cyber threats and attacks using real-world tools and techniques.",
 
   aboutPara2:
     "You will learn ethical hacking, network security, penetration testing, SQL injection, XSS, and tools like Burp Suite, OWASP ZAP, and Metasploit for security testing and vulnerability analysis.",
 
   aboutPara3:
-    "At 5Trainers, we focus on practical learning with live hacking labs, real-world scenarios, and hands-on projects. After completion, you will be able to work confidently as a Cyber Security Analyst or Ethical Hacker.",
+    "At Mindweave Academy, we focus on practical learning with live hacking labs, real-world scenarios, and hands-on projects. After completion, you will be able to work confidently as a Cyber Security Analyst or Ethical Hacker.",
 
   learningObjectives: [
     "Introduction to Cyber Security",
@@ -73,7 +73,7 @@ move: {
  training: {
   heading: "Modes of Training",
   subHeading:
-    "5Trainers provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
+    "Mindweave Academy provides flexible, industry-oriented training designed to match different learning styles and career goals. Whether you prefer classroom interaction, online flexibility, or a hybrid approach, our training ensures hands-on experience, real-world exposure, and job-ready skills in Web Application Penetration Testing.",
 
   trainingModes: [
     {
@@ -116,7 +116,7 @@ move: {
   title: "Cyber Security Course Overview",
 
   paragraphs: [
-    "The Cyber Security Course at 5Trainers Institute is designed to help students understand how to protect systems, networks, and applications from cyber attacks using real-world tools and techniques.",
+    "The Cyber Security Course at Mindweave Academy Institute is designed to help students understand how to protect systems, networks, and applications from cyber attacks using real-world tools and techniques.",
     "You will learn ethical hacking, penetration testing, network security, and vulnerability assessment with hands-on practical training.",
     "The course focuses on identifying security threats, analyzing vulnerabilities, and securing systems from unauthorized access.",
     "Students will work on live hacking labs and real-world security scenarios to gain practical industry experience in cyber security."

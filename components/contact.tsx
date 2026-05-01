@@ -23,7 +23,7 @@ const Contact = () => {
                             <div className="flex items-start gap-4 text-gray-300">
                                 <MapPin className="text-[#00a3c8] mt-1 shrink-0" size={20} />
                                 <p>
-                                    5Trainers Institute,<br />
+                                    Mindweave Academy Institute,<br />
                                     5th Floor, Victory Tower,<br />
                                     Sector 74, Sahibzada Ajit Singh Nagar,<br />
                                     Mohali, Punjab 160055
@@ -31,7 +31,7 @@ const Contact = () => {
                             </div>
                             <div className="flex items-center gap-4 text-gray-300">
                                 <Mail className="text-[#00a3c8] shrink-0" size={20} />
-                                <p>info@5Trainers.com</p>
+                                <p>info@Mindweave Academy.com</p>
                             </div>
                             <div className="flex items-center gap-4 text-gray-300">
                                 <Phone className="text-[#00a3c8] shrink-0" size={20} />
@@ -126,7 +126,7 @@ const Contact = () => {
                         allowFullScreen={true}
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="5Trainers Mohali Location"
+                        title="Mindweave Academy Mohali Location"
                         className="w-full"
                     ></iframe>
                 </div>

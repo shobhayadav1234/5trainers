@@ -5,7 +5,7 @@ import { Monitor, Globe, BookOpen } from 'lucide-react';
 
 const Courses = ({
   heading = "Modes of Training",
-  subHeading = "5Trainers offers flexibility in terms of training modes to accommodate various learning preferences:",
+  subHeading = "Mindweave Academy offers flexibility in terms of training modes to accommodate various learning preferences:",
   trainingModes = [],
   targetAudience = []
 }: any) => {
@@ -37,7 +37,7 @@ const Courses = ({
 
         {/* HEADING */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold text-[#006677] mb-4">
+          <h2 className="text-4xl font-bold text-[#20c9b0] mb-4">
             {heading}
           </h2>
           <p className="text-gray-600 text-sm md:text-base">
@@ -54,7 +54,7 @@ const Courses = ({
               key={index}
               className="bg-white p-8 rounded-sm shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col items-center text-center group transition-all min-h-[420px] w-full"
             >
-              <div className="text-[#00a8b4] mb-10 group-hover:text-black">
+              <div className="text-[#20c9b0] mb-10 group-hover:text-black">
                 {mode.icon}
               </div>
 
@@ -78,7 +78,7 @@ const Courses = ({
               {targetAudience.length > 0 ? (
                 targetAudience.map((item: string, idx: number) => (
                   <li key={idx} className="flex gap-2 text-[10px] text-gray-600">
-                    <span className="text-[#00a8b4] font-bold">•</span>
+                    <span className="text-[#20c9b0] font-bold">•</span>
                     <span>{item}</span>
                   </li>
                 ))
