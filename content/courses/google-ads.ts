@@ -1,7 +1,7 @@
 import { CourseContent } from "./types";
 
 const  googleadsCourse: CourseContent = {
-  slug: "googleads",
+  slug: "google-ads",
 hero: {
   title: "Google Ads Course in Mohali",
   description:

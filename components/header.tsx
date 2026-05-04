@@ -24,7 +24,7 @@ type SubLink = {
 type CourseItem = {
   name: string;
   href?: string;
-  sub?: SubLink[];
+  subCourses?: SubLink[];
 };
 
 type NavItem = {
@@ -40,20 +40,162 @@ const navbarLinks: NavItem[] = [
   {
     name: "Courses",
     dropdown: [
-      { name: "Software Testing", href: "/courses/software-testing" },
-      { name: "Web Development", href: "/courses/web-development" },
-      { name: "Digital Marketing", href: "/courses/digital-marketing" },
-      { name: "Pythons", href: "/courses/pythons" },
-      { name: "Cyber Security", href: "/courses/cyber-security" },
-      { name: "Data Science", href: "/courses/data-science" },
-      { name: "AI(Artificial Intelligence)", href: "/courses/ai" },
-      { name: "Data Analytics", href: "/courses/data-analystics" },
-      { name: "Google ads", href: "/courses/google-ads" },
-      { name: "Meta ads", href: "/courses/meta-ads" },
-      { name: "DevOps", href: "/courses/devops" },
-      { name: "Networking", href: "/courses/networking" },
-      { name: "Cloud Computing", href: "/courses/cloud-computering" },
-      { name: "Social Media", href: "/courses/social-media" },
+      {
+        name: "Software Testing",
+        href: "/courses/software-testing",
+        subCourses: [
+          { name: "Appium Training", href: "/courses/software-testing/appium-training" },
+          { name: "Manual Testing + Selenium", href: "/courses/software-testing/manual-selenium" },
+          { name: "Pentration Testing", href: "/courses/software-testing/penetration-testing" },
+          { name: "API Testing", href: "/courses/software-testing/api-testing" },
+          { name: "Selenium(PYTHON)", href: "/courses/software-testing/selenium-python" },
+          { name: "Playright with javascript Course", href: "/courses/software-testing/playwright-javascript" },
+          { name: "Full Stack QA with AI", href: "/courses/software-testing/fullstack-qa-with-ai" },
+          { name: "Selenium(JAVA)", href: "/courses/software-testing/selenium-java" },
+
+        ]
+      },
+      {
+        name: "Web Development",
+        href: "/courses/web-development",
+        subCourses: [
+          { name: "Java Full Stack (Professional + AI)", href: "/courses/web-development/java-fullstack-professional-ai" },
+          { name: "Java Full Stack Developer", href: "/courses/web-development/javafullstackdeveloper" },
+          { name: "Diploma in Full Stack Web Development (Java)", href: "/courses/web-development/diploma-in-full-stack-web-development-java" },
+          { name: "WordPress Development", href: "/courses/web-development/wordpress" },
+          { name: "Tailwind CSS & Modern UI", href: "/courses/web-development/ui-ux" }
+        ]
+      },
+      {
+        name: "Digital Marketing",
+        href: "/courses/digital-marketing",
+        subCourses: [
+          { name: "Digital Marketing Training", href: "/courses/digital-marketing/digital-marketing-training" },
+          { name: "Advance Digital Marketing", href: "/courses/digital-marketing/advance-digital-marketing-course" },
+          { name: "Diploma in Digital Marketing with AI", href: "/courses/digital-marketing/diploma-with-ai" },
+        ]
+      },
+      {
+        name: "Python",
+        href: "/courses/python",
+        subCourses: [
+          { name: "Python for Beginners", href: "/courses/python/basics" },
+          { name: "Django Framework", href: "/courses/python/django" },
+          { name: "Flask Web Development", href: "/courses/python/flask" },
+          { name: "Python for Automation", href: "/courses/python/automation" },
+          { name: "Advanced Data Structures", href: "/courses/python/advanced" }
+        ]
+      },
+      {
+        name: "Cyber Security",
+        href: "/courses/cyber-security",
+        subCourses: [
+          { name: "Ethical Hacking", href: "/courses/cyber-security/ethical-hacking" },
+          { name: "Penetration Testing", href: "/courses/cyber-security/pen-testing" },
+          { name: "Network Security", href: "/courses/cyber-security/network-security" },
+          { name: "Application Security", href: "/courses/cyber-security/app-security" },
+          { name: "Cyber Forensics", href: "/courses/cyber-security/forensics" }
+        ]
+      },
+      {
+        name: "Data Science",
+        href: "/courses/data-science",
+        subCourses: [
+          { name: "Machine Learning", href: "/courses/data-science/ml" },
+          { name: "Deep Learning", href: "/courses/data-science/dl" },
+          { name: "Data Visualization (Tableau)", href: "/courses/data-science/visualization" },
+          { name: "Big Data (Hadoop)", href: "/courses/data-science/big-data" },
+          { name: "NLP (Natural Language Processing)", href: "/courses/data-science/nlp" }
+        ]
+      },
+      {
+        name: "AI(Artificial Intelligence)",
+        href: "/courses/ai",
+        subCourses: [
+          { name: "Generative AI", href: "/courses/ai/generative" },
+          { name: "Neural Networks", href: "/courses/ai/neural-networks" },
+          { name: "Computer Vision", href: "/courses/ai/computer-vision" },
+          { name: "AI Ethics & Safety", href: "/courses/ai/ethics" },
+          { name: "Reinforcement Learning", href: "/courses/ai/reinforcement-learning" }
+        ]
+      },
+      {
+        name: "Data Analytics",
+        href: "/courses/data-analytics",
+        subCourses: [
+          { name: "Business Intelligence", href: "/courses/data-analytics/bi" },
+          { name: "SQL for Data Analysis", href: "/courses/data-analytics/sql" },
+          { name: "Excel for Analytics", href: "/courses/data-analytics/excel" },
+          { name: "Power BI", href: "/courses/data-analytics/power-bi" },
+          { name: "Statistical Modeling", href: "/courses/data-analytics/statistics" }
+        ]
+      },
+      {
+        name: "Google Ads",
+        href: "/courses/google-ads",
+        subCourses: [
+          { name: "Search Ads", href: "/courses/google-ads/search" },
+          { name: "Display Ads", href: "/courses/google-ads/display" },
+          { name: "Video (YouTube) Ads", href: "/courses/google-ads/video" },
+          { name: "Shopping Ads", href: "/courses/google-ads/shopping" },
+          { name: "Performance Max Campaigns", href: "/courses/google-ads/pmax" }
+        ]
+      },
+      {
+        name: "Meta Ads",
+        href: "/courses/meta-ads",
+        subCourses: [
+          { name: "Facebook Advertising", href: "/courses/meta-ads/facebook" },
+          { name: "Instagram Marketing", href: "/courses/meta-ads/instagram" },
+          { name: "Meta Pixel & Tracking", href: "/courses/meta-ads/pixel" },
+          { name: "A/B Testing Strategies", href: "/courses/meta-ads/ab-testing" },
+          { name: "Lead Generation Ads", href: "/courses/meta-ads/leads" }
+        ]
+      },
+      {
+        name: "DevOps",
+        href: "/courses/devops",
+        subCourses: [
+          { name: "Docker & Containerization", href: "/courses/devops/docker" },
+          { name: "Kubernetes (K8s)", href: "/courses/devops/kubernetes" },
+          { name: "CI/CD Pipelines (Jenkins)", href: "/courses/devops/jenkins" },
+          { name: "Infrastructure as Code (Terraform)", href: "/courses/devops/terraform" },
+          { name: "Ansible Automation", href: "/courses/devops/ansible" }
+        ]
+      },
+      {
+        name: "Networking",
+        href: "/courses/networking",
+        subCourses: [
+          { name: "CCNA (Routing & Switching)", href: "/courses/networking/ccna" },
+          { name: "Network Administration", href: "/courses/networking/admin" },
+          { name: "Troubleshooting & Security", href: "/courses/networking/troubleshooting" },
+          { name: "Wireless Networking", href: "/courses/networking/wireless" },
+          { name: "TCP/IP Fundamentals", href: "/courses/networking/tcp-ip" }
+        ]
+      },
+      {
+        name: "Cloud Computing",
+        href: "/courses/cloud-computering",
+        subCourses: [
+          { name: "AWS Solutions Architect", href: "/courses/cloud-computering/aws" },
+          { name: "Microsoft Azure", href: "/courses/cloud-computering/azure" },
+          { name: "Google Cloud Platform (GCP)", href: "/courses/cloud-computering/gcp" },
+          { name: "Cloud Security", href: "/courses/cloud-computering/security" },
+          { name: "Serverless Architecture", href: "/courses/cloud-computering/serverless" }
+        ]
+      },
+      {
+        name: "Social Media",
+        href: "/courses/social-media",
+        subCourses: [
+          { name: "Social Media Management", href: "/courses/social-media/management" },
+          { name: "Influencer Marketing", href: "/courses/social-media/influencer" },
+          { name: "LinkedIn Professional Branding", href: "/courses/social-media/linkedin" },
+          { name: "Twitter & Threads Growth", href: "/courses/social-media/twitter" },
+          { name: "Social Media Analytics", href: "/courses/social-media/analytics" }
+        ]
+      },
     ],
   },
   {
@@ -73,30 +215,32 @@ const navbarLinks: NavItem[] = [
     dropdown: [
       { name: "About Us", href: "/about" },
       { name: "Gallery", href: "/gallery" },
-      { name: "Webinars", href: "/webinars" },
-    
+      { name: "Services", href: "/services" },
+
     ],
   },
   { name: "Contact", href: "/contact" },
 ];
 
 /* ================= COMPONENT ================= */
-
 export default function Header() {
   const [open, setOpen] = useState(false);
+  // Default value "Software Testing" set ki hai taaki right side khali na dikhe
+  const [activeCourse, setActiveCourse] = useState<string>("Software Testing");
+  // Mobile ke liye sub-menu toggle state
+  const [mobileSubOpen, setMobileSubOpen] = useState<string | null>(null);
 
   return (
     <>
       <nav className="w-full border-b bg-background sticky top-0 z-[100]">
-        {/* Container aligned with Hero Section (max-w-7xl) */}
         <div className="max-w-8xl mx-auto px-4 md:px-10 py-4 flex items-center justify-between">
 
-          {/* LOGO - Scaled for better alignment */}
+          {/* LOGO */}
           <Link href="/">
             <img
               src="/mind.png"
-              alt="Mindweave Academy Logo"
-              className="h-16 md:h-16 w-auto object-contain cursor-pointer"
+              alt="Logo"
+              className="h-16 w-auto object-contain cursor-pointer"
             />
           </Link>
 
@@ -112,39 +256,64 @@ export default function Header() {
                       </NavigationMenuTrigger>
 
                       <NavigationMenuContent>
-                        <div className="grid gap-2 p-4 w-[280px] md:w-[350px] max-h-[450px] overflow-y-auto bg-popover rounded-md shadow-xl border">
-                          {item.name === "Courses"
-                            ? (item.dropdown as CourseItem[]).map((course, idx) =>
-                              course.sub ? (
-                                <div key={idx} className="mb-2">
-                                  <p className="text-sm font-bold text-foreground px-2 py-1">
-                                    {course.name}
-                                  </p>
-                                  <div className="ml-2 mt-1 space-y-1 border-l-2 border-muted pl-2">
-                                    {course.sub.map((sub, subIdx) => (
+                        {item.name === "Courses" ? (
+                          <div className="flex w-[650px] min-h-[450px] bg-popover rounded-md shadow-xl border overflow-hidden">
+
+                            {/* Left Side: Main Course Categories */}
+                            <div className="w-[280px] border-r bg-muted/10 p-2 overflow-y-auto max-h-[500px] custom-scrollbar">
+                              {(item.dropdown as CourseItem[]).map((course, idx) => (
+                                <Link
+                                  key={idx}
+                                  href={course.href || "#"}
+                                  onMouseEnter={() => setActiveCourse(course.name)}
+                                  className={`px-4 py-3 rounded-md transition-all text-[14px] font-medium flex justify-between items-center mb-1 ${activeCourse === course.name
+                                    ? "bg-primary text-primary-foreground shadow-md"
+                                    : "hover:bg-accent text-foreground"
+                                    }`}
+                                >
+                                  {course.name}
+                                  <span
+                                    className={
+                                      activeCourse === course.name
+                                        ? "opacity-100"
+                                        : "opacity-30"
+                                    }
+                                  >
+                                    →
+                                  </span>
+                                </Link>
+                              ))}
+                            </div>
+
+                            {/* Right Side: Nested Sub Courses */}
+                            <div className="flex-1 p-5 bg-background overflow-y-auto max-h-[500px]">
+                              <div className="animate-in fade-in slide-in-from-left-3 duration-300">
+                                <p className="text-[11px] font-bold uppercase text-primary mb-4 tracking-widest border-b pb-2">
+                                  {activeCourse} Modules
+                                </p>
+
+                                <div className="grid gap-2">
+                                  {(item.dropdown as CourseItem[])
+                                    .find((c) => c.name === activeCourse)
+                                    ?.subCourses?.map((sub, subIdx) => (
                                       <NavigationMenuLink asChild key={subIdx}>
                                         <Link
                                           href={sub.href}
-                                          className="block px-2 py-1.5 text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-sm transition-all"
+                                          className="flex items-center px-3 py-2.5 text-sm rounded-md hover:bg-primary/5 hover:text-primary transition-all border border-transparent hover:border-primary/10 group"
                                         >
+                                          <span className="w-1.5 h-1.5 rounded-full bg-primary/40 mr-3 group-hover:bg-primary transition-colors" />
                                           {sub.name}
                                         </Link>
                                       </NavigationMenuLink>
                                     ))}
-                                  </div>
                                 </div>
-                              ) : (
-                                <NavigationMenuLink asChild key={idx}>
-                                  <Link
-                                    href={course.href || "#"}
-                                    className="block px-2 py-2 text-sm font-medium hover:text-primary hover:bg-accent rounded-md transition-all"
-                                  >
-                                    {course.name}
-                                  </Link>
-                                </NavigationMenuLink>
-                              )
-                            )
-                            : (item.dropdown as SubLink[]).map((sub, idx) => (
+                              </div>
+                            </div>
+                          </div>
+                        ) : (
+                          /* Partners & Company Dropdown */
+                          <div className="grid gap-1 p-3 w-[220px] bg-popover rounded-md shadow-xl border">
+                            {(item.dropdown as SubLink[]).map((sub, idx) => (
                               <NavigationMenuLink asChild key={idx}>
                                 <Link
                                   href={sub.href}
@@ -154,7 +323,8 @@ export default function Header() {
                                 </Link>
                               </NavigationMenuLink>
                             ))}
-                        </div>
+                          </div>
+                        )}
                       </NavigationMenuContent>
                     </NavigationMenuItem>
                   ) : (
@@ -175,53 +345,86 @@ export default function Header() {
           </div>
 
           {/* MOBILE BUTTON */}
-          <button
-            className="md:hidden p-2 hover:bg-accent rounded-md transition-colors"
-            onClick={() => setOpen(!open)}
-            aria-label="Toggle Menu"
-          >
+          <button className="md:hidden p-2" onClick={() => setOpen(!open)}>
             {open ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
         {/* MOBILE MENU */}
         {open && (
-          <div className="md:hidden w-full border-t bg-background px-4 pb-6 absolute top-full left-0 shadow-2xl animate-in slide-in-from-top-2">
-            <div className="flex flex-col gap-4 mt-6">
+          <div className="md:hidden w-full border-t bg-background px-4 pb-8 absolute top-full left-0 shadow-2xl max-h-[85vh] overflow-y-auto">
+            <div className="flex flex-col gap-2 mt-6">
               {navbarLinks.map((item, i) =>
                 item.dropdown ? (
-                  <div key={i} className="border-b border-muted pb-2">
-                    <p className="font-bold text-lg mb-2 text-foreground">{item.name}</p>
-                    <div className="ml-4 space-y-2">
-                      {item.name === "Courses"
-                        ? (item.dropdown as CourseItem[]).map((course, idx) => (
-                          <Link
-                            key={idx}
-                            href={course.href || "#"}
-                            onClick={() => setOpen(false)}
-                            className="block text-sm text-muted-foreground hover:text-primary py-1"
-                          >
-                            {course.name}
-                          </Link>
-                        ))
-                        : (item.dropdown as SubLink[]).map((sub, idx) => (
-                          <Link
-                            key={idx}
-                            href={sub.href}
-                            onClick={() => setOpen(false)}
-                            className="block text-sm text-muted-foreground hover:text-primary py-1"
-                          >
-                            {sub.name}
-                          </Link>
-                        ))}
-                    </div>
+                  <div key={i} className="border-b border-muted py-2">
+                    <button
+                      onClick={() =>
+                        setMobileSubOpen(
+                          mobileSubOpen === item.name ? null : item.name
+                        )
+                      }
+                      className="flex justify-between items-center w-full font-bold text-lg text-foreground py-2"
+                    >
+                      {item.name}
+                      <span
+                        className={`transform transition-transform ${mobileSubOpen === item.name ? "rotate-180" : ""
+                          }`}
+                      >
+                        ▼
+                      </span>
+                    </button>
+
+                    {mobileSubOpen === item.name && (
+                      <div className="ml-4 mt-2 space-y-4 animate-in slide-in-from-top-2">
+                        {item.name === "Courses" ? (
+                          (item.dropdown as CourseItem[]).map((course, idx) => (
+                            <div key={idx} className="mb-4">
+
+                              {/* Main Course Page */}
+                              <Link
+                                href={course.href || "#"}
+                                onClick={() => setOpen(false)}
+                                className="block font-semibold text-primary text-sm mb-2 hover:underline"
+                              >
+                                {course.name}
+                              </Link>
+
+                              {/* Nested Subcourses */}
+                              <div className="ml-3 space-y-2 border-l-2 border-muted pl-3">
+                                {course.subCourses?.map((sub, sIdx) => (
+                                  <Link
+                                    key={sIdx}
+                                    href={sub.href}
+                                    onClick={() => setOpen(false)}
+                                    className="block text-[13px] text-muted-foreground hover:text-primary"
+                                  >
+                                    {sub.name}
+                                  </Link>
+                                ))}
+                              </div>
+                            </div>
+                          ))
+                        ) : (
+                          (item.dropdown as SubLink[]).map((sub, idx) => (
+                            <Link
+                              key={idx}
+                              href={sub.href}
+                              onClick={() => setOpen(false)}
+                              className="block text-[15px] py-1 text-muted-foreground"
+                            >
+                              {sub.name}
+                            </Link>
+                          ))
+                        )}
+                      </div>
+                    )}
                   </div>
                 ) : (
                   <Link
                     key={i}
                     href={item.href || "#"}
                     onClick={() => setOpen(false)}
-                    className="text-lg font-semibold border-b border-muted pb-2 hover:text-primary"
+                    className="text-lg font-semibold border-b border-muted py-4 hover:text-primary"
                   >
                     {item.name}
                   </Link>
@@ -231,36 +434,8 @@ export default function Header() {
           </div>
         )}
       </nav>
-
-      {/* WhatsApp Fixed Icon */}
-      <a
-        href="https://wa.me/918750500075"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-[999] bg-[#25D366] p-3 md:p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 group"
-      >
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-          alt="WhatsApp"
-          className="w-8 h-8 md:w-6 md:h-6"
-        />
-        {/* Tooltip on Hover */}
-        <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-black text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-md whitespace-nowrap pointer-events-none border border-gray-100">
-          Chat with us!
-        </span>
-      </a>
-      {/* Call Fixed Icon */}
-      <a
-        href="tel:+918750500075"
-        className="fixed bottom-24 right-6 z-[999] bg-[#007BFF] p-3 md:p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 group flex items-center justify-center"
-      >
-        <Phone className="w-8 h-8 md:w-6 md:h-6 text-white" />
-
-        {/* Tooltip on Hover */}
-        <span className="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-black text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity shadow-md whitespace-nowrap pointer-events-none border border-gray-100">
-          Call us!
-        </span>
-      </a>
     </>
   );
+
+
 }

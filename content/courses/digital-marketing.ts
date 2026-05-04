@@ -1,7 +1,7 @@
 import { CourseContent } from "./types";
 
 const  digitalmarketingCourse: CourseContent = {
-  slug: "digitalmarketing",
+  slug: "digital-marketing",
 hero: {
   title: "Digital Marketing Course in Mohali",
   description:

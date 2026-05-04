@@ -1,7 +1,7 @@
 import { CourseContent } from "./types";
 
 const softwaretestingCourse: CourseContent = {
-  slug: "softwaretesting",
+  slug: "software-testing",
 
   hero: {
   title: "Selenium Automation Software Testing Course in Mohali",
@@ -9,7 +9,7 @@ const softwaretestingCourse: CourseContent = {
     "Learn manual and Selenium automation testing techniques to effectively test web applications, ensuring quality and performance.",
   image: "/img.jpg",
   category: "Automation Software Testing",
-},
+},  
 
 
  write: {

@@ -1,7 +1,7 @@
 import { CourseContent } from "./types";
 
 const  datascienceCourse: CourseContent = {
-  slug: "datascience",
+  slug: "data-science",
 hero: {
   title: "Data Science Course in Mohali",
   description:

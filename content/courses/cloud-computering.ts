@@ -1,7 +1,7 @@
 import { CourseContent } from "./types";
 
 const cloudcomputeringCourse: CourseContent = {
-  slug: "cloudcomputering",
+  slug: "cloud-computering",
 
  hero: {
   title: "Cloud Computing Course in Mohali",

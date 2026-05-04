@@ -1,7 +1,7 @@
 import { CourseContent } from "./types";
 
 const  metaadsCourse: CourseContent = {
-  slug: "metaads",
+  slug: "meta-ads",
 hero: {
   title: "Meta Ads Course in Mohali",
   description:

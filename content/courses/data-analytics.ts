@@ -1,7 +1,7 @@
 import { CourseContent } from "./types";
 
-const dataanalysticsCourse: CourseContent = {
-  slug: "dataanalystics",
+const dataanalyticsCourse: CourseContent = {
+  slug: "data-analytics",
 hero: {
   title: "Data Analytics Course in Mohali",
   description:
@@ -213,4 +213,4 @@ testimonials: {
 },
 };
 
-export default dataanalysticsCourse;
+export default dataanalyticsCourse;

@@ -1,7 +1,7 @@
 import { CourseContent } from "./types";
 
-const  pythonsCourse: CourseContent = {
-  slug: "pythons",
+const  pythonCourse: CourseContent = {
+  slug: "python",
 hero: {
   title: "Python Programming Course in Mohali",
   description:
@@ -267,4 +267,4 @@ training: {
 }
 };
 
-export default pythonsCourse;
+export default pythonCourse;

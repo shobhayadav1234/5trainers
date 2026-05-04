@@ -1,7 +1,7 @@
 import { CourseContent } from "./types";
 
 const  webdevelopmentCourse: CourseContent = {
-  slug: "webdevelopment",
+  slug: "web-development",
 
  hero: {
   title: "Web Application Testing Course in Mohali",
