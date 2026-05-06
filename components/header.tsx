@@ -62,8 +62,8 @@ const navbarLinks: NavItem[] = [
           { name: "Java Full Stack (Professional + AI)", href: "/courses/web-development/java-fullstack-professional-ai" },
           { name: "Java Full Stack Developer", href: "/courses/web-development/javafullstackdeveloper" },
           { name: "Diploma in Full Stack Web Development (Java)", href: "/courses/web-development/diploma-in-full-stack-web-development-java" },
-          { name: "WordPress Development", href: "/courses/web-development/wordpress" },
-          { name: "Tailwind CSS & Modern UI", href: "/courses/web-development/ui-ux" }
+          { name: "Node.js Full Stack Development", href: "/courses/web-development/node-js-full-stack" },
+          { name: "MEAN Full Stack Development", href: "/courses/web-development/mean-full-stack" }
         ]
       },
       {
@@ -77,42 +77,35 @@ const navbarLinks: NavItem[] = [
       },
       {
         name: "Python",
-        href: "/courses/python",
+        href: "/courses/pythons",
         subCourses: [
-          { name: "Python for Beginners", href: "/courses/python/basics" },
-          { name: "Django Framework", href: "/courses/python/django" },
-          { name: "Flask Web Development", href: "/courses/python/flask" },
-          { name: "Python for Automation", href: "/courses/python/automation" },
-          { name: "Advanced Data Structures", href: "/courses/python/advanced" }
+          { name: "Python Full Stack with AI", href: "/courses/pythons/python-fullstack-with-ai" },
+          { name: "Python + SQL + Django", href: "/courses/pythons/python-sql-django" },
+          { name: "Python Full Stack Data Scientist", href: "/courses/pythons/python-full-stack-data-scientist" },
         ]
       },
       {
         name: "Cyber Security",
         href: "/courses/cyber-security",
         subCourses: [
-          { name: "Ethical Hacking", href: "/courses/cyber-security/ethical-hacking" },
-          { name: "Penetration Testing", href: "/courses/cyber-security/pen-testing" },
-          { name: "Network Security", href: "/courses/cyber-security/network-security" },
-          { name: "Application Security", href: "/courses/cyber-security/app-security" },
-          { name: "Cyber Forensics", href: "/courses/cyber-security/forensics" }
+          { name: "Cyber Security Training", href: "/courses/cyber-security/cyber-security-training" },
+          { name: "Diploma in Cyber Security", href: "/courses/cyber-security/diploma-in-cybersecurity" },
+          { name: "Computer Networking & Cyber Security", href: "/courses/cyber-security/computer-networking-cyber-security-course" },
+          { name: "Diploma in Ethical Hacking & Cyber Security", href: "/courses/cyber-security/diploma-in-ethical-hacking-cyber-security" },
         ]
       },
       {
         name: "Data Science",
         href: "/courses/data-science",
         subCourses: [
-          { name: "Machine Learning", href: "/courses/data-science/ml" },
-          { name: "Deep Learning", href: "/courses/data-science/dl" },
-          { name: "Data Visualization (Tableau)", href: "/courses/data-science/visualization" },
-          { name: "Big Data (Hadoop)", href: "/courses/data-science/big-data" },
-          { name: "NLP (Natural Language Processing)", href: "/courses/data-science/nlp" }
+          { name: "Data Science Professional Training", href: "/courses/data-science/data-science-professional-training" },
         ]
       },
       {
         name: "AI(Artificial Intelligence)",
         href: "/courses/ai",
         subCourses: [
-          { name: "Generative AI", href: "/courses/ai/generative" },
+          { name: "Transform Graphics with Generative AI", href: "/courses/ai/generative-ai" },
           { name: "Neural Networks", href: "/courses/ai/neural-networks" },
           { name: "Computer Vision", href: "/courses/ai/computer-vision" },
           { name: "AI Ethics & Safety", href: "/courses/ai/ethics" },
@@ -123,7 +116,7 @@ const navbarLinks: NavItem[] = [
         name: "Data Analytics",
         href: "/courses/data-analytics",
         subCourses: [
-          { name: "Business Intelligence", href: "/courses/data-analytics/bi" },
+          { name: "Data Analytics Professional Training", href: "/courses/data-analytics/data-analyticpro" },
           { name: "SQL for Data Analysis", href: "/courses/data-analytics/sql" },
           { name: "Excel for Analytics", href: "/courses/data-analytics/excel" },
           { name: "Power BI", href: "/courses/data-analytics/power-bi" },

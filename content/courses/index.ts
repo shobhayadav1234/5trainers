@@ -3,7 +3,7 @@ import cyber from "./cyber";
 import softwaretesting from "./software-testing";
 import webdevelopment from "./web-development";
 import metaadsCourse from "./meta-ads";
-import pythonCourse from "./python";
+import pythonCourse from "./pythons";
 import socialmediaCourse from "./social-media";
 import googleadsCourse from "./google-ads";
 import digitalmarketingCourse from "./digital-marketing";
@@ -19,7 +19,7 @@ export const courses: Record<string, any> = {
   "software-testing": softwaretesting,
   "web-development": webdevelopment,
   "meta-ads": metaadsCourse,
-  "python": pythonCourse,
+  "pythons": pythonCourse,
   "social-media": socialmediaCourse,
   "google-ads": googleadsCourse,
   "digital-marketing": digitalmarketingCourse,

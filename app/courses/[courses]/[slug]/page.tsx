@@ -14,6 +14,11 @@ import Testimonials from "@/components/courses-testimonials";
 import { softwareTestingCourses } from "@/content/courses/software-testing/index";
 import { digitalMarketingCourses } from "@/content/courses/digital-marketing/index";
 import webDevelopmentCourses from "@/content/courses/web-development/index";
+import pythonCourses from "@/content/courses/pythons/index";
+import cyberSecurityCourses from "@/content/courses/cyber-security/index";
+import aiCourses from "@/content/courses/ai/index";
+import dataScienceCourses from "@/content/courses/data-science/index";
+import dataAnalyticsPro from "@/content/courses/data-analystics/data-analyticpro";
 
 interface PageProps {
   params: Promise<{
@@ -25,8 +30,6 @@ interface PageProps {
 export default async function SubCoursePage({ params }: PageProps) {
   const { courses, slug } = await params;
 
-  console.log("Courses:", courses);
-  console.log("Slug:", slug);
 
   if (!courses || !slug) {
     notFound();
@@ -52,7 +55,26 @@ export default async function SubCoursePage({ params }: PageProps) {
       course = webDevelopmentCourses[courseSlug];
       break;
 
-      
+    case "pythons":
+      course = pythonCourses[courseSlug];
+      break;
+
+    case "cyber-security":
+      course = cyberSecurityCourses[courseSlug];
+      break;
+
+    case "ai":
+      course = aiCourses[courseSlug];
+      break;
+
+    case "data-science":
+      course = dataScienceCourses[courseSlug];
+      break;
+
+      case "data-analytics":
+      course = dataAnalyticsPro[courseSlug];
+      break;
+
     default:
       notFound();
   }
