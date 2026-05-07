@@ -18,7 +18,14 @@ import pythonCourses from "@/content/courses/pythons/index";
 import cyberSecurityCourses from "@/content/courses/cyber-security/index";
 import aiCourses from "@/content/courses/ai/index";
 import dataScienceCourses from "@/content/courses/data-science/index";
-import dataAnalyticsPro from "@/content/courses/data-analystics/data-analyticpro";
+import datatrainingCourses from "@/content/courses/data-analystics/index";
+import ccnaCourses from "@/content/courses/networking/index";
+import cloudComputingCourses from "@/content/courses/cloud-computering/index"
+import socialmediaCourses from "@/content/courses/social-media/index";
+import devopstrainingCourses from "@/content/courses/devops/index";
+import metaCourses from "@/content/courses/meta-ads/index";
+import googleCourses from "@/content/courses/google-ads/index";
+
 
 interface PageProps {
   params: Promise<{
@@ -71,9 +78,33 @@ export default async function SubCoursePage({ params }: PageProps) {
       course = dataScienceCourses[courseSlug];
       break;
 
-      case "data-analytics":
-      course = dataAnalyticsPro[courseSlug];
+
+    case "networking":
+      course = ccnaCourses[courseSlug];
       break;
+
+    case "cloud-computering":
+      course = cloudComputingCourses[courseSlug];
+      break;
+    case "social-media":
+      course = socialmediaCourses[courseSlug];
+      break;
+
+    case "devops":
+      course = devopstrainingCourses[courseSlug];
+      break;
+
+    case "meta-ads":
+      course = metaCourses[courseSlug];
+      break;
+
+    case "google-ads":
+      course = googleCourses[courseSlug];
+      break;
+    case "data-analytics":
+      course = datatrainingCourses[courseSlug];
+      break;
+
 
     default:
       notFound();

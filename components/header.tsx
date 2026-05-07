@@ -106,54 +106,41 @@ const navbarLinks: NavItem[] = [
         href: "/courses/ai",
         subCourses: [
           { name: "Transform Graphics with Generative AI", href: "/courses/ai/generative-ai" },
-          { name: "Neural Networks", href: "/courses/ai/neural-networks" },
-          { name: "Computer Vision", href: "/courses/ai/computer-vision" },
-          { name: "AI Ethics & Safety", href: "/courses/ai/ethics" },
-          { name: "Reinforcement Learning", href: "/courses/ai/reinforcement-learning" }
+          { name: "Scaling Marketing with AI Agents", href: "/courses/ai/scaling-marketing-with-ai-agents" },
+          { name: "DevOps Automation Powered by Generative AI", href: "/courses/ai/devops-automation-powered-by-generative-ai" },
+          { name: "Agentic AI Tools for Data Analytics", href: "/courses/ai/agentic-ai-tools-for-data-analytics" },
         ]
       },
       {
         name: "Data Analytics",
         href: "/courses/data-analytics",
         subCourses: [
-          { name: "Data Analytics Professional Training", href: "/courses/data-analytics/data-analyticpro" },
-          { name: "SQL for Data Analysis", href: "/courses/data-analytics/sql" },
-          { name: "Excel for Analytics", href: "/courses/data-analytics/excel" },
-          { name: "Power BI", href: "/courses/data-analytics/power-bi" },
-          { name: "Statistical Modeling", href: "/courses/data-analytics/statistics" }
+          { name: "Data Analytics Professional Training", href: "/courses/data-analytics/data-analytics-pro" },
+          { name: "Data Analytics Professional Training with AI", href: "/courses/data-analytics/data-analytics-pro-ai" },
+          { name: "Business Analytics", href: "/courses/data-analytics/business-analytics" },
         ]
       },
       {
         name: "Google Ads",
         href: "/courses/google-ads",
         subCourses: [
-          { name: "Search Ads", href: "/courses/google-ads/search" },
-          { name: "Display Ads", href: "/courses/google-ads/display" },
-          { name: "Video (YouTube) Ads", href: "/courses/google-ads/video" },
-          { name: "Shopping Ads", href: "/courses/google-ads/shopping" },
-          { name: "Performance Max Campaigns", href: "/courses/google-ads/pmax" }
+          { name: "Google Search Ads Professional", href: "/courses/google-ads/google-search-ads-professional" },
+        
         ]
       },
       {
         name: "Meta Ads",
         href: "/courses/meta-ads",
         subCourses: [
-          { name: "Facebook Advertising", href: "/courses/meta-ads/facebook" },
-          { name: "Instagram Marketing", href: "/courses/meta-ads/instagram" },
-          { name: "Meta Pixel & Tracking", href: "/courses/meta-ads/pixel" },
-          { name: "A/B Testing Strategies", href: "/courses/meta-ads/ab-testing" },
-          { name: "Lead Generation Ads", href: "/courses/meta-ads/leads" }
+          { name: "meta-ads-professional", href: "/courses/meta-ads/meta-ads-professional" },
         ]
       },
       {
         name: "DevOps",
         href: "/courses/devops",
         subCourses: [
-          { name: "Docker & Containerization", href: "/courses/devops/docker" },
-          { name: "Kubernetes (K8s)", href: "/courses/devops/kubernetes" },
-          { name: "CI/CD Pipelines (Jenkins)", href: "/courses/devops/jenkins" },
-          { name: "Infrastructure as Code (Terraform)", href: "/courses/devops/terraform" },
-          { name: "Ansible Automation", href: "/courses/devops/ansible" }
+          { name: "DevOps Training", href: "/courses/devops/devops-training" },
+          { name: "DevOps for Professionals", href: "/courses/devops/devops-for-professional" },
         ]
       },
       {
@@ -161,32 +148,28 @@ const navbarLinks: NavItem[] = [
         href: "/courses/networking",
         subCourses: [
           { name: "CCNA (Routing & Switching)", href: "/courses/networking/ccna" },
-          { name: "Network Administration", href: "/courses/networking/admin" },
-          { name: "Troubleshooting & Security", href: "/courses/networking/troubleshooting" },
-          { name: "Wireless Networking", href: "/courses/networking/wireless" },
-          { name: "TCP/IP Fundamentals", href: "/courses/networking/tcp-ip" }
+          { name: "CCNA + CCNP", href: "/courses/networking/ccna-ccnp" },
+          { name: "CCNP Core Advanced", href: "/courses/networking/ccnp-core-advance" },
+          { name: "Diploma in Networking, Cloud & AI", href: "/courses/networking/diploma-networking-cloud-ai" },
         ]
       },
       {
         name: "Cloud Computing",
         href: "/courses/cloud-computering",
         subCourses: [
-          { name: "AWS Solutions Architect", href: "/courses/cloud-computering/aws" },
-          { name: "Microsoft Azure", href: "/courses/cloud-computering/azure" },
-          { name: "Google Cloud Platform (GCP)", href: "/courses/cloud-computering/gcp" },
-          { name: "Cloud Security", href: "/courses/cloud-computering/security" },
-          { name: "Serverless Architecture", href: "/courses/cloud-computering/serverless" }
+          { name: "Cloud Infrastructure", href: "/courses/cloud-computering/cloud-infra" },
+          { name: "Diploma in Cloud Computing", href: "/courses/cloud-computering/diploma-cloud-computing" },
+          { name: "Cloud Infrastructure with DevOps", href: "/courses/cloud-computering/cloud-infra-with-devops" },
+          { name: "Azure Cloud for Beginners", href: "/courses/cloud-computering/azure-cloud-for-basic" },
+          { name: "Azure Cloud for Professionals", href: "/courses/cloud-computering/azure-cloud-for-professional" }
         ]
       },
       {
         name: "Social Media",
         href: "/courses/social-media",
         subCourses: [
-          { name: "Social Media Management", href: "/courses/social-media/management" },
-          { name: "Influencer Marketing", href: "/courses/social-media/influencer" },
-          { name: "LinkedIn Professional Branding", href: "/courses/social-media/linkedin" },
-          { name: "Twitter & Threads Growth", href: "/courses/social-media/twitter" },
-          { name: "Social Media Analytics", href: "/courses/social-media/analytics" }
+          { name: "Advanced Excel with AI", href: "/courses/social-media/advanced-excel-gen-ai" },
+          { name: "Influencer Marketing", href: "/courses/social-media/influencer-marketing" },
         ]
       },
     ],
