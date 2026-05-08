@@ -1,7 +1,7 @@
 export interface CourseContent {
   slug: string;
 
- 
+
 
   write: {
     courseName: string;
@@ -21,16 +21,16 @@ export interface CourseContent {
   };
 
 
- training: {
-  heading: string;
-  subHeading: string;
-  trainingModes: {
-    title: string;
-    icon: string; 
-    description: string;
-  }[];
-  targetAudience: string[];
-};
+  training: {
+    heading: string;
+    subHeading: string;
+    trainingModes: {
+      title: string;
+      icon: string;
+      description: string;
+    }[];
+    targetAudience: string[];
+  };
 
   book: {
     title: string;
@@ -40,6 +40,39 @@ export interface CourseContent {
       desc: string;
     }[];
   };
+
+  batches: {
+    heading: string;
+    subHeading: string;
+    items: {
+      id: number;
+      date: string;
+      month: string;
+      courseName: string;
+      description: string;
+      type: string;
+      schedule: string;
+      timing: string;
+      duration: string;
+      instructor: {
+        name: string;
+        role: string;
+        initials: string;
+      };
+      seatsLeft: number;
+      colorTheme?: string; // Optional for UI colors
+    }[];
+  };
+
+  relatedCourses?: {
+    title: string;
+    image: string;
+    duration: string;
+    rating: string;
+    reviews: string;
+    description: string;
+    tag: string;
+  }[];
 
   faq: {
     title: string;

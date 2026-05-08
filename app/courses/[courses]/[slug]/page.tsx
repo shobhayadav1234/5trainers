@@ -25,6 +25,9 @@ import socialmediaCourses from "@/content/courses/social-media/index";
 import devopstrainingCourses from "@/content/courses/devops/index";
 import metaCourses from "@/content/courses/meta-ads/index";
 import googleCourses from "@/content/courses/google-ads/index";
+import UpcomingBatches from "@/components/upcoming-batches";
+import RelatedCourses from "@/components/relatedcourses";
+
 
 
 interface PageProps {
@@ -131,7 +134,7 @@ export default async function SubCoursePage({ params }: PageProps) {
 
       {/* BANNER */}
       <Move
-        titleLine1={course.move?.titleLine1 || ""}
+        titleLine1={course.move?.titleLine1 || ""}  
         titleLine2={course.move?.titleLine2 || ""}
         description={course.move?.description || ""}
       />
@@ -149,6 +152,30 @@ export default async function SubCoursePage({ params }: PageProps) {
         title={course.book.title}
         paragraphs={course.book.paragraphs || []}
         highlights={course.book.highlights || []}
+      />
+
+
+      {/* DYNAMIC UPCOMING BATCHES SECTION */}
+      {course.batches && (
+        <UpcomingBatches
+          heading={course.batches.heading}
+          subHeading={course.batches.subHeading}
+          items={course.batches.items}
+        />
+      )}
+
+      {/* RELATED COURSES ADDED HERE */}
+      {course.relatedCourses && (
+        <RelatedCourses courses={course.relatedCourses} />
+      )}
+
+
+      {/* TRAINING MODES (COURSES) */}
+      <Courses
+        heading={course.training.heading}
+        subHeading={course.training.subHeading}
+        trainingModes={course.training.trainingModes || []}
+        targetAudience={course.training.targetAudience || []}
       />
 
       {/* FAQ */}
