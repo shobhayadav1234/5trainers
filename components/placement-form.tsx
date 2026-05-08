@@ -41,7 +41,7 @@ const Black = () => {
                             </div>
                             <div>
                                 <p className="font-bold text-[#FFB81C] text-lg uppercase">Phone Number</p>
-                                <p className="text-gray-200 text-lg">+91-87505 00075</p>
+                                <p className="text-gray-200 text-lg">+91 84474 04770</p>
                             </div>
                         </div>
 
@@ -64,7 +64,7 @@ const Black = () => {
                             <div>
                                 <p className="font-bold text-[#FFB81C] text-lg uppercase">Corporate Address</p>
                                 <p className="text-gray-200 text-sm md:text-base leading-snug">
-                                    5th floor ,victory Tower, Sector 55 Phase 8B Mohali
+                                    Mindweave Academy Institute, Delhi - 160055
                                 </p>
                             </div>
                         </div>

@@ -81,7 +81,7 @@ const ContactSection = () => {
                     size={20}
                   />
                   <p className="text-slate-400 font-medium text-sm">
-                    5th Floor, Victory Tower, Mohali - 160055
+                    Delhi - 160055
                   </p>
                 </div>
 
@@ -95,7 +95,7 @@ const ContactSection = () => {
                 <div className="flex items-center gap-4">
                   <Phone className="text-[#20c9b0]" size={20} />
                   <p className="text-white text-2xl font-black tracking-tight">
-                    +91-87505 00075
+                    +91 84474 04770
                   </p>
                 </div>
               </div>

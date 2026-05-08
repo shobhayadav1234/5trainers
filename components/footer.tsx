@@ -114,12 +114,12 @@ export default function Footer() {
 
               <div className="space-y-5 relative z-10">
                 <a
-                  href="tel:+918750500075"
+                  href="tel:+918447404770"
                   className="flex items-center gap-4 text-slate-300 hover:text-[#20c9b0] transition-colors"
                 >
                   <Phone size={18} className="text-[#20c9b0]" />
                   <span className="text-sm font-bold tracking-tight">
-                    +91-87505 00075
+                    +91 84474 04770
                   </span>
                 </a>
 
@@ -136,9 +136,9 @@ export default function Footer() {
                 <div className="flex items-start gap-4 text-slate-300">
                   <MapPin size={18} className="text-[#20c9b0] shrink-0" />
                   <span className="text-xs font-medium leading-relaxed">
-                    5th Floor, Victory Tower,
+                    Mindweave Academy Institute,
                     <br />
-                    Sector 55, Phase 8B, Mohali
+                    Delhi
                   </span>
                 </div>
               </div>

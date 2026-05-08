@@ -24,9 +24,7 @@ const Contact = () => {
                                 <MapPin className="text-[#20C9B0] mt-1 shrink-0" size={20} />
                                 <p>
                                     Mindweave Academy Institute,<br />
-                                    5th Floor, Victory Tower,<br />
-                                    Sector 74, Sahibzada Ajit Singh Nagar,<br />
-                                    Mohali, Punjab 160055
+                                    Delhi<br />  
                                 </p>
                             </div>
                             <div className="flex items-center gap-4 text-gray-300">
@@ -35,7 +33,7 @@ const Contact = () => {
                             </div>
                             <div className="flex items-center gap-4 text-gray-300">
                                 <Phone className="text-[#20C9B0] shrink-0" size={20} />
-                                <p>+91-87505 00075</p>
+                                <p>+91 84474 04770</p>
                             </div>
 
                             {/* Social Icons */}
@@ -61,7 +59,7 @@ const Contact = () => {
                     {/* --- RIGHT SIDE: Form --- */}
                     <div className="bg-[#20C9B0] p-8 rounded-sm shadow-xl self-start">
                         <h3 className="text-xl font-bold mb-2">Book your Trial Demo Class</h3>
-                        <p className="text-sm mb-6 text-gray-100">You can call us at +91 87505 00075</p>
+                        <p className="text-sm mb-6 text-gray-100">You can call us at +91 84474 04770</p>
 
                         <form className="space-y-4">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

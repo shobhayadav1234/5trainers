@@ -41,7 +41,7 @@ export default function Center() {
             <div className="flex items-center gap-3 bg-white/[0.03] px-4 py-2 rounded-xl border border-white/10 hover:border-[#10b981]/40 transition-all cursor-pointer group">
               <Phone size={16} className="text-[#10b981]" fill="#10b981" />
               <p className="text-white text-base md:text-xl font-bold tracking-tight">
-                +91 87505 00075
+                +91 84474 04770
               </p>
             </div>
 

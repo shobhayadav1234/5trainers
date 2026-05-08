@@ -126,7 +126,7 @@ const Write = ({
             {/* CTA Button */}
             <div className="pt-4">
               <button className="w-full sm:w-auto bg-[#20c9b0] hover:bg-black text-white px-8 py-4 rounded-2xl flex items-center justify-center gap-2 font-black shadow-lg active:scale-95 uppercase tracking-wider transition-all">
-                Call Now +91 87505 00075→
+                Call Now +91 84474 04770
               </button>
             </div>
           </div>
@@ -139,7 +139,7 @@ const Write = ({
               </h3>
 
               <p className="text-slate-400 text-xs md:text-sm mb-6">
-                You can call us at +91-87505 00075
+                You can call us at +91 84474 04770
               </p>
 
               <form className="space-y-4">

@@ -122,7 +122,7 @@ export default function TrendingCourses() {
                 </p>
 
                 <p className="text-slate-900 font-bold text-sm md:text-base tracking-tight">
-                  +91 8750500075
+                  +91 84474 04770
                 </p>
               </div>
             </div>

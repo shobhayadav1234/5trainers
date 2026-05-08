@@ -183,9 +183,6 @@ const navbarLinks: NavItem[] = [
       { name: "Affiliate", href: "/partners/affiliate" },
     ],
   },
-  { name: "Reviews", href: "/reviews" },
-  { name: "Blog", href: "/blogs" },
-  { name: "Placement", href: "/placement" },
   {
     name: "Company",
     dropdown: [

@@ -107,7 +107,7 @@ const HeroSection = ({
           <span>
             Mobile:{" "}
             <span className="font-semibold text-[#20c9b0]">
-              +91 87505 00075
+              +91 84474 04770
             </span>
           </span>
         </div>
