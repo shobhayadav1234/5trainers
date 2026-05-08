@@ -175,6 +175,11 @@ const navbarLinks: NavItem[] = [
     ],
   },
   {
+ name: "Blog",
+  href: "/blogs"},
+ 
+
+  {
     name: "Partners",
     dropdown: [
       { name: "Corporate", href: "/partners/corporate" },
