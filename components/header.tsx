@@ -125,7 +125,7 @@ const navbarLinks: NavItem[] = [
         href: "/courses/google-ads",
         subCourses: [
           { name: "Google Search Ads Professional", href: "/courses/google-ads/google-search-ads-professional" },
-        
+
         ]
       },
       {
@@ -175,9 +175,8 @@ const navbarLinks: NavItem[] = [
     ],
   },
   {
- name: "Blog",
-  href: "/blogs"},
- 
+    name: "Blog",href: "/blogs"
+  },
 
   {
     name: "Partners",
@@ -197,6 +196,9 @@ const navbarLinks: NavItem[] = [
 
     ],
   },
+  { name: "Placement", href: "/placement" },
+
+
   { name: "Contact", href: "/contact" },
 ];
 

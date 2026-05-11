@@ -4,8 +4,9 @@ import { useState } from "react"; // Hook import kiya
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Phone, Mail, Clock, ArrowRight } from "lucide-react";
-
+import { Phone, Mail, Clock } from "lucide-react";
+import Link from "next/link"; // Top par ye import karein
+import { ArrowRight } from "lucide-react";
 export default function Hero() {
   // 1. Form State Management
   const [loading, setLoading] = useState(false);
@@ -73,7 +74,7 @@ export default function Hero() {
       </div>
 
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-black py-16 md:py-24">
+      <section className="relative overflow-hidden  py-16 md:py-24 bg-[#020817]">
         {/* Background Glow */}
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#20c9b0]/10 rounded-full blur-[140px]" />
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#5b7cfd]/10 rounded-full blur-[160px]" />
@@ -102,13 +103,15 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 pt-4">
-              <Button
-                size="lg"
-                className="h-14 px-10 text-base font-bold text-white bg-[#20c9b0] hover:bg-[#18b39d] transition-all rounded-full border-none shadow-lg"
-              >
-                Explore Programs <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-
+              <Link href="/programs">
+                <Button
+                  size="lg"
+                  className="h-14 px-10 text-base font-bold text-white bg-[#20c9b0] hover:bg-[#18b39d] transition-all rounded-full border-none shadow-lg group"
+                >
+                  Explore Programs
+                  <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-[#5b7cfd]/10 border border-[#5b7cfd]/20 flex items-center justify-center">
                   <Phone size={18} className="text-[#5b7cfd]" />
@@ -121,9 +124,9 @@ export default function Hero() {
           </div>
 
           {/* RIGHT FORM */}
-          <div className="w-full md:w-2/5 flex justify-center md:justify-end">
-            <Card className="w-full max-w-md rounded-[2.5rem] border-none bg-white shadow-2xl shadow-[#20c9b0]/15 overflow-hidden">
-              <CardContent className="p-8 sm:p-10 space-y-7">
+          <div className="w-full md:w-2/5 flex justify-center md:justify-end ">
+            <Card className="w-full max-w-md rounded-[2.5rem] border-none bg-white shadow-2xl shadow-[#20c9b0]/15 overflow-hidden ">
+              <CardContent className="p-8 sm:p-10 space-y-7 ">
                 <div className="text-center space-y-2">
                   <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">
                     Book Demo Class
@@ -166,8 +169,8 @@ export default function Hero() {
                     className="h-14 bg-slate-50 border-slate-200 text-slate-900 placeholder:text-slate-400 focus:ring-2 focus:ring-[#5b7cfd]/20 focus:border-[#5b7cfd] rounded-xl"
                   />
 
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     disabled={loading}
                     className="w-full h-14 font-bold text-white bg-[#0f172a] hover:bg-[#020617] transition-all rounded-xl shadow-lg"
                   >

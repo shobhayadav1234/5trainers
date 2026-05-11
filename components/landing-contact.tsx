@@ -46,7 +46,7 @@ const ContactSection = () => {
                 Master AI, Data Science, Cyber Security, and modern technologies
                 with industry experts. We build real careers through practical
                 training.
-              </p>
+              </p>  
             </div>
 
             {/* Features */}

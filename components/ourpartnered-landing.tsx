@@ -5,91 +5,76 @@ import { Atom } from "lucide-react";
 
 const Badge = () => {
   return (
-    <section className="w-full bg-white py-12 border-y border-slate-100 overflow-hidden">
+    <section className="relative w-full bg-white py-16 border-y border-slate-100 overflow-hidden">
+      {/* Decorative Background Element - Adds a "Premium" feel */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-[0.03] pointer-events-none">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#20c9b0_0%,_transparent_70%)]" />
+      </div>
 
-      {/* Container - Responsive width matching your premium layout */}
-      <div className="max-w-8xl mx-auto px-4 md:px-6">
-
+      {/* Container */}
+      <div className="max-w-8xl mx-auto px-4 md:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-
-          {/* Brand Header Section */}
-          <div className="flex items-center gap-4 shrink-0">
-            <div className="w-12 h-12 rounded-2xl bg-[#020817] border border-[#20c9b0]/20 flex items-center justify-center shadow-md">
-              <Atom size={28} className="text-[#20c9b0] animate-spin-slow" />
+          
+          {/* Brand Header Section with Highlighted Icon */}
+          <div className="flex items-center gap-5 shrink-0">
+            <div className="relative group">
+              {/* Outer Glow */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#20c9b0] to-teal-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+              <div className="relative w-14 h-14 rounded-2xl bg-[#020817] border border-[#20c9b0]/30 flex items-center justify-center shadow-xl">
+                <Atom size={32} className="text-[#20c9b0] animate-[spin_10s_linear_infinite]" />
+              </div>
             </div>
 
             <div className="flex flex-col">
-              <span className="text-[#20c9b0] uppercase tracking-[0.3em] text-[10px] font-black">
+              <span className="text-[#20c9b0] uppercase tracking-[0.4em] text-[11px] font-black mb-1">
                 Official
               </span>
-
-              <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight leading-none">
                 Our Industry{" "}
-                <span className="text-[#20c9b0]">
-                  Partners
+                <span className="relative inline-block">
+                  <span className="relative z-10 text-[#20c9b0]">Partners</span>
+                  {/* Subtle underline highlight */}
+                  <span className="absolute bottom-1 left-0 w-full h-2 bg-[#20c9b0]/10 -z-10"></span>
                 </span>
               </h2>
             </div>
           </div>
 
-          {/* BADGES WRAPPER - Original Colors, No Hover Effects */}
-          <div className="flex flex-nowrap items-center gap-10 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0 no-scrollbar">
-
-            {/* Amazon Ads */}
-            <div className="flex flex-col items-center gap-2 shrink-0">
-              <div className="h-20 flex items-center justify-center">
-                <img
-                  src="/Amazon_Ads_Verified-_Partner.png"
-                  alt="Amazon Ads"
-                  className="h-14 w-auto object-contain"
-                />
+          {/* BADGES WRAPPER - Increased spacing and subtle divider */}
+          <div className="flex flex-nowrap items-center gap-12 overflow-x-auto w-full lg:w-auto pb-4 lg:pb-0 no-scrollbar">
+            
+            {/* Individual Badge Styles */}
+            {[
+              { src: "/Amazon_Ads_Verified-_Partner.png", label: "Verified Partner", alt: "Amazon" },
+              { src: "/Google .jpg", label: "Certified", alt: "Google" },
+              { src: "/iso_banner.png", label: "Quality Standard", alt: "ISO" },
+              { src: "/meta-business-partner-badge.png", label: "Business Partner", alt: "Meta" }
+            ].map((partner, idx) => (
+              <div key={idx} className="flex flex-col items-center gap-3 shrink-0 group">
+                <div className="h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                  <img
+                    src={partner.src}
+                    alt={partner.alt}
+                    className="h-14 w-auto object-contain filter grayscale-[0.2] group-hover:grayscale-0 transition-all"
+                  />
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 group-hover:text-[#20c9b0] transition-colors">
+                  {partner.label}
+                </span>
               </div>
-              <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">Verified Partner</span>
-            </div>
+            ))}
 
-            {/* Google */}
-            <div className="flex flex-col items-center gap-2 shrink-0">
-              <div className="h-20 flex items-center justify-center">
-                <img
-                  src="/Google .jpg"
-                  alt="Google"
-                  className="h-14 w-auto object-contain"
-                />
-              </div>
-              <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 text-center">Certified</span>
-            </div>
-
-            {/* ISO Banner */}
-            <div className="flex flex-col items-center gap-2 shrink-0">
-              <div className="h-20 flex items-center justify-center">
-                <img
-                  src="/iso_banner.png"
-                  alt="ISO"
-                  className="h-16 w-auto object-contain"
-                />
-              </div>
-              <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 text-center">Quality Standard</span>
-            </div>
-
-            {/* Meta Badge */}
-            <div className="flex flex-col items-center gap-2 shrink-0">
-              <div className="h-20 flex items-center justify-center">
-                <img
-                  src="/meta-business-partner-badge.png"
-                  alt="Meta"
-                  className="h-14 w-auto object-contain"
-                />
-              </div>
-              <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 text-center">Business Partner</span>
-            </div>
-
-            {/* ISO 9001:2015 Information Box */}
-            <div className="flex items-center gap-4 border-l-4 border-[#1db954] pl-6 py-2 bg-slate-50 rounded-r-2xl shrink-0">
+            {/* ISO 9001:2015 Box - Made to look like a "Certificate" */}
+            <div className="flex items-center gap-5 border-l-2 border-slate-200 pl-8 py-3 shrink-0">
               <div className="flex flex-col">
-                <span className="text-[10px] font-black text-slate-400 uppercase tracking-tighter">Accredited Agency</span>
-                <div className="text-sm font-black text-slate-900 leading-tight">
+                <span className="text-[10px] font-bold text-[#1db954] uppercase tracking-widest mb-1">
+                  Accredited Agency
+                </span>
+                <div className="text-base font-black text-slate-900 leading-tight">
                   ISO 9001:2015 <br />
-                  <span className="text-[#1db954]">Certified Organization</span>
+                  <span className="bg-[#1db954]/10 text-[#1db954] px-1 rounded">
+                    Certified Organization
+                  </span>
                 </div>
               </div>
             </div>
@@ -98,15 +83,9 @@ const Badge = () => {
         </div>
       </div>
 
-      {/* Custom Styles for a clean, scrollbar-less look on mobile */}
       <style jsx>{`
-        .no-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .no-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>
     </section>
   );

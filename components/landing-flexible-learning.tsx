@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link"; 
 import {
   Calendar,
   Clock,
@@ -150,10 +151,12 @@ const FlexibleLearn = () => {
 
         {/* CTA */}
         <div className="text-center">
+           <Link href="/programs">
           <button className="inline-flex items-center gap-3 px-8 py-4 bg-[#14b8a6] hover:bg-[#0d9488] text-white font-bold rounded-2xl transition-all shadow-md">
             Explore Programs
             <ChevronRight size={18} />
           </button>
+          </Link>
         </div>
       </div>
     </section>
