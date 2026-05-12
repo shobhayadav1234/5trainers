@@ -120,7 +120,7 @@ const RelatedCourses: React.FC<RelatedCourseProps> = ({ courses }) => {
       {demoModalOpen && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4">
           <div className="bg-white rounded-3xl shadow-2xl w-full max-w-md p-8 relative">
-            
+
             <button
               onClick={() => setDemoModalOpen(false)}
               className="absolute top-4 right-4 text-3xl text-slate-500 hover:text-black"

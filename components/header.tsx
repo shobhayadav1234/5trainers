@@ -175,7 +175,7 @@ const navbarLinks: NavItem[] = [
     ],
   },
   {
-    name: "Blog",href: "/blogs"
+    name: "Blog", href: "/blogs"
   },
 
   {
