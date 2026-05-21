@@ -1,15 +1,17 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { connectDB } from "@/lib/mongodb";
 import Course from "@/models/Course";
 
 export async function GET(
-  req: Request,
-  { params }: { params: { slug: string } }
+  request: NextRequest,
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
     await connectDB();
 
-    const course = await Course.findOne({ slug: params.slug });
+    const { slug } = await params;
+
+    const course = await Course.findOne({ slug });
 
     if (!course) {
       return NextResponse.json(
@@ -21,7 +23,7 @@ export async function GET(
     return NextResponse.json(course);
   } catch (error) {
     return NextResponse.json(
-      { message: "Server Error", error },
+      { message: "Server Error" },
       { status: 500 }
     );
   }
