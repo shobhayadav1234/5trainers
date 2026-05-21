@@ -72,11 +72,11 @@ export default function PlacementReport({
   };
 
   return (
-    <section className="w-full bg-[#0b1020] py-16 px-4 md:px-10">
+    <section className="w-full py-16 px-4 md:px-10">
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
 
         {/* LEFT */}
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+        <div className="rounded-3xl border border-white/10  p-8 backdrop-blur-sm">
           <span className="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm font-medium text-cyan-300 bg-[#20c9b0]">
             {badge}
           </span>
@@ -138,7 +138,7 @@ export default function PlacementReport({
         <div className="flex flex-col gap-8">
 
           {/* MARKET */}
-          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 p-8">
+          <div className="rounded-3xl p-8">
             <span className="text-sm font-medium uppercase tracking-widest text-cyan-300">
               Current Job Market
             </span>
