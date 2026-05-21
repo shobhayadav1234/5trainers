@@ -65,24 +65,67 @@ export interface CourseContent {
   };
 
 
-  // --- ACERREDITATIONS & STATS INTEGRATED HERE ---
-  accreditations: {
-    name: string;
-    rating?: string;
-  }[];
+  // PLACEMENT REPORT SECTION
+  // =========================
+  placementSection: {
+    badge: string;
 
-  stats: {
-    openJobs: string;
-    avgPackage: string;
-    places: string;
+    title: {
+      line1: string;
+      highlight: string;
+    };
+
+    description: string;
+
+    extraDescription: string;
+
+    rating: {
+      academyName: string;
+      value: string;
+      reviewText: string;
+    };
+
+    actionButtons: {
+      title: string;
+      icon: string;
+      url?: string;
+    }[];
+
+    marketStats: {
+      title: string;
+      value: string;
+    }[];
+
+    form: {
+      heading: string;
+      description: string;
+      buttonText: string;
+    };
   };
 
-  // --- RELEVANT CTAS / ACTION CHANNELS ---
-  placementReportUrl?: string;
-  syllabusUrl?: string;
-  mockTestUrl?: string;
-  interviewQuestionsUrl?: string;
+    // TOP PLACEMENTS SECTION
+  // =========================
+  topPlacements: {
+    badge: string;
 
+    title: {
+      normal: string;
+      highlight: string;
+    };
+
+    description: string;
+
+    items: {
+      id: number;
+      name: string;
+      role: string;
+      company: string;
+      package: string;
+      experience: string;
+      year: string;
+      image: string;
+    }[];
+  };
 
   relatedCourses?: {
     title: string;

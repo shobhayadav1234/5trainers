@@ -157,7 +157,7 @@ const digitalMarketingTrainingCourse: CourseContent = {
     ],
   },
 
-   batches: {
+  batches: {
     heading: "Upcoming Live Batches",
     subHeading: "Reserve your spot in our next instructor-led interactive session.",
     items: [
@@ -199,6 +199,148 @@ const digitalMarketingTrainingCourse: CourseContent = {
         duration: "8 Weeks",
         instructor: { name: "Ganesh Dutt", role: "Java Full Stack Developer", initials: "GD" },
         seatsLeft: 4,
+      },
+    ],
+  },
+  placementSection: {
+    badge: "Industry-Ready Ecosystem",
+
+    title: {
+      line1: "Master Industry Skills",
+      highlight: "With Confidence",
+    },
+
+    description:
+      "Accelerate your career with practical, industry-aligned training programs. Learn from experienced mentors, work on real-world projects, build a professional portfolio, and gain the skills employers are actively looking for.",
+
+
+    extraDescription:
+      "Whether you're a student, fresher, or working professional, our training programs are designed to help you master new skills, earn industry-recognized certifications, prepare for interviews, and unlock exciting career opportunities across multiple domains.",
+
+    rating: {
+      academyName: "Mindweave Academy Rating",
+      value: "4.9/5",
+      reviewText: "Rated by 5,000+ learners",
+    },
+
+    actionButtons: [
+      {
+        title: "Placement Report",
+        icon: "file",
+        url: "/placement-report.pdf",
+      },
+      {
+        title: "Download Syllabus",
+        icon: "download",
+        url: "/appium-training-syllabus.pdf",
+      },
+      {
+        title: "Attempt Mock Test",
+        icon: "briefcase",
+        url: "/mock-test",
+      },
+      {
+        title: "Interview Questions",
+        icon: "message",
+        url: "/interview-questions",
+      },
+    ],
+
+    marketStats: [
+      {
+        title: "Get Jobs",
+        value: "1500+",
+      },
+      {
+        title: "Average Package",
+        value: "₹7.2 LPA",
+      },
+      {
+        title: "Placements",
+        value: "98%",
+      },
+    ],
+
+    form: {
+      heading: "Start Your Learning Journey",
+      description:
+        "Connect with our career experts and get a personalized learning roadmap tailored to your goals, experience level, and career aspirations.",
+      buttonText: "Claim Free Career Roadmap",
+    },
+  },
+
+
+  topPlacements: {
+    badge: "Success Stories",
+
+    title: {
+      normal: "Our Latest",
+      highlight: "Placements",
+    },
+
+    description:
+      "Our learners are successfully placed in leading IT companies with high salary packages and excellent career growth opportunities. Through hands-on API testing projects, real-time industry exposure, and interview preparation, students become confident and industry-ready professionals.",
+
+    items: [
+      {
+        id: 1,
+        name: "Rahul Sharma",
+        role: "API Testing Engineer",
+        company: "TCS",
+        package: "₹7.2 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/men1.jfif",
+      },
+      {
+        id: 2,
+        name: "Sneha Kapoor",
+        role: "Automation Tester",
+        company: "Infosys",
+        package: "₹6.8 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/women1.jpg",
+      },
+      {
+        id: 3,
+        name: "Aman Verma",
+        role: "QA Analyst",
+        company: "Wipro",
+        package: "₹5.9 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/men2.jpg",
+      },
+      {
+        id: 4,
+        name: "Priya Singh",
+        role: "Software Tester",
+        company: "Accenture",
+        package: "₹8.1 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/women2.jpg",
+      },
+      {
+        id: 5,
+        name: "Karan Malhotra",
+        role: "Automation Engineer",
+        company: "Capgemini",
+        package: "₹6.4 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/men3.jfif",
+      },
+      {
+        id: 6,
+        name: "Neha Yadav",
+        role: "Backend QA Engineer",
+        company: "Cognizant",
+        package: "₹7.5 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/women3.jpg",
       },
     ],
   },

@@ -27,7 +27,8 @@ import metaCourses from "@/content/courses/meta-ads/index";
 import googleCourses from "@/content/courses/google-ads/index";
 import UpcomingBatches from "@/components/upcoming-batches";
 import RelatedCourses from "@/components/relatedcourses";
-import Placement from "@/components/placement-report"
+import PlacementReport from "@/components/placement-report";
+import TopPlacement from "@/components/top-placement";
 
 
 
@@ -170,8 +171,29 @@ export default async function SubCoursePage({ params }: PageProps) {
         <RelatedCourses courses={course.relatedCourses} />
       )}
 
+
       {/* PLACEMENT REPORT SECTION */}
-      <Placement course={course} />
+      {course.placementSection && (
+        <PlacementReport
+          badge={course.placementSection.badge}
+          title={course.placementSection.title}
+          description={course.placementSection.description}
+          extraDescription={course.placementSection.extraDescription}
+          rating={course.placementSection.rating}
+          actionButtons={course.placementSection.actionButtons}
+          marketStats={course.placementSection.marketStats}
+          form={course.placementSection.form}
+        />
+      )}
+
+{course.topPlacements && (
+  <TopPlacement
+    badge={course.topPlacements.badge}
+    title={course.topPlacements.title}
+    description={course.topPlacements.description}
+    items={course.topPlacements.items}
+  />
+)}
 
       {/* TRAINING MODES (COURSES) */}
       <Courses

@@ -62,6 +62,66 @@ export interface CourseContent {
       colorTheme?: string; // Optional for UI colors
     }[];
   };
+  placementSection: {
+    badge: string;
+
+    title: {
+      line1: string;
+      highlight: string;
+    };
+
+    description: string;
+
+    extraDescription: string;
+
+    rating: {
+      academyName: string;
+      value: string;
+      reviewText: string;
+    };
+
+    actionButtons: {
+      title: string;
+      icon: string;
+      url?: string;
+    }[];
+
+    marketStats: {
+      title: string;
+      value: string;
+    }[];
+
+    form: {
+      heading: string;
+      description: string;
+      buttonText: string;
+    };
+  };
+
+  // TOP PLACEMENTS SECTION
+  // =========================
+  topPlacements: {
+    badge: string;
+
+    title: {
+      normal: string;
+      highlight: string;
+    };
+
+    description: string;
+
+    items: {
+      id: number;
+      name: string;
+      role: string;
+      company: string;
+      package: string;
+      experience: string;
+      year: string;
+      image: string;
+    }[];
+  };
+
 
   relatedCourses?: {
     title: string;

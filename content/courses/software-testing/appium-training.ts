@@ -63,12 +63,12 @@ const appiumtrainingCourse: CourseContent = {
       "Module 20: Performance & Compatibility Testing"
     ]
   },
-move: {
-  titleLine1: "Appium- Training Course",
-  titleLine2: "Training",
-  description:
-  "Master Appium Testing with hands-on mobile automation training. Learn Android & iOS app testing, cross-platform automation, Selenium integration, gesture handling, and real-world mobile testing projects using industry-standard tools and frameworks."
-},
+  move: {
+    titleLine1: "Appium- Training Course",
+    titleLine2: "Training",
+    description:
+      "Master Appium Testing with hands-on mobile automation training. Learn Android & iOS app testing, cross-platform automation, Selenium integration, gesture handling, and real-world mobile testing projects using industry-standard tools and frameworks."
+  },
 
 
   training: {
@@ -158,7 +158,7 @@ move: {
     ]
   },
 
-   batches: {
+  batches: {
     heading: "Upcoming Live Batches",
     subHeading: "Reserve your spot in our next instructor-led interactive session.",
     items: [
@@ -203,6 +203,152 @@ move: {
       },
     ],
   },
+
+  // ADD THIS ABOVE relatedCourses
+
+  placementSection: {
+    badge: "Industry-Ready Ecosystem",
+
+    title: {
+      line1: "Appium Training",
+      highlight: "Course Insights",
+    },
+
+    description:
+      "Master Mobile Automation Testing with Appium through hands-on training and real-world projects. Learn Android and iOS automation, Appium architecture, Selenium integration, TestNG, automation frameworks, mobile app validation, and end-to-end testing using industry-standard tools and best practices.",
+
+    extraDescription:
+      "This training program is designed for freshers, QA professionals, manual testers, automation engineers, and developers who want to build expertise in mobile test automation. Work on live mobile application projects, device and emulator testing, automation framework development, CI/CD integration, and industry-focused testing workflows used by leading software companies.",
+
+    rating: {
+      academyName: "Mindweave Academy Rating",
+      value: "4.9/5",
+      reviewText: "Rated by 5,000+ learners",
+    },
+
+    actionButtons: [
+      {
+        title: "Placement Report",
+        icon: "file",
+        url: "/placement-report.pdf",
+      },
+      {
+        title: "Download Syllabus",
+        icon: "download",
+        url: "/appium-training-syllabus.pdf",
+      },
+      {
+        title: "Attempt Mock Test",
+        icon: "briefcase",
+        url: "/mock-test",
+      },
+      {
+        title: "Interview Questions",
+        icon: "message",
+        url: "/interview-questions",
+      },
+    ],
+
+    marketStats: [
+      {
+        title: "Get Jobs",
+        value: "1500+",
+      },
+      {
+        title: "Average Package",
+        value: "₹7.2 LPA",
+      },
+      {
+        title: "Placements",
+        value: "98%",
+      },
+    ],
+
+    form: {
+      heading: "Fast-Track Your Career",
+      description:
+        "Fill out the form and get your personalized roadmap for becoming a successful Mobile Automation Testing Professional with Appium.",
+      buttonText: "Claim Free Career Roadmap",
+    },
+  },
+
+
+  topPlacements: {
+    badge: "Success Stories",
+
+    title: {
+      normal: "Our Latest",
+      highlight: "Placements",
+    },
+
+    description:
+      "Our learners are successfully placed in leading IT companies with high salary packages and excellent career growth opportunities. Through hands-on API testing projects, real-time industry exposure, and interview preparation, students become confident and industry-ready professionals.",
+
+    items: [
+      {
+        id: 1,
+        name: "Rahul Sharma",
+        role: "API Testing Engineer",
+        company: "TCS",
+        package: "₹7.2 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/men1.jfif",
+      },
+      {
+        id: 2,
+        name: "Sneha Kapoor",
+        role: "Automation Tester",
+        company: "Infosys",
+        package: "₹6.8 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/women1.jpg",
+      },
+      {
+        id: 3,
+        name: "Aman Verma",
+        role: "QA Analyst",
+        company: "Wipro",
+        package: "₹5.9 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/men2.jpg",
+      },
+      {
+        id: 4,
+        name: "Priya Singh",
+        role: "Software Tester",
+        company: "Accenture",
+        package: "₹8.1 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/women2.jpg",
+      },
+      {
+        id: 5,
+        name: "Karan Malhotra",
+        role: "Automation Engineer",
+        company: "Capgemini",
+        package: "₹6.4 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/men3.jfif",
+      },
+      {
+        id: 6,
+        name: "Neha Yadav",
+        role: "Backend QA Engineer",
+        company: "Cognizant",
+        package: "₹7.5 LPA",
+        experience: "Experienced Professional",
+        year: "2026",
+        image: "/women3.jpg",
+      },
+    ],
+  },
+
+
 
   // Inside agenticAIToolsAnalytics object:
   relatedCourses: [
