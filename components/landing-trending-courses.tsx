@@ -6,28 +6,40 @@ import { Star, Phone, ArrowRight, Sparkles } from "lucide-react";
 
 const courses = [
   {
-    img: "/basic.jpg",
+    img: "/software-testing-methods.jpg",
     rating: "175 Reviews",
-    title: "Ethical Hacking Course",
-    desc: "Ethical Hacking Training teaches legal hacking methods to identify vulnerabilities and secure systems.",
+    title: "Software Testing Course",
+    desc: "Software Testing Training teaches manual and automation testing techniques to identify bugs and ensure software quality.",
   },
   {
-    img: "/corse.jpg",
+    img: "/se.jpg",
     rating: "149 Reviews",
-    title: "Penetration Testing",
-    desc: "Covers network security, web app security, ethical hacking techniques and methodology.",
+    title: "Cyber Security & Ethical Hacking",
+    desc: "Learn network security, ethical hacking, vulnerability assessment, penetration testing, cyber defense strategies, and real-world security practices."
   },
   {
-    img: "/py.jpg",
+    img: "/datase.jpg",
     rating: "133 Reviews",
-    title: "Basic Networking",
-    desc: "Covers protocols, hardware, configurations and network connectivity basics.",
+    title: "Data Science Fundamentals",
+    desc: "Learn data analysis, data visualization, machine learning basics, Python programming, and real-world data-driven problem solving."
   },
   {
-    img: "/pe.jpg",
+    img: "/AI-text.jpg ",
     rating: "142 Reviews",
-    title: "Python Programming",
-    desc: "Learn variables, functions, OOP, modules and real-world programming skills.",
+    title: "Artificial Intelligence",
+    desc: "Learn AI concepts, machine learning, neural networks, automation, and real-world AI applications with hands-on projects.",
+  },
+  {
+    img: "/digital-marketing-with.jpg",
+    rating: "142 Reviews",
+    title: "Digital Marketing",
+    desc: "Learn SEO, social media marketing, Google Ads, content marketing, email marketing, and real-world digital marketing strategies.",
+  },
+  {
+    img: "/What-is-Full-stack-development.jpg",
+    rating: "142 Reviews",
+    title: "Full Stack Development",
+    desc: "Learn frontend and backend development using React, Node.js, databases, APIs, and build real-world web applications.",
   },
 ];
 

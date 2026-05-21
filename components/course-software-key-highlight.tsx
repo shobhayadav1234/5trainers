@@ -26,9 +26,9 @@ const Book = ({
 
   return (
     <div className="bg-[#fcfdfe] font-sans min-h-screen py-16 px-6 md:py-24 overflow-hidden relative">
-      
+
       <div className="container mx-auto max-w-6xl relative">
-        
+
         {/* MAIN CARD */}
         <motion.div
           className="bg-white p-8 md:p-16 rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.06)] border border-gray-100 relative z-10"

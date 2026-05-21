@@ -64,11 +64,11 @@ const apitestingCourse: CourseContent = {
   },
 
   move: {
-  titleLine1: "API Testing Course",
-  titleLine2: "Training",
-  description:
-    "Master API Testing with hands-on automation and manual testing training. Learn REST API validation, Postman, Swagger, automation frameworks, performance testing, security testing, and real-world API projects using industry-standard tools and best practices.",
-},
+    titleLine1: "API Testing Course",
+    titleLine2: "Training",
+    description:
+      "Master API Testing with hands-on automation and manual testing training. Learn REST API validation, Postman, Swagger, automation frameworks, performance testing, security testing, and real-world API projects using industry-standard tools and best practices.",
+  },
 
   training: {
     heading: "Modes of Training",
@@ -156,7 +156,7 @@ const apitestingCourse: CourseContent = {
       }
     ]
   },
-   batches: {
+  batches: {
     heading: "Upcoming Live Batches",
     subHeading: "Reserve your spot in our next instructor-led interactive session.",
     items: [
@@ -201,6 +201,45 @@ const apitestingCourse: CourseContent = {
       },
     ],
   },
+
+  
+    // --- ACCREDITATIONS ---
+    accreditations: [
+      {
+        name: "ISO 9001:2015 Certified",
+        rating: "4.9",
+      },
+      {
+        name: "NASSCOM Associated Member",
+        rating: "4.8",
+      },
+      {
+        name: "100% Practical Training",
+        rating: "4.9",
+      },
+    ],
+
+    // --- MARKET PERFORMANCE TRACKER ---
+    stats: {
+      openJobs: "12,400+",
+      avgPackage: "6.5 LPA",
+      places: "94% Ratio",
+    },
+
+    // --- ACTION BUTTON LINKS ---
+    placementReportUrl:
+      "/docs/api-testing-placement-report.pdf",
+
+    syllabusUrl:
+      "/docs/api-testing-syllabus.pdf",
+
+    mockTestUrl:
+      "/assessments/api-testing-mock",
+
+    interviewQuestionsUrl:
+      "/resources/api-testing-interview-questions",
+
+   
 
   // Inside agenticAIToolsAnalytics object:
   relatedCourses: [

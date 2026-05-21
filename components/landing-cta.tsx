@@ -126,6 +126,21 @@ export default function Center() {
                 <option>Cyber Security</option>
                 <option>Data Science</option>
                 <option>AI & Machine Learning</option>
+                <option>DevOps Engineering</option>
+                <option>Software Testing</option>
+                <option>UI/UX Design</option>
+                <option>Graphic Designing</option>
+                <option>Web Development</option>
+                <option>App Development</option>
+                <option>Cloud Computing</option>
+                <option>Python Programming</option>
+                <option>Java Development</option>
+                <option>React JS Development</option>
+                <option>Node JS Development</option>
+                <option>Blockchain Development</option>
+                <option>Ethical Hacking</option>
+                <option>Business Analytics</option>
+                <option>Computer Networking</option>
               </select>
 
               {/* Submit */}

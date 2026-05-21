@@ -14,12 +14,12 @@ import type { CarouselApi } from "@/components/ui/carousel";
 /* ================= DATA ================= */
 
 const courses = [
-  { img: "/kali.jpg" },
-  { img: "/ethnical.jpg" },
-  { img: "/python.jpg" },
-  { img: "/mobile.jpg" },
-  { img: "/net.jpg" },
-  { img: "/mobile.jpg" },
+  { img: "/ai.png" },
+  { img: "/digital-marketing-business.jpg" },
+  { img: "/Software-Testing.jpg" },
+  { img: "/graphic-design-service-500x500.jpg" },
+  { img: "/What-Is-Social-Media-2.0-Simple-Explanation-And-Examples.jpg" },
+  { img: "/Difference-Between-Cyber-Security-and-Information-Security.jpg " },
 ];
 
 /* ================= COMPONENT ================= */

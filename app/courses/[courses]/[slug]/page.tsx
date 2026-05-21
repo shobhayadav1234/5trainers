@@ -27,6 +27,7 @@ import metaCourses from "@/content/courses/meta-ads/index";
 import googleCourses from "@/content/courses/google-ads/index";
 import UpcomingBatches from "@/components/upcoming-batches";
 import RelatedCourses from "@/components/relatedcourses";
+import Placement from "@/components/placement-report"
 
 
 
@@ -134,7 +135,7 @@ export default async function SubCoursePage({ params }: PageProps) {
 
       {/* BANNER */}
       <Move
-        titleLine1={course.move?.titleLine1 || ""}  
+        titleLine1={course.move?.titleLine1 || ""}
         titleLine2={course.move?.titleLine2 || ""}
         description={course.move?.description || ""}
       />
@@ -169,6 +170,8 @@ export default async function SubCoursePage({ params }: PageProps) {
         <RelatedCourses courses={course.relatedCourses} />
       )}
 
+      {/* PLACEMENT REPORT SECTION */}
+      <Placement course={course} />
 
       {/* TRAINING MODES (COURSES) */}
       <Courses

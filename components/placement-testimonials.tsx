@@ -32,13 +32,13 @@ const reviewsData = [
     rating: 5,
     text: "The training environment at Mindweave Academy is excellent. Mentors are supportive and placement assistance is great.",
   },
-   {
+  {
     name: "Rahul Sain",
     image: "/employ5.jpg",
     rating: 5,
     text: "This AutoCAD course was incredibly beneficial. It offered a blend of theoretical knowledge and practical exercises.",
   },
-   {
+  {
     name: "Rahul Sain",
     image: "/employ5.jpg",
     rating: 5,
@@ -122,7 +122,7 @@ const Review = () => {
                       />
                     </div>
                   </div>
-                    
+
                   {/* Button */}
                   <div className="mt-4 text-right">
                     <button className="text-[#FFB81C] font-bold text-sm hover:underline">

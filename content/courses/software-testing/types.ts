@@ -64,6 +64,26 @@ export interface CourseContent {
     }[];
   };
 
+
+  // --- ACERREDITATIONS & STATS INTEGRATED HERE ---
+  accreditations: {
+    name: string;
+    rating?: string;
+  }[];
+
+  stats: {
+    openJobs: string;
+    avgPackage: string;
+    places: string;
+  };
+
+  // --- RELEVANT CTAS / ACTION CHANNELS ---
+  placementReportUrl?: string;
+  syllabusUrl?: string;
+  mockTestUrl?: string;
+  interviewQuestionsUrl?: string;
+
+
   relatedCourses?: {
     title: string;
     image: string;
