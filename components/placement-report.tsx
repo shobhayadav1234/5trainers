@@ -77,14 +77,14 @@ export default function PlacementReport({
 
         {/* LEFT */}
         <div className="rounded-3xl border border-white/10  p-8 backdrop-blur-sm">
-          <span className="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm font-medium text-cyan-300 bg-[#20c9b0]">
+          <span className="mb-4 inline-flex rounded-full  px-4 py-1 text-sm font-medium text-black bg-[#20c9b0]">
             {badge}
           </span>
 
           <h2 className="text-4xl font-bold leading-tight text-black md:text-5xl">
             {title.line1}
             <br />
-            <span className="text-cyan-400">{title.highlight}</span>
+            <span className="text-[#20c9b0]">{title.highlight}</span>
           </h2>
 
           <p className="mt-6 text-base leading-8 text-black-300">
@@ -139,7 +139,7 @@ export default function PlacementReport({
 
           {/* MARKET */}
           <div className="rounded-3xl p-8">
-            <span className="text-sm font-medium uppercase tracking-widest text-cyan-300">
+            <span className="text-sm font-medium uppercase tracking-widest text-[#20c9b0]">
               Current Job Market
             </span>
 
