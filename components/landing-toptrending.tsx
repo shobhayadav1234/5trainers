@@ -113,7 +113,7 @@ const Trending: React.FC = () => {
 
   return (
     <>
-      <section className="py-24 px-4 font-sans bg-[#f8fafc] w-full">
+      <section className="py-16 px-4 font-sans bg-[#f8fafc] w-full">
         <div className="max-w-7xl mx-auto">
 
           {/* Badge */}
@@ -142,11 +142,10 @@ const Trending: React.FC = () => {
               <button
                 key={cat}
                 onClick={() => setActiveTab(cat)}
-                className={`px-5 py-2 rounded-xl font-bold text-xs uppercase tracking-widest transition-all border ${
-                  activeTab === cat
-                    ? "bg-[#0f172a] text-white border-[#0f172a]"
-                    : "bg-white text-slate-600 border-slate-200 hover:border-[#20c9b0]"
-                }`}
+                className={`px-5 py-2 rounded-xl font-bold text-xs uppercase tracking-widest transition-all border ${activeTab === cat
+                  ? "bg-[#0f172a] text-white border-[#0f172a]"
+                  : "bg-white text-slate-600 border-slate-200 hover:border-[#20c9b0]"
+                  }`}
               >
                 {cat}
               </button>

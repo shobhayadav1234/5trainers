@@ -220,7 +220,7 @@ export default function Header() {
             <img
               src="/mind.png"
               alt="Logo"
-              className="h-16 w-auto object-contain cursor-pointer"
+              className="h-12 sm:h-16 w-auto object-contain cursor-pointer"
             />
           </Link>
 
@@ -238,7 +238,6 @@ export default function Header() {
                       <NavigationMenuContent>
                         {item.name === "Courses" ? (
                           <div className="flex w-[650px] min-h-[450px] bg-popover rounded-md shadow-xl border overflow-hidden">
-
                             {/* Left Side: Main Course Categories */}
                             <div className="w-[280px] border-r bg-muted/10 p-2 overflow-y-auto max-h-[500px] custom-scrollbar">
                               {(item.dropdown as CourseItem[]).map((course, idx) => (
@@ -252,13 +251,7 @@ export default function Header() {
                                     }`}
                                 >
                                   {course.name}
-                                  <span
-                                    className={
-                                      activeCourse === course.name
-                                        ? "opacity-100"
-                                        : "opacity-30"
-                                    }
-                                  >
+                                  <span className={activeCourse === course.name ? "opacity-100" : "opacity-30"}>
                                     →
                                   </span>
                                 </Link>
@@ -324,30 +317,51 @@ export default function Header() {
             </NavigationMenu>
           </div>
 
-          {/* MOBILE BUTTON */}
-          <button className="md:hidden p-2" onClick={() => setOpen(!open)}>
-            {open ? <X size={28} /> : <Menu size={28} />}
+          {/* DESKTOP AUTH BUTTONS */}
+          <div className="hidden md:flex items-center gap-3">
+            <Link
+              href="/signin"
+              className="px-5 py-2 border border-primary rounded-lg text-primary font-medium hover:bg-primary hover:text-black transition"
+            >
+              Sign In
+            </Link>
+
+            <Link
+              href="/register"
+              className="px-5 py-2 bg-primary text-white rounded-lg font-medium hover:opacity-90 transition"
+            >
+              Register
+            </Link>
+          </div>
+
+          {/* MOBILE HAMBURGER BUTTON */}
+          <button
+            className="md:hidden p-2 text-foreground focus:outline-none"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle Menu"
+          >
+            {open ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
 
-        {/* MOBILE MENU */}
+        {/* MOBILE MENU DRAWER */}
         {open && (
-          <div className="md:hidden w-full border-t bg-background px-4 pb-8 absolute top-full left-0 shadow-2xl max-h-[85vh] overflow-y-auto">
-            <div className="flex flex-col gap-2 mt-6">
+          <div className="md:hidden w-full border-t bg-background px-5 pb-8 absolute top-full left-0 shadow-2xl max-h-[calc(100vh-80px)] overflow-y-auto animate-in fade-in slide-in-from-top-4 duration-200">
+            <div className="flex flex-col gap-1 mt-4">
               {navbarLinks.map((item, i) =>
                 item.dropdown ? (
-                  <div key={i} className="border-b border-muted py-2">
+                  <div key={i} className="border-b border-muted/60 py-1">
                     <button
                       onClick={() =>
                         setMobileSubOpen(
                           mobileSubOpen === item.name ? null : item.name
                         )
                       }
-                      className="flex justify-between items-center w-full font-bold text-lg text-foreground py-2"
+                      className="flex justify-between items-center w-full font-semibold text-base text-foreground py-3 context-none"
                     >
                       {item.name}
                       <span
-                        className={`transform transition-transform ${mobileSubOpen === item.name ? "rotate-180" : ""
+                        className={`text-xs transform transition-transform duration-200 ${mobileSubOpen === item.name ? "rotate-180" : ""
                           }`}
                       >
                         ▼
@@ -355,28 +369,27 @@ export default function Header() {
                     </button>
 
                     {mobileSubOpen === item.name && (
-                      <div className="ml-4 mt-2 space-y-4 animate-in slide-in-from-top-2">
+                      <div className="ml-3 mb-2 space-y-3 animate-in slide-in-from-top-2 duration-200">
                         {item.name === "Courses" ? (
                           (item.dropdown as CourseItem[]).map((course, idx) => (
-                            <div key={idx} className="mb-4">
-
-                              {/* Main Course Page */}
+                            <div key={idx} className="mt-2">
+                              {/* Main Course Link */}
                               <Link
                                 href={course.href || "#"}
                                 onClick={() => setOpen(false)}
-                                className="block font-semibold text-primary text-sm mb-2 hover:underline"
+                                className="block font-medium text-primary text-sm mb-1.5 hover:underline"
                               >
                                 {course.name}
                               </Link>
 
                               {/* Nested Subcourses */}
-                              <div className="ml-3 space-y-2 border-l-2 border-muted pl-3">
+                              <div className="ml-2.5 space-y-2 border-l border-muted-foreground/30 pl-3">
                                 {course.subCourses?.map((sub, sIdx) => (
                                   <Link
                                     key={sIdx}
                                     href={sub.href}
                                     onClick={() => setOpen(false)}
-                                    className="block text-[13px] text-muted-foreground hover:text-primary"
+                                    className="block text-[13px] text-muted-foreground hover:text-primary py-0.5"
                                   >
                                     {sub.name}
                                   </Link>
@@ -390,7 +403,7 @@ export default function Header() {
                               key={idx}
                               href={sub.href}
                               onClick={() => setOpen(false)}
-                              className="block text-[15px] py-1 text-muted-foreground"
+                              className="block text-sm py-1.5 text-muted-foreground hover:text-primary"
                             >
                               {sub.name}
                             </Link>
@@ -404,12 +417,32 @@ export default function Header() {
                     key={i}
                     href={item.href || "#"}
                     onClick={() => setOpen(false)}
-                    className="text-lg font-semibold border-b border-muted py-4 hover:text-primary"
+                    className="text-base font-semibold border-b border-muted/60 py-3.5 hover:text-primary transition-colors"
                   >
                     {item.name}
                   </Link>
                 )
               )}
+
+              {/* RESPONSIVE MOBILE AUTH BUTTONS */}
+              <div className="flex flex-col gap-3 mt-6 pt-2">
+                <Link
+                  href="/signin"
+                  onClick={() => setOpen(false)}
+                  className="w-full text-center py-3 border border-primary rounded-xl text-primary font-medium hover:bg-primary hover:text-black transition text-sm"
+                >
+                  Sign In
+                </Link>
+
+                <Link
+                  href="/register"
+                  onClick={() => setOpen(false)}
+                  className="w-full text-center py-3 bg-primary text-white rounded-xl font-medium hover:opacity-90 transition text-sm shadow-sm"
+                >
+                  Register
+                </Link>
+              </div>
+
             </div>
           </div>
         )}

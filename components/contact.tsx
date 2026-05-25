@@ -24,7 +24,7 @@ const Contact = () => {
                                 <MapPin className="text-[#20C9B0] mt-1 shrink-0" size={20} />
                                 <p>
                                     Mindweave Academy Institute,<br />
-                                    Delhi<br />  
+                                    Delhi<br />
                                 </p>
                             </div>
                             <div className="flex items-center gap-4 text-gray-300">
@@ -81,11 +81,55 @@ const Contact = () => {
                             />
                             <select className="p-3 bg-white text-black rounded-sm outline-none w-full appearance-none">
                                 <option>Select Course</option>
-                                <option>Cyber Security</option>
-                                <option>Web Development</option>
+
                                 <option>Software Testing</option>
-                                <option>python</option>
-                                <option>fullstack Development</option>
+                                <option>Appium Training</option>
+
+                                <option>Full Stack QA with AI</option>
+                                <option>Selenium (Java)</option>
+
+                                <option>Web Development</option>
+
+                                <option>MEAN Full Stack Development</option>
+
+                                <option>Python Full Stack with AI</option>
+                                <option>Python + SQL + Django</option>
+                                <option>Python Full Stack Data Scientist</option>
+
+                                <option>Cyber Security</option>
+
+                                <option>Diploma in Ethical Hacking & Cyber Security</option>
+
+                                <option>Data Science</option>
+                                <option>Data Science Professional Training</option>
+
+                                <option>Artificial Intelligence (AI)</option>
+                                <option>Generative AI</option>
+
+
+                                <option>Data Analytics</option>
+
+                                <option>Business Analytics</option>
+
+                                <option>Digital Marketing</option>
+
+                                <option>Google Ads Professional</option>
+                                <option>Meta Ads Professional</option>
+
+                                <option>DevOps</option>
+                                <option>DevOps Training</option>
+                                <option>DevOps for Professionals</option>
+
+                                <option>Networking</option>
+
+
+                                <option>Cloud Computing</option>
+                                <option>Cloud Infrastructure</option>
+
+
+                                <option>Social Media Marketing</option>
+                                <option>Advanced Excel with AI</option>
+                                <option>Influencer Marketing</option>
                             </select>
 
                             <div className="flex flex-col md:flex-row gap-4">

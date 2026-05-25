@@ -14,7 +14,7 @@ import {
 
 const FlexibleLearn = () => {
   return (
-    <section className="py-20 bg-white text-slate-900 font-sans">
+    <section className="py-14 bg-white text-slate-900 font-sans">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         
         {/* Header */}

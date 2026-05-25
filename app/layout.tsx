@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/components/header"; 
+import Header from "@/components/header";
 import "./globals.css";
 import Footer from "@/components/footer";
 
@@ -25,17 +25,17 @@ export default function RootLayout({
       className={`${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
-        
-        
+
         <Header />
-        
 
         {/* Page content */}
         <main className="flex-1">
           {children}
         </main>
-<Footer/>
+        <Footer />
       </body>
     </html>
   );
 }
+
+

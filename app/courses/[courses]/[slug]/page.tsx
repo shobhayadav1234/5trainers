@@ -186,14 +186,14 @@ export default async function SubCoursePage({ params }: PageProps) {
         />
       )}
 
-{course.topPlacements && (
-  <TopPlacement
-    badge={course.topPlacements.badge}
-    title={course.topPlacements.title}
-    description={course.topPlacements.description}
-    items={course.topPlacements.items}
-  />
-)}
+      {course.topPlacements && (
+        <TopPlacement
+          badge={course.topPlacements.badge}
+          title={course.topPlacements.title}
+          description={course.topPlacements.description}
+          items={course.topPlacements.items}
+        />
+      )}
 
       {/* TRAINING MODES (COURSES) */}
       <Courses

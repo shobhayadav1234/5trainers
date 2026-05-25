@@ -18,10 +18,6 @@ interface PageProps {
   }>;
 }
 
-/* ==============================
-   BACKEND FETCH ONLY FOR
-   HERO + WRITE SECTION
-============================== */
 async function getCourseFromBackend(slug: string) {
   try {
     const res = await fetch(
@@ -31,19 +27,22 @@ async function getCourseFromBackend(slug: string) {
       }
     );
 
-    if (!res.ok) return null;
+    const json = await res.json();
 
-    return res.json();
+    return json.data;
+
+
   } catch (error) {
     console.error("Backend fetch failed:", error);
     return null;
   }
+
 }
 
 export default async function CoursePage({ params }: PageProps) {
-  /* ==============================
-     NEXT JS 15 PARAMS FIX
-  ============================== */
+
+
+
   const resolvedParams = await params;
   const slug = resolvedParams?.courses;
 
@@ -51,104 +50,54 @@ export default async function CoursePage({ params }: PageProps) {
     notFound();
   }
 
-  /* ==============================
-     NORMALIZE SLUG
-  ============================== */
+
   const normalizedSlug = slug.trim().toLowerCase();
 
-  /* ==============================
-     STATIC DATA FOR OTHER SECTIONS
-  ============================== */
-  const staticCourse = courses[normalizedSlug];
-
-  if (!staticCourse) {
-    console.error(`Course not found for slug: ${normalizedSlug}`);
-    notFound();
-  }
-
-  /* ==============================
-     BACKEND DATA FOR HERO + WRITE
-  ============================== */
   const backendCourse = await getCourseFromBackend(normalizedSlug);
+  console.log("Backend Course:", backendCourse);
 
   return (
     <>
-      {/* HERO SECTION (Backend Priority) */}
       <HeroSection
-        title={backendCourse?.title || staticCourse.hero?.title || ""}
-        description={
-          backendCourse?.description || staticCourse.hero?.description || ""
-        }
-        image={backendCourse?.image || staticCourse.hero?.image || ""}
-        category={backendCourse?.category || staticCourse.hero?.category || ""}
+        title={backendCourse?.hero?.title || ""}
+        description={backendCourse?.hero?.description || ""}
+        image={backendCourse?.hero?.image || ""}
+        category={backendCourse?.hero?.category || ""}
       />
 
-      {/* WRITE SECTION (Backend Priority) */}
       <Write
-        courseName={
-          backendCourse?.courseName || staticCourse.write?.courseName || ""
-        }
-        aboutTitle={
-          backendCourse?.aboutTitle || staticCourse.write?.aboutTitle || ""
-        }
-        aboutPara1={
-          backendCourse?.aboutPara1 || staticCourse.write?.aboutPara1 || ""
-        }
-        aboutPara2={
-          backendCourse?.aboutPara2 || staticCourse.write?.aboutPara2 || ""
-        }
-        aboutPara3={
-          backendCourse?.aboutPara3 || staticCourse.write?.aboutPara3 || ""
-        }
-        learningObjectives={
-          backendCourse?.learningObjectives ||
-          staticCourse.write?.learningObjectives ||
-          []
-        }
-        requirements={
-          backendCourse?.requirements ||
-          staticCourse.write?.requirements ||
-          []
-        }
-        modules={
-          backendCourse?.modules || staticCourse.write?.modules || []
-        }
+        courseName={backendCourse?.write?.courseName || ""}
+        aboutTitle={backendCourse?.write?.aboutTitle || ""}
+        aboutPara1={backendCourse?.write?.aboutPara1 || ""}
+        aboutPara2={backendCourse?.write?.aboutPara2 || ""}
+        aboutPara3={backendCourse?.write?.aboutPara3 || ""}
+        learningObjectives={backendCourse?.write?.learningObjectives || []}
+        requirements={backendCourse?.write?.requirements || []}
+        modules={backendCourse?.write?.modules || []}
       />
 
-      {/* BANNER SECTION (Static) */}
-      <Move
-        titleLine1={staticCourse.move?.titleLine1 || ""}
-        titleLine2={staticCourse.move?.titleLine2 || ""} 
-        description={staticCourse.move?.description || ""}
-      />
 
-      {/* TRAINING MODES (Static) */}
       <Courses
-        heading={staticCourse.training?.heading || ""}
-        subHeading={staticCourse.training?.subHeading || ""}
-        trainingModes={staticCourse.training?.trainingModes || []}
-        targetAudience={staticCourse.training?.targetAudience || []}
+        heading={backendCourse?.training?.heading || ""}
+        subHeading={backendCourse?.training?.subHeading || ""}
+        trainingModes={backendCourse?.training?.trainingModes || []}
+        targetAudience={backendCourse?.training?.targetAudience || []}
       />
 
-      {/* COURSE OVERVIEW (Static) */}
       <Book
-        title={staticCourse.book?.title || ""}
-        paragraphs={staticCourse.book?.paragraphs || []}
-        highlights={staticCourse.book?.highlights || []}
+        title={backendCourse?.book?.title || ""}
+        paragraphs={backendCourse?.book?.paragraphs || []}
+        highlights={backendCourse?.book?.highlights || []}
       />
 
-      {/* FAQ (Static) */}
       <Drop
-        title={staticCourse.faq?.title || ""}
-        faqs={staticCourse.faq?.faqs || []}
+        title={backendCourse?.faq?.title || ""}
+        faqs={backendCourse?.faq?.faqs || []}
       />
 
-      {/* TESTIMONIALS (Static) */}
       <Testimonials
-        title={
-          staticCourse.testimonials?.title || "Student Testimonials"
-        }
-        testimonials={staticCourse.testimonials?.items || []}
+        title={backendCourse?.testimonials?.title || "Student Testimonials"}
+        testimonials={backendCourse?.testimonials?.items || []}
       />
     </>
   );

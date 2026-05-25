@@ -186,7 +186,7 @@ const Blogs = () => {
 
                 <div className="relative z-10 text-center px-4">
                     <h1 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter">
-                         Mindweave Academy<span className="text-[#FFB81C]">Expert Blog</span>
+                        Mindweave Academy<span className="text-[#FFB81C]">Expert Blog</span>
                     </h1>
 
                     <p className="text-gray-300 mt-4 text-lg max-w-2xl mx-auto">

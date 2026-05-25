@@ -17,7 +17,7 @@ const PlacementPartners = () => {
   const scrollLogos = [...logos, ...logos, ...logos];
 
   return (
-    <section className="py-24 bg-white overflow-hidden border-t border-slate-100">
+    <section className="py-20 bg-white overflow-hidden border-t border-slate-100">
       <div className="max-w-8xl mx-auto px-6">
 
         {/* --- Header Section --- */}
@@ -38,8 +38,8 @@ const PlacementPartners = () => {
         {/* --- Smooth Auto-Scrolling Marquee --- */}
         <div className="relative group">
           {/* Clean Edge Fade */}
-          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white via-white/90 to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white via-white/90 to-transparent z-10" />
+          <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white via-white/90 to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white via-white/90 to-transparent z-10" />
 
           <div className="flex overflow-hidden">
             <div className="flex animate-marquee-continuous whitespace-nowrap py-12 items-center">

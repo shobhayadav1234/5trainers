@@ -14,7 +14,7 @@ const Badge = () => {
       {/* Container */}
       <div className="max-w-8xl mx-auto px-4 md:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          
+
           {/* Brand Header Section with Highlighted Icon */}
           <div className="flex items-center gap-5 shrink-0">
             <div className="relative group">
@@ -42,7 +42,7 @@ const Badge = () => {
 
           {/* BADGES WRAPPER - Increased spacing and subtle divider */}
           <div className="flex flex-nowrap items-center gap-12 overflow-x-auto w-full lg:w-auto pb-4 lg:pb-0 no-scrollbar">
-            
+
             {/* Individual Badge Styles */}
             {[
               { src: "/Amazon_Ads_Verified-_Partner.png", label: "Verified Partner", alt: "Amazon" },

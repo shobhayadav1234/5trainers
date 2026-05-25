@@ -62,7 +62,7 @@ const Move = ({
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <motion.h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+            <motion.h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
               
               <motion.span variants={leftMoveVariants} className="block">
                 {titleLine1}

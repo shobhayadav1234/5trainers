@@ -113,9 +113,7 @@ export default function Hero() {
                 </Button>
               </Link>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-[#5b7cfd]/10 border border-[#5b7cfd]/20 flex items-center justify-center">
-                  <Phone size={18} className="text-[#5b7cfd]" />
-                </div>
+               
                 <div className="bg-[#f4c430] px-5 py-3 rounded-xl shadow-md">
                   <span className="text-lg font-bold text-black">+91 84474 04770</span>
                 </div>

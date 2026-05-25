@@ -50,7 +50,7 @@ const trainers = [
 
 export default function OurTrainers() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         
         {/* Header */}

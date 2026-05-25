@@ -144,7 +144,7 @@ export default function PlacementReport({
             </span>
 
             <h3 className="mt-3 text-3xl font-bold text-black">
-            Unlock New Career Opportunities
+              Unlock New Career Opportunities
             </h3>
 
             <div className="mt-8 grid gap-5 sm:grid-cols-3">

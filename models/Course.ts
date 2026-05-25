@@ -1,23 +1,44 @@
-import mongoose, { Schema, models } from "mongoose";
+import mongoose, { Schema, model, models } from "mongoose";
 
-const CourseSchema = new Schema({
-  slug: { type: String, required: true, unique: true },
+const CourseSchema = new Schema(
+  {
+    slug: {
+      type: String,
+      required: true,
+      unique: true,
+    },
 
-  title: String,
-  description: String,
-  image: String,
-  category: String,
+    hero: {
+      type: Object,
+      default: {},
+    },
 
-  aboutTitle: String,
-  aboutPara1: String,
-  aboutPara2: String,
-  aboutPara3: String,
+    write: {
+      type: Object,
+      default: {},
+    },
 
-  learningObjectives: [String],
-  modules: [String],
-  requirements: [String],
+    training: {
+      type: Object,
+      default: {},
+    },
 
-  courseName: String,
-});
+    book: {
+      type: Object,
+      default: {},
+    },
 
-export default models.Course || mongoose.model("Course", CourseSchema); 
+    faq: {
+      type: Object,
+      default: {},
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
+
+const Course =
+  models.Course || model("Course", CourseSchema);
+
+export default Course;

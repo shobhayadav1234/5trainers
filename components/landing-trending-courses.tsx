@@ -51,12 +51,13 @@ export default function TrendingCourses() {
         {/* HEADER - Mindweave Academy Theme */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-16 border-b border-slate-100 pb-8">
 
-          <div>
-            <div className="flex items-center gap-2 text-[#20c9b0] font-bold text-xs uppercase tracking-[0.2em] mb-2">
-              <Sparkles size={14} /> Career Growth
+          <div className="text-center lg:text-left">
+            <div className="mb-2 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#20c9b0] lg:justify-start">
+              <Sparkles size={14} />
+              Career Growth
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-slate-900">
+            <h2 className="text-4xl font-black tracking-tighter text-slate-900 md:text-5xl">
               Trending <span className="text-[#20c9b0]">Mindweave Courses</span>
             </h2>
           </div>
