@@ -46,7 +46,7 @@ export default function Hero() {
   return (
     <>
       {/* TOP STRIP */}
-      <div className="bg-[#020817] text-slate-300 text-[13px] py-2.5 border-b border-[#20c9b0]/10">
+      <div className="bg-[#020817] text-white text-[13px] py-2.5 border-b border-[#20c9b0]/10">
         <div className="max-w-8xl mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center gap-6 flex-wrap">
             <a
