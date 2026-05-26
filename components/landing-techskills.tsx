@@ -32,7 +32,7 @@ export default function Content() {
         {/* Paragraph */}
         <div className="flex justify-center">
           <p className="mt-10 text-slate-400 text-lg md:text-xl leading-relaxed max-w-3xl font-medium">
-            Transform your career through <span className="text-white">Mindweave Academy’s</span>
+            Transform your career through <span className="text-white">Mindweave Academy’s     </span>
             expert-led programs in Data Science, AI, Cyber Security, Cloud, and next-generation technologies.
             Our industry-focused training equips students with practical knowledge, live project experience,
             and job-ready expertise to succeed in today’s digital world.

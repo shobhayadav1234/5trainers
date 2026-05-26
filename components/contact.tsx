@@ -29,7 +29,7 @@ const Contact = () => {
                             </div>
                             <div className="flex items-center gap-4 text-gray-300">
                                 <Mail className="text-[#20C9B0] shrink-0" size={20} />
-                                <p>info@Mindweave Academy.com</p>
+                                <p>info@Mindweaveacademy.com</p>
                             </div>
                             <div className="flex items-center gap-4 text-gray-300">
                                 <Phone className="text-[#20C9B0] shrink-0" size={20} />

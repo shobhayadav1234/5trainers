@@ -15,7 +15,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
-          
+
           {/* Brand Section */}
           <div className="lg:col-span-4 space-y-8">
             <img
@@ -31,17 +31,6 @@ export default function Footer() {
               Digital Skills.
             </p>
 
-            {/* Social Icons */}
-            <div className="flex gap-4">
-              {["In", "Fb", "X"].map((social, i) => (
-                <div
-                  key={i}
-                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:border-[#20c9b0] hover:bg-[#20c9b0] transition-all cursor-pointer"
-                >
-                  <span className="text-xs font-bold">{social}</span>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Courses Section */}
@@ -129,16 +118,14 @@ export default function Footer() {
                 >
                   <Mail size={18} className="text-[#20c9b0]" />
                   <span className="text-sm font-bold break-all">
-                    info@mindweaveacademy.com
+                    info@mindweave.com
                   </span>
                 </a>
 
                 <div className="flex items-start gap-4 text-slate-300">
                   <MapPin size={18} className="text-[#20c9b0] shrink-0" />
                   <span className="text-xs font-medium leading-relaxed">
-                    Mindweave Academy Institute,
-                    <br />
-                    Delhi
+                    Mindweave Academy Institute Delhi
                   </span>
                 </div>
               </div>

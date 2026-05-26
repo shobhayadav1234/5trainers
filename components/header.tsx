@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -334,6 +335,8 @@ export default function Header() {
             </Link>
           </div>
 
+          
+
           {/* MOBILE HAMBURGER BUTTON */}
           <button
             className="md:hidden p-2 text-foreground focus:outline-none"
@@ -447,7 +450,9 @@ export default function Header() {
           </div>
         )}
       </nav>
+      
     </>
+    
   );
 
 

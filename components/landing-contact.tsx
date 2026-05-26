@@ -13,7 +13,8 @@ import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
-  FaLinkedinIn, 
+  FaLinkedinIn,
+  FaPinterestP,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -26,7 +27,7 @@ const ContactSection = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
+
           {/* LEFT SIDE */}
           <div className="space-y-10">
             <div>
@@ -46,7 +47,7 @@ const ContactSection = () => {
                 Master AI, Data Science, Cyber Security, and modern technologies
                 with industry experts. We build real careers through practical
                 training.
-              </p>  
+              </p>
             </div>
 
             {/* Features */}
@@ -108,6 +109,7 @@ const ContactSection = () => {
                   <FaInstagram />,
                   <FaYoutube />,
                   <FaLinkedinIn />,
+                  <FaPinterestP />,
                 ].map((icon, i) => (
                   <a
                     key={i}
@@ -159,6 +161,20 @@ const ContactSection = () => {
                   <option>Cyber Security</option>
                   <option>Full Stack Development</option>
                   <option>Digital Marketing</option>
+                  <option>Web Development</option>
+                  <option>Frontend Development</option>
+                  <option>Backend Development</option>
+                  <option>MERN Stack Development</option>
+                  <option>MEAN Stack Development</option>
+                  <option>Software Testing</option>
+                  <option>Python Programming</option>
+                  <option>Java Development</option>
+                  <option>C++ Programming</option>
+                  <option>React.js Development</option>
+                  <option>Node.js Development</option>
+                  <option>UI/UX Design</option>
+                  <option>Graphic Design</option>
+                  <option>Cloud Computing</option>
                 </select>
 
                 <div className="flex gap-4 items-center">

@@ -13,7 +13,7 @@ const Vision = () => {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Vision</h2>
             <p className="text-gray-300 leading-relaxed text-lg">
-              At Cyberyuan, our vision is to create a more secure digital world by providing
+              At Mindweave, our vision is to create a more secure digital world by providing
               businesses with comprehensive cybersecurity solutions. We believe that every
               business should have access to effective and affordable cybersecurity services,
               regardless of their size or industry. Our goal is to be a trusted partner for

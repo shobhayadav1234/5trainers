@@ -30,14 +30,14 @@ const trainers = [
     role: "Digital Marketing Mentor",
     experience: "5+ Years Experience",
     specialization: "SEO, Social Media Marketing, Google Ads",
-    image: "/successful-busines.jpg",
+    image: "/female-software-developer-work.jpg ",
   },
   {
     name: "Vikas Yadav",
     role: "Full Stack Development Coach",
     experience: "9+ Years Experience",
     specialization: "React, Next.js, Node.js, MongoDB",
-    image: "/smiling.jpg",
+    image: "/blue.jpg",
   },
   {
     name: "Tanya Kapoor",
@@ -52,7 +52,7 @@ export default function OurTrainers() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        
+
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 text-[#14b8a6] font-bold text-xs uppercase tracking-[0.25em] mb-4">
@@ -80,7 +80,7 @@ export default function OurTrainers() {
               key={index}
               className="group bg-slate-50 border border-slate-100 rounded-3xl overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
             >
-              
+
               {/* Image */}
               <div className="relative overflow-hidden">
                 <img

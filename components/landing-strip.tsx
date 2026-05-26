@@ -16,7 +16,7 @@ export default function Hero() {
     phone: "",
   });
 
-  // 2. Submit Logic
+  // 2. Submit     
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -62,7 +62,7 @@ export default function Hero() {
               className="flex items-center gap-2 hover:text-[#20c9b0] transition-colors"
             >
               <Mail size={14} className="text-[#20c9b0]" />
-              mindweaveacademy.com
+              @infomindweaveacademy.com
             </a>
           </div>
 
@@ -113,7 +113,7 @@ export default function Hero() {
                 </Button>
               </Link>
               <div className="flex items-center gap-3">
-               
+
                 <div className="bg-[#f4c430] px-5 py-3 rounded-xl shadow-md">
                   <span className="text-lg font-bold text-black">+91 84474 04770</span>
                 </div>
