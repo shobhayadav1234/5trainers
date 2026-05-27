@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-
+import Image from "next/image";
 import { NavMain } from "@/components/sidebar/nav-main"
 import { NavProjects } from "@/components/sidebar/nav-projects"
 import { NavUser } from "@/components/sidebar/nav-user"
@@ -24,9 +24,14 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "Mindwave Academy",
       logo: (
-        <GalleryVerticalEndIcon
+        <Image
+          src="/mind.png"
+          alt="Mindwave Logo"
+          width={40}
+          height={40}
+          className="object-contain"
         />
       ),
       plan: "Enterprise",
@@ -50,27 +55,13 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
-      url: "#",
+      title: "Courses",
+      url: "/admin/courses",
       icon: (
         <TerminalSquareIcon
         />
       ),
       isActive: true,
-      items: [
-        {
-          title: "History",
-          url: "#",
-        },
-        {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
-        },
-      ],
     },
     {
       title: "Models",

@@ -39,7 +39,7 @@ export default function SignInPage() {
 
                 // Redirect to dashboard after success message
                 setTimeout(() => {
-                    router.push("/dashboard");
+                    router.push("/admin");
                 }, 1500);
             } else {
                 setSuccess(false);
@@ -55,7 +55,7 @@ export default function SignInPage() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-tr from-[#20c9b0] to-[#eab308] flex items-center justify-center px-4">
+        <div className="min-h-screen flex items-center justify-center px-4">
             <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl p-8">
                 <div className="text-center mb-8">
                     <h1 className="text-3xl font-bold text-gray-800">
@@ -70,8 +70,8 @@ export default function SignInPage() {
                 {message && (
                     <div
                         className={`mb-5 text-center py-3 px-4 rounded-lg text-sm font-medium border ${success
-                                ? "bg-green-100 text-green-700 border-green-300"
-                                : "bg-red-100 text-red-700 border-red-300"
+                            ? "bg-green-100 text-green-700 border-green-300"
+                            : "bg-red-100 text-red-700 border-red-300"
                             }`}
                     >
                         {message}
@@ -118,7 +118,7 @@ export default function SignInPage() {
                             required
                         />
                     </div>
-   
+
                     <div className="flex justify-end">
                         <Link
                             href="/forgot-password"
@@ -131,7 +131,7 @@ export default function SignInPage() {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-900 transition shadow-md disabled:opacity-70 disabled:cursor-not-allowed"
+                        className="w-full bg-black text-white py-3 rounded-lg font-semibold transition shadow-md disabled:opacity-70 disabled:cursor-not-allowed"
                     >
                         {loading ? "Signing In..." : "Sign In"}
                     </button>

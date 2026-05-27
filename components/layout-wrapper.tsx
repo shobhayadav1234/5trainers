@@ -9,19 +9,24 @@ export default function LayoutWrapper({
 }: {
     children: React.ReactNode;
 }) {
-
     const pathname = usePathname();
 
-    const isadmin = pathname.startsWith("/admin");
+    // /admin ya /dashboard dono ke liye admin view activate hoga
+    const isadmin = pathname.startsWith("/admin") || pathname.startsWith("/dashboard");
 
     return (
         <>
+            {/* Jab admin page NA HO tabhi normal header dikhega */}
             {!isadmin && <Header />}
 
-            <main className="flex-1">
+            {/* isadmin true hone par 'flex w-full min-h-screen bg-gray-50' apply hoga.
+              Ye class Shadcn sidebar ko aur aapke dashboard page ko aamne-saamne perfect stretch karegi.
+            */}
+            <main className={`flex-1 ${isadmin ? "flex w-full min-h-screen bg-gray-50" : ""}`}>
                 {children}
             </main>
 
+            {/* Jab admin page NA HO tabhi normal footer dikhega */}    
             {!isadmin && <Footer />}
         </>
     );

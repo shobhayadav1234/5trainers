@@ -51,7 +51,7 @@ export default function RegisterPage() {
 
     return (
         /* Responsive background gradient matching the sign-in theme */
-        <div className="min-h-screen bg-gradient-to-tr from-[#20c9b0] to-[#eab308] flex items-center justify-center px-4 py-8-sm:py-12">
+        <div className="min-h-screen flex items-center justify-center px-4 py-8-sm:py-12">
             <div className="w-full max-w-md bg-white shadow-2xl rounded-2xl p-6 sm:p-8">
 
                 <h1 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-6">
