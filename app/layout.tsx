@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/components/header";
+
 import "./globals.css";
-import Footer from "@/components/footer";
+
+import LayoutWrapper from "@/components/layout-wrapper";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,6 +21,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html
       lang="en"
@@ -26,16 +29,14 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans">
 
-        <Header />
+        <LayoutWrapper>
+          <TooltipProvider>
 
-        {/* Page content */}
-        <main className="flex-1">
           {children}
-        </main>
-        <Footer />
+          </TooltipProvider>
+        </LayoutWrapper>
+
       </body>
     </html>
   );
 }
-
-

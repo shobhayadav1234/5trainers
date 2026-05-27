@@ -335,7 +335,7 @@ export default function Header() {
             </Link>
           </div>
 
-          
+
 
           {/* MOBILE HAMBURGER BUTTON */}
           <button
@@ -450,9 +450,9 @@ export default function Header() {
           </div>
         )}
       </nav>
-      
+
     </>
-    
+
   );
 
 

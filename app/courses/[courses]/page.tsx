@@ -63,14 +63,16 @@ export default async function CoursePage({ params }: PageProps) {
         description={backendCourse?.hero?.description || ""}
         image={backendCourse?.hero?.image || ""}
         category={backendCourse?.hero?.category || ""}
+        delivery={backendCourse?.hero?.delivery || ""}
+        language={backendCourse?.hero?.language || ""}
+        download={backendCourse?.hero?.download || ""}
+        mobile={backendCourse?.hero?.mobile || ""}
       />
 
       <Write
         courseName={backendCourse?.write?.courseName || ""}
         aboutTitle={backendCourse?.write?.aboutTitle || ""}
         aboutPara1={backendCourse?.write?.aboutPara1 || ""}
-        aboutPara2={backendCourse?.write?.aboutPara2 || ""}
-        aboutPara3={backendCourse?.write?.aboutPara3 || ""}
         learningObjectives={backendCourse?.write?.learningObjectives || []}
         requirements={backendCourse?.write?.requirements || []}
         modules={backendCourse?.write?.modules || []}

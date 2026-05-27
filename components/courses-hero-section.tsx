@@ -2,19 +2,36 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Monitor, Globe, Download, Phone, Star, ChevronRight } from "lucide-react";
+import {
+  Monitor,
+  Globe,
+  Download,
+  Phone,
+  Star,
+  ChevronRight,
+} from "lucide-react";
+
+interface HeroSectionProps {
+  title: string;
+  description: string;
+  image: string;
+  category: string;
+  delivery?: string;
+  language?: string;
+  download?: string;
+  mobile?: string;
+}
 
 const HeroSection = ({
   title,
   description,
   image,
   category,
-}: {
-  title: string;
-  description: string;
-  image: string;
-  category: string;
-}) => {
+  delivery,
+  language,
+  download,
+  mobile,
+}: HeroSectionProps) => {
   return (
     <section className="relative min-h-[600px] md:h-[700px] w-full overflow-hidden flex items-center py-12 md:py-0">
 
@@ -55,59 +72,90 @@ const HeroSection = ({
 
           {/* Badge + Rating */}
           <div className="flex flex-wrap items-center gap-3 md:gap-4 mb-6 md:mb-8">
+
             <span className="bg-[#eab308] text-black text-[10px] md:text-xs font-bold px-3 py-1 rounded">
               Bestseller
             </span>
 
             <div className="flex items-center gap-1 text-[#eab308]">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={14} fill="currentColor" />
+                <Star
+                  key={i}
+                  size={14}
+                  fill="currentColor"
+                />
               ))}
+
               <span className="ml-1 text-white text-xs md:text-sm border-b border-white/50 cursor-pointer hover:text-[#20c9b0]">
                 Course Review
               </span>
             </div>
+
           </div>
 
           {/* Info */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 text-sm mb-8 md:mb-10">
 
+            {/* Delivery */}
             <div className="flex items-center gap-3">
-              <Monitor size={18} className="text-[#20c9b0]" />
+              <Monitor
+                size={18}
+                className="text-[#20c9b0]"
+              />
+
               <span>
                 Course Delivery:{" "}
+
                 <span className="font-semibold text-[#20c9b0]">
-                  Online & Offline
+                  {delivery || "Online & Offline"}
                 </span>
               </span>
             </div>
 
+            {/* Language */}
             <div className="flex items-center gap-3">
-              <Globe size={18} className="text-[#20c9b0]" />
+              <Globe
+                size={18}
+                className="text-[#20c9b0]"
+              />
+
               <span>
                 Language:{" "}
+
                 <span className="font-semibold text-[#20c9b0]">
-                  Hindi, English
+                  {language || "Hindi, English"}
                 </span>
               </span>
             </div>
 
+            {/* Download */}
             <div className="flex items-center gap-3">
-              <Download size={18} className="text-[#20c9b0]" />
+              <Download
+                size={18}
+                className="text-[#20c9b0]"
+              />
+
               <span className="cursor-pointer hover:underline">
                 Download:{" "}
+
                 <span className="font-semibold text-[#20c9b0]">
-                  Course Content
+                  {download || "Course Content"}
                 </span>
               </span>
             </div>
 
+            {/* Mobile */}
             <div className="flex items-center gap-3">
-              <Phone size={18} className="text-[#20c9b0]" />
+              <Phone
+                size={18}
+                className="text-[#20c9b0]"
+              />
+
               <span>
                 Mobile:{" "}
+
                 <span className="font-semibold text-[#20c9b0]">
-                  +91 84474 04770
+                  {mobile || "+91 84474 04770"}
                 </span>
               </span>
             </div>

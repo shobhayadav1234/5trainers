@@ -16,7 +16,7 @@ import {
 const WhyChooseUs = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const features = [
+  const features = [  
     {
       title: "10+ Years IT Experience",
       desc: "Benefit from a decade of corporate expertise, real-world projects, and proven industry success.",

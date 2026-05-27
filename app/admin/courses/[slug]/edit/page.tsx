@@ -55,7 +55,9 @@ export default function EditCoursePage({
 
             <div className="mb-6 border p-4 rounded">
 
-                <h2 className="font-bold mb-3">Hero Section Edit</h2>
+                <h2 className="font-bold mb-3">
+                    Hero Section Edit
+                </h2>
 
                 {/* TITLE */}
                 <input
@@ -69,7 +71,7 @@ export default function EditCoursePage({
                             },
                         })
                     }
-                    className="border p-2 w-full mb-2"
+                    className="w-full border border-gray-300 rounded-xl px-4 py-3 mb-3 focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
                     placeholder="Hero Title"
                 />
 
@@ -85,79 +87,265 @@ export default function EditCoursePage({
                             },
                         })
                     }
-                    className="border p-2 w-full"
+                    className="w-full border border-gray-300 rounded-xl px-4 py-3 h-32 mb-3 focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
                     placeholder="Hero Description"
                 />
+
+                {/* Course Delivery */}
+                <input
+                    value={course.hero?.delivery || ""}
+                    onChange={(e) =>
+                        setCourse({
+                            ...course,
+                            hero: {
+                                ...course.hero,
+                                delivery: e.target.value,
+                            },
+                        })
+                    }
+                    className="w-full border border-gray-300 rounded-xl px-4 py-3 mb-3 focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
+                    placeholder="Course Delivery"
+                />
+
+                {/* Language */}
+                <input
+                    value={course.hero?.language || ""}
+                    onChange={(e) =>
+                        setCourse({
+                            ...course,
+                            hero: {
+                                ...course.hero,
+                                language: e.target.value,
+                            },
+                        })
+                    }
+                    className="w-full border border-gray-300 rounded-xl px-4 py-3 mb-3 focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
+                    placeholder="Language"
+                />
+
+                {/* Download */}
+                <input
+                    value={course.hero?.download || ""}
+                    onChange={(e) =>
+                        setCourse({
+                            ...course,
+                            hero: {
+                                ...course.hero,
+                                download: e.target.value,
+                            },
+                        })
+                    }
+                    className="w-full border border-gray-300 rounded-xl px-4 py-3 mb-3 focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
+                    placeholder="Download Text"
+                />
+
+                {/* Mobile */}
+                <input
+                    value={course.hero?.mobile || ""}
+                    onChange={(e) =>
+                        setCourse({
+                            ...course,
+                            hero: {
+                                ...course.hero,
+                                mobile: e.target.value,
+                            },
+                        })
+                    }
+                    className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
+                    placeholder="Mobile Number"
+                />
+
             </div>
+
+
 
             <div className="mb-6 border p-4 rounded">
 
-                <h2 className="font-bold mb-3">Write Section Edit</h2>
+                <h2 className="font-bold mb-3">
+                    Write Section Edit
+                </h2>
+
+                {/* COURSE NAME */}
+                <div className="mb-4">
+
+                    <label className="block text-sm font-semibold mb-2 text-gray-700">
+                        Course Name
+                    </label>
+
+                    <input
+                        value={course.write?.courseName || ""}
+                        onChange={(e) =>
+                            setCourse({
+                                ...course,
+                                write: {
+                                    ...course.write,
+                                    courseName: e.target.value,
+                                },
+                            })
+                        }
+                        className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
+                        placeholder="Course Name"
+                    />
+
+                </div>
 
                 {/* ABOUT TITLE */}
-                <input
-                    value={course.write?.aboutTitle || ""}
-                    onChange={(e) =>
-                        setCourse({
-                            ...course,
-                            write: {
-                                ...course.write,
-                                aboutTitle: e.target.value,
-                            },
-                        })
-                    }
-                    className="border p-2 w-full mb-2"
-                    placeholder="About Title"
-                />
+                <div className="mb-4">
 
-                {/* PARA 1 */}
-                <textarea
-                    value={course.write?.aboutPara1 || ""}
-                    onChange={(e) =>
-                        setCourse({
-                            ...course,
-                            write: {
-                                ...course.write,
-                                aboutPara1: e.target.value,
-                            },
-                        })
-                    }
-                    className="border p-2 w-full mb-2"
-                    placeholder="Paragraph 1"
-                />
+                    <label className="block text-sm font-semibold mb-2 text-gray-700">
+                        About Title
+                    </label>
 
-                {/* PARA 2 */}
-                <textarea
-                    value={course.write?.aboutPara2 || ""}
-                    onChange={(e) =>
-                        setCourse({
-                            ...course,
-                            write: {
-                                ...course.write,
-                                aboutPara2: e.target.value,
-                            },
-                        })
-                    }
-                    className="border p-2 w-full mb-2"
-                    placeholder="Paragraph 2"
-                />
+                    <input
+                        value={course.write?.aboutTitle || ""}
+                        onChange={(e) =>
+                            setCourse({
+                                ...course,
+                                write: {
+                                    ...course.write,
+                                    aboutTitle: e.target.value,
+                                },
+                            })
+                        }
+                        className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
+                        placeholder="About Title"
+                    />
 
-                {/* PARA 3 */}
-                <textarea
-                    value={course.write?.aboutPara3 || ""}
-                    onChange={(e) =>
-                        setCourse({
-                            ...course,
-                            write: {
-                                ...course.write,
-                                aboutPara3: e.target.value,
-                            },
-                        })
-                    }
-                    className="border p-2 w-full"
-                    placeholder="Paragraph 3"
-                />
+                </div>
+
+                {/* ABOUT PARAGRAPH */}
+                <div className="mb-6">
+
+                    <label className="block text-sm font-semibold mb-2 text-gray-700">
+                        About Paragraph
+                    </label>
+
+                    <textarea
+                        value={course.write?.aboutPara1 || ""}
+                        onChange={(e) =>
+                            setCourse({
+                                ...course,
+                                write: {
+                                    ...course.write,
+                                    aboutPara1: e.target.value,
+                                },
+                            })
+                        }
+                        className="w-full border border-gray-300 rounded-xl px-4 py-3 h-40 resize-none focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
+                        placeholder="About Paragraph"
+                    />
+
+                </div>
+
+                {/* LEARNING OBJECTIVES */}
+                <div className="mb-6">
+
+                    <label className="block text-sm font-semibold mb-2 text-gray-700">
+                        Learning Objectives (JSON)
+                    </label>
+
+                    <textarea
+                        value={JSON.stringify(
+                            course.write?.learningObjectives || [],
+                            null,
+                            2
+                        )}
+                        onChange={(e) => {
+                            try {
+                                setCourse({
+                                    ...course,
+                                    write: {
+                                        ...course.write,
+                                        learningObjectives: JSON.parse(
+                                            e.target.value || "[]"
+                                        ),
+                                    },
+                                });
+                            } catch (error) {
+                                console.log("Invalid JSON");
+                            }
+                        }}
+                        className="w-full border border-gray-300 rounded-xl px-4 py-3 h-48 focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
+                        placeholder='["Objective 1", "Objective 2"]'
+                    />
+
+                </div>
+
+                {/* REQUIREMENTS */}
+                <div className="mb-6">
+
+                    <label className="block text-sm font-semibold mb-2 text-gray-700">
+                        Requirements (JSON)
+                    </label>
+
+                    <textarea
+                        value={JSON.stringify(
+                            course.write?.requirements || [],
+                            null,
+                            2
+                        )}
+                        onChange={(e) => {
+                            try {
+                                setCourse({
+                                    ...course,
+                                    write: {
+                                        ...course.write,
+                                        requirements: JSON.parse(
+                                            e.target.value || "[]"
+                                        ),
+                                    },
+                                });
+                            } catch (error) {
+                                console.log("Invalid JSON");
+                            }
+                        }}
+                        className="w-full border border-gray-300 rounded-xl px-4 py-3 h-40 focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
+                        placeholder='["Requirement 1", "Requirement 2"]'
+                    />
+
+                </div>
+
+                {/* MODULES */}
+                <div className="mb-2">
+
+                    <label className="block text-sm font-semibold mb-2 text-gray-700">
+                        Modules (JSON)
+                    </label>
+
+                    <textarea
+                        value={JSON.stringify(
+                            course.write?.modules || [],
+                            null,
+                            2
+                        )}
+                        onChange={(e) => {
+                            try {
+                                setCourse({
+                                    ...course,
+                                    write: {
+                                        ...course.write,
+                                        modules: JSON.parse(
+                                            e.target.value || "[]"
+                                        ),
+                                    },
+                                });
+                            } catch (error) {
+                                console.log("Invalid JSON");
+                            }
+                        }}
+                        className="w-full border border-gray-300 rounded-xl px-4 py-3 h-56 focus:outline-none focus:ring-2 focus:ring-[#20c9b0]"
+                        placeholder='["Module 1", "Module 2"]'
+                    />
+
+                </div>
+
             </div>
+
+
+
+
+
+
 
             <div className="mb-6 border p-4 rounded">
 
